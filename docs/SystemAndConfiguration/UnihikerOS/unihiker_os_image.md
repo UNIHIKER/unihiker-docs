@@ -3,15 +3,25 @@
 ## **OS Image**
 - To begin, download the OS img image file that needs to be flashed. 
 - Once downloaded and extracted, you will have an img format image file.
-**Download V0.3.6 System Image**
-**Name:** unihiker_v0.3.6.md5.0234c1218cc19119c6ca78ec8fe01048.img
+**Download V0.4.0 System Image**
+**Name:** unihiker_v0.4.0.md5.455cd88c55d5e5bf47b3588c3f9f9446.img
 
 | **Download channel** |  |
 | --- | --- |
-| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.3.6_20240704_2351.7z) |
+| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.0_20241129_2102.7z) |
 | **Download from Google Drive:** | [Click to download](https://drive.google.com/drive/folders/1JU73SOyN5VmpB6ilbxVNvCB9qXfc-Qo-?usp=sharing) |
 
 ##  **Release Logs**
+### **V0.4.0 :**
+
+- Pinpong library upgraded to the latest V0.6.1 version (greatly improved stability, speed, and threading compatibility)
+- The function of switching wireless hotspot has added the feature of switching security protocol
+- unihiker library upgraded to the latest V0.0.27 version
+- Several new Python libraries have been built in: torch,tensorflowjs,tf2onnx,xedu-hub
+- The links of the Local Web Page have been updated and the function of switching between siot V1 and V2 has been added
+- WiFi connection supports names with special symbols
+- Block pip version update prompts
+
 ### **V0.3.6 :**
 
 - The Local Web Page has been optimized to improve the WiFi connection process and reduce errors.

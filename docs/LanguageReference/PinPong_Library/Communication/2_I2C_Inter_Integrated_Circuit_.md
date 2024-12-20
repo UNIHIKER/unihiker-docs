@@ -58,6 +58,24 @@ All serial data SDA connected to I2C bus devices are connected to the SDA of the
 |                     | **data:** Write data. |
 | **Return**          |**None    |  
 
+#### 1.6 I2C Scan
+
+- After upgrading the Pinpong library to version 0.6.0 and above, you can use the commonly used i2cdetect tool on Linux for i2c scanning.
+- The i2c interface number on the UNIHIKER is the fourth one, so the method to scan the address is: ```i2cdetect -y 4```
+
+```
+root@unihiker:~# i2cdetect -y 4
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
+40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: -- -- -- -- -- -- -- --
+root@unihiker:~#
+```
 
 
 
