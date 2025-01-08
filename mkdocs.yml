@@ -156,7 +156,7 @@ extra_css:
 
 nav:
   - Home: https://www.unihiker.com/
-  - Documentation: 
+  - Documentation(M10): 
     - index.md 
     - 🚩 Getting Started: 
       - Getting Started: get-started.md
@@ -316,7 +316,12 @@ nav:
       - The UNIHIKER cannot be connected to Mindplus : Troubleshooting/The_UNIHIKER_cannot_be_connected_to_Mind.md
       - What should I do if the screen is black, white and I can't enter the system : Troubleshooting/What_should_I_do_if_the_screen_is_black_white_and_I_can_t_enter_the_system.md
       - How to Install Multiple Python Versions on Unihiker? : Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker.md
-
+  - Documentation(K10): 
+    - K10/index.md     
+    - 🚩 Getting Started: 
+      - Getting Started: K10/get-started.md
+      - MindPlus: K10/GettingStarted/gettingstarted_mindplus.md
+    - FAQ: K10/faq.md
   - Forum: https://www.dfrobot.com/forum/?t=947&p=1
   - Contact Us: 
     - 1.Technical Discussion: ContactUs/contactus_technical_discussion.md
