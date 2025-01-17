@@ -321,7 +321,25 @@ nav:
     - 🚩 Getting Started: 
       - Getting Started: K10/get-started.md
       - MindPlus: K10/GettingStarted/gettingstarted_mindplus.md
-    - FAQ: K10/faq.md
+      - MicroPython: K10/GettingStarted/gettingstarted_mpy.md
+    - 🌟 Examples:
+      - Mindplus Examples: K10/Examples/examples_mindplus.md
+      - MicroPython Examples: K10/Examples/examples_mpy.md
+    - 📜 Code Reference:
+      - Blocks Reference: K10/CodeReference/CodeReference_blocksReference.md
+      - MicroPython Reference: K10/CodeReference/CodeReference_mpyReference.md
+    - 🪄 Playground: 
+      - Playground: K10/Playground/playground_playground.md
+    - 🚀 Hardware Reference:
+      - Introduction: K10/HardwareReference/hardwarereference_introduction.md
+      - Onboard function: K10/HardwareReference/hardwarereference_onboardfunction.md
+      - System Framework: K10/HardwareReference/hardwarereference_sysframwork.md   
+      - Specification: K10/HardwareReference/hardwarereference_specs.md
+      - Board Overview: K10/HardwareReference/hardwarereference_boardoverview.md
+      - Dimension: K10/HardwareReference/hardwarereference_dimension.md
+      - STP file & Schematic: K10/HardwareReference/hardwarereference_stepschematic.md
+    
+    - 🔧 FAQ: K10/faq.md
   - Forum: https://www.dfrobot.com/forum/?t=947&p=1
   - Contact Us: 
     - 1.Technical Discussion: ContactUs/contactus_technical_discussion.md
