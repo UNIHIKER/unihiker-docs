@@ -53,6 +53,12 @@ After the system image is burned, the system is in its initial state, and you ne
 | --- | --- |
 | A | [click](https://www.dfrobot.com/forum/topic/327538) |
 
+| **Q** | **What should I do if all the above methods tried on my PC can't recognize UNIHIKER or fail to burn successfully?** |
+| --- | --- |
+| A | Try switching to another PC (such as a Linux PC or macOS PC), if you have multiple UNIHIKERs, you can also try this method:  [click](https://www.dfrobot.com/forum/topic/339927) |
+
+
+
 If you encounter any issues that cannot be resolved during use, please don't hesitate to contact us through either of the methods listed below:
 
 1. Join our UNIHIKER channel by the link https://discord.gg/rvvfNCvBKv.
