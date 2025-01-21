@@ -22,9 +22,9 @@ After successful boot-up, K10 runs the factory built-in program, you can quickly
 
 - Press the button B again to switch to “View Tutorial” mode, and scan the QR code through your cell phone to view the tutorial of K10.
 
-## **Working offline Power Supply**
+## **Factory Programme**
 After uploading other programmes, the factory programme will be overwritten, if you want to re-experience the factory programme, you can follow the process below:
-- Download [factory programme](img/get-stated/user-en.zip)
+- Download [factory programme](img/get-started/user-en.zip)
 - Unzip the programme and open it with Notepad/VSCode etc. and copy the entire contents
 - Paste it into the manual editing area of Mind+.<br/>
 ![image.png](img/get-started/getstarted5.png)
