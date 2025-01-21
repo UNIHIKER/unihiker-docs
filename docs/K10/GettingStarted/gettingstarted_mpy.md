@@ -1,13 +1,13 @@
 ## **UNIHIKER K10 with MicroPython**
 
-## **1 Download**
+## **Download**
 - Micropython firmware<br/>
 Before using micropython to program the UNIHIKER K10, the Micropython firmware has to be uploaded into the UNIHIKER K10.
 
 | **Download channel** |  |
 | --- | --- |
-| **Download:** | [Click to download]() |
-| **Download from Google Drive:** | [Click to download]() |
+| **Download:** | [Click to download](img/gettingstarted_mpy/unihikerK10mpy_20241122_V0.5.bin)  |
+| **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1gKTtFghDu0V-vSi19ahH7bor5WSaBbDE/view?usp=drive_link) |
 
 
 - Flash Download Tool<br/>
@@ -17,7 +17,7 @@ Flash Download Tool released by Espressif is the tool to upload the Micropython 
 - Thonny<br/>
 Thonny is one of the most common Micropython editor.<br/>[Click to download](https://thonny.org/) Thonny.
 
-## **2 Flash MicroPython Firmware**
+## **Flash MicroPython Firmware**
 Click to open the Flash Download Tool, then choose the ESP32-S3
 ![image.png](img/gettingstarted_mpy/flashdownload1.png)
 
@@ -29,7 +29,7 @@ First click "ERASE" to clear the flsh, and then click "START" to flash the firmw
 Press the RST reset button on the K10 board after the flash is completed.<br/>
 
 
-## **3 Coding**
+## **Coding**
 Open up Thonny as the MicroPython Editor.<br/>
 Select the ESP32 device in Thonny.<br/>
 ![image.png](img/gettingstarted_mpy/Thonny1.png)
@@ -117,3 +117,8 @@ save the code and name as main.py
 
 Click to run the code
 ![image.png](img/gettingstarted_mpy/Thonny5.png)
+
+
+## **Flash back to Arduino C firmware**
+Restore the device to the factory Arduino firmware in Mind+.
+![image.png](img/gettingstarted_mpy/Restore1.png)

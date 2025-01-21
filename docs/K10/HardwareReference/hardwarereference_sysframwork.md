@@ -1,0 +1,1 @@
+![image.png](img/hardwarereference_onboard/onboard2.png) 

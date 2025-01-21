@@ -5,7 +5,9 @@ In this tutorial, we will guide you through the process of downloading and insta
 Mind+ is a software designed for teenagers that supports AI and IoT functions by integrating with popular mainboards and open-source hardware. It offers an easy programming experience through graphical building blocks and advanced languages like Python, C, and C++.
 
 ### **Download**
-
+| **Download channel** |  |
+| --- | --- |
+| **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1WAOHVI7O-FOut98sRzbNyuq7DNtMT5Vo/view?usp=sharing) |
 
 ### **Code**
 - Open Mind+ and switch to "Offline" mode.

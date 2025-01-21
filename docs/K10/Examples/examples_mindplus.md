@@ -39,9 +39,6 @@ When displaying text over an image, turn auto-clear off and use a constant refre
 ![image.png](img/example_mindplus/exampleMindplus15.png) 
 ![image.png](img/example_mindplus/exampleMindplus16.png)
 
-## **Display-QR Code**
-![image.png](img/example_mindplus/exampleMindplus15.png) 
-![image.png](img/example_mindplus/exampleMindplus16.png)
 
 ## **Display-QR Code**
 ![image.png](img/example_mindplus/exampleMindplus17.png) 

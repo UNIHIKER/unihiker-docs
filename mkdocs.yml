@@ -327,7 +327,6 @@ nav:
       - MicroPython Examples: K10/Examples/examples_mpy.md
     - 📜 Code Reference:
       - Blocks Reference: K10/CodeReference/CodeReference_blocksReference.md
-      - MicroPython Reference: K10/CodeReference/CodeReference_mpyReference.md
     - 🪄 Playground: 
       - Playground: K10/Playground/playground_playground.md
     - 🚀 Hardware Reference:
