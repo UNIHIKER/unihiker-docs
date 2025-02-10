@@ -1,4 +1,5 @@
-## **Download and Install the VSCode**
+## **Download and Install Visual Studio Code**
+
 In this tutorial, we will demonstrate how to download and install VSCode (Visual Studio Code) on your Windows, Mac, or Linux computer.   
 
 ### **VSCode** 
