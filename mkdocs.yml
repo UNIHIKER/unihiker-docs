@@ -317,7 +317,7 @@ nav:
       - What should I do if the screen is black, white and I can't enter the system : Troubleshooting/What_should_I_do_if_the_screen_is_black_white_and_I_can_t_enter_the_system.md
       - How to Install Multiple Python Versions on Unihiker? : Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker.md
   - Documentation(K10): 
-    - K10/index.md     
+    - K10/index.md 
     - 🚩 Getting Started: 
       - Getting Started: K10/get-started.md
       - MindPlus: K10/GettingStarted/gettingstarted_mindplus.md

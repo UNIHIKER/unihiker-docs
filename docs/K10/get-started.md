@@ -24,7 +24,7 @@ After successful boot-up, K10 runs the factory built-in program, you can quickly
 
 ## **Factory Programme**
 After uploading other programmes, the factory programme will be overwritten, if you want to re-experience the factory programme, you can follow the process below:
-- Download [factory programme](img/get-started/user-en.zip)
+- Download [factory programme](https://dfimg.dfrobot.com/62b2fb5caa613609f271523c/wiki/94b66ba7b78d1fafdbc73675ec2da461.zip)
 - Unzip the programme and open it with Notepad/VSCode etc. and copy the entire contents
 - Paste it into the manual editing area of Mind+.<br/>
 ![image.png](img/get-started/getstarted5.png)

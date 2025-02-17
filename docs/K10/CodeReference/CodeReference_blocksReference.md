@@ -56,7 +56,7 @@
 | ---- | ------------------------------------------------------------ |
 | Block |![image.png](img/codeReference_blocks/blockreference20.png) |
 | Discription | An interrupt is triggered when the on-board key A/B is pressed/released.</p>Infinite loops and long delays should not be used in interrupts, and the code in the interrupt should be as short as possible to ensure system stability. |
-| Block | ![](https://img.dfrobot.com.cn/wiki/5d09937f437c63049d98b469/837a41aae32fc4975150cf5abae18073.png) |
+| Block | ![image.png](img/codeReference_blocks/blockreference21.png) |
 | Discription | detect the status of onboard button A/B (pressed/released). </p> When the camera/AI function is enabled, it is recommended to use the key interrupt to determine the key press. |
 | Block | ![image.png](img/codeReference_blocks/blockreference22.png)|
 | Discription | Detects the current attitude of the main control panel as tilted forward/tilted backward/tilted left/tilted right/screen up/screen down, a total of 6 types of attitude detection. |
@@ -150,18 +150,6 @@ There are three RGB LEDs on the underside of the back of the K10, use the serial
 | Block | ![image.png](img/codeReference_blocks/blockreference52.png) |
 | Discription | Used to determine whether the command word with the specified ID is recognised after waking up the K10. |
 
-
-## **AI-Speech synthesis**
-Speech synthesis function can only support Chinese.<br/>
-
-|      |                                                              |
-| ---- | ------------------------------------------------------------ |
-| Block | ![image.png](img/codeReference_blocks/blockreference53.png)  |
-| Discription | Set the speech rate of voice playback, the larger the value, the faster the speech rate. The minimum speed is 0, the maximum speed is 5. If you don't set it, the default is 2.|
-| Block | ![image.png](img/codeReference_blocks/blockreference54.png) |
-| Discription | Speech synthesis of specified text can be achieved using commas for tone spacing. |
-
-
 ## **Serial port**
 |      |                                                              |
 | ---- | ------------------------------------------------------------ |
@@ -180,3 +168,22 @@ Speech synthesis function can only support Chinese.<br/>
 | Block | ![image.png](img/codeReference_blocks/blockreference61.png) |
 | Discription | Set the Rx (receive) and Tx (transmit) pins and baud rate for serial port 1 (Software Serial).|
 
+## **Pin operation**
+|      |                                                              |
+| ---- | ------------------------------------------------------------ |
+| Block | ![image.png](img/codeReference_blocks/blockreference63.png)  |
+| Discription | Setting the mode of the pin, the selection modes are Output (OUTPUT), Input (INPUT), and Pull-up Input (INPUT_PULLUP). The pull-up input mode is generally used to stabilize the pin signal to a high level when an input pin is dangling.<br/>To connect an external sensor to the K10, you need to set the mode of the corresponding pin with this instruction.|
+| Block | ![image.png](img/codeReference_blocks/blockreference64.png) |
+| Discription | Reads the value of the digital pins and reads the results as 1 and 0. |
+| Block | ![image.png](img/codeReference_blocks/blockreference65.png) |
+| Discription | Reads the value of an analog pin with a read data range of 0-4095. |
+| Block | ![image.png](img/codeReference_blocks/blockreference66.png) |
+| Discription | Set pin output high or low level|
+| Block | ![image.png](img/codeReference_blocks/blockreference67.png)  |
+| Discription | Sets the specified analog pin output PWM value with a value in the range of 0-1023.       |
+
+## **System**
+|      |                                                              |
+| ---- | ------------------------------------------------------------ |
+| Block | ![image.png](img/codeReference_blocks/blockreference68.png)  |
+| Discription | Time elapsed since the start of program execution (Unit: ms)|
