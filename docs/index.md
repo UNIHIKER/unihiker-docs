@@ -1,6 +1,7 @@
-# **Welcome to UNIHIKER Documentation**
-Unleash your imagination and embark on a new journey with UNIHIKER.
-   
+# **Welcome to UNIHIKER M10 Documentation**
+Unleash your imagination and embark on a new journey with UNIHIKER M10.
+![image.png](img/index/UNIHIKERM10back.png)
+The UNIHIKER M10 and K10 can be distinguished simply by the presence or absence of a camera and USB-A port on the back.
 
 <div class="grid cards" markdown>
 
