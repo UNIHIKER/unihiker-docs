@@ -43,7 +43,7 @@ The UNIHIKER M10 and K10 can be distinguished simply by the presence or absence 
   [micropython]: GettingStarted/gettingstarted_mpy.md
   [Graphical Coding]: Examples/examples_mindplus.md
   [Micropython Coding]: Examples/examples_mpy.md
-  [blocks reference]: CodeReference/CodeReference_blocksReference
+  [blocks reference]: CodeReference/CodeReference_blocksReference.md
   [intruduction]: HardwareReference/hardwarereference_introduction.md
   [Onboard function]: HardwareReference/hardwarereference_onboardfunction.md
   [system-framework]: HardwareReference/hardwarereference_sysframwork.md
