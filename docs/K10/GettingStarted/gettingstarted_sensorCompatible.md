@@ -54,6 +54,8 @@ At present, K10 only opens up some of the commonly used sensors, and the compati
 | SEN0322 | I2COxygen Concentration Sensor       | V1.8.1 RC1.0 - K10 beta version 250103 |
 | SEN0619 | BMM350Triaxial Geomagnetic Sensor    | V1.8.1 RC1.0 - K10 beta version 250103 |
 
+![image.png](img/gettingstarted_sensorCompatible/sensorCompatible1.png)
+
 ### Actuator
 | SKU  | Part name                  | Mind+ Minimum Version              |
 | ---- | -------------------- | ------------------------ |
@@ -64,6 +66,9 @@ At present, K10 only opens up some of the commonly used sensors, and the compati
 | DFR0523         | Gravity: Digital Peristaltic Pump   | V1.8.1 RC1.0 - K10 beta version 250103 |
 | DFR0473         | 3.3V Relay     | V1.8.1 RC1.0 - K10 beta version 250103 |
 | DFR0760         | Gravity: Text to Speech Voice Synthesizer Module    | V1.8.1 RC1.0 - K10 beta version 250103 |
+
+![image.png](img/gettingstarted_sensorCompatible/sensorCompatible2.png)
+
 ### Communication
 
 | SKU  | Function                 | Mind+ Minimum Version             |
@@ -73,12 +78,16 @@ At present, K10 only opens up some of the commonly used sensors, and the compati
 | DFR0231/DFR0231-H | RFID/NFC Module | V1.8.1 RC1.0 - K10 beta version 250103 |
 |                   | wireless broadcast     | V1.8.1 RC1.0 - K10 beta version 250103 |
 
+![image.png](img/gettingstarted_sensorCompatible/sensorCompatible3.png)
+
 ### Display
 
 | SKU                     | Part name         | Mind+ Minimum Version             |
 | ----------------------- | ------------ | ------------------------ |
 | FIT0352/FIT0656/DFR0888 | WS2812 RGB LED | V1.8.1 RC1.0 - K10 beta version 250103 |
 | DFR0646 | Gravity: 8-Digital LED Segment Display Module | V1.8.1 RC1.0 - K10 beta version 250103 |
+
+![image.png](img/gettingstarted_sensorCompatible/sensorCompatible4.png)
 
 ### Function
 
@@ -92,24 +101,24 @@ At present, K10 only opens up some of the commonly used sensors, and the compati
 |          | Cross-modal data transfer       | V1.8.1 RC1.0 - K10 beta version 250103 |
 | DFR0999  | Gravity SCl DAQ | V1.8.1 RC1.0 - K10 beta version 250103 |
 
+![image.png](img/gettingstarted_sensorCompatible/sensorCompatible5.png)
+
 ### Network
 
 | SKU  | Function         | Mind+ Minimum Version              |
 | ---- | ------------ | ------------------------ |
 |      | WiFi         | V1.8.1 RC1.0 - K10 beta version 250103 |
 |      | MQTT         | V1.8.1 RC1.0 - K10 beta version 250103 |
-|      | NTP 网络时间 | V1.8.1 RC1.0 - K10 beta version 250103 |
-|          | UDP广播   | V1.8.1 RC1.0 - K10 beta version 250103 |
+|      | NTP  | V1.8.1 RC1.0 - K10 beta version 250103 |
+|      | UDP broadcast   | V1.8.1 RC1.0 - K10 beta version 250103 |
 |          | HTTP      | V1.8.1 RC1.0 - K10 beta version 250103 |
-|          | 获取天气  | V1.8.1 RC1.0 - K10 beta version 250103 |
+|          | Weather  | V1.8.1 RC1.0 - K10 beta version 250103 |
 |          | TinyWebDB | V1.8.1 RC1.0 - K10 beta version 250103 |
+
+![image.png](img/gettingstarted_sensorCompatible/sensorCompatible6.png)
 
 ## User-extension
 
 The compatibility of current sensors and small modules is still being optimized, and some of the sensors that have been optimized will first be opened for use through the user extension.
-
-
-
-### Bluetooth Serial
-
-User extension：https://gitee.com/chenqi1233/ext-ble_-uart
+If you would like any Gravity sensors to be compatible with the K10, please contact us via email. We will get back to you as soon as possible.<br/>
+E-mail: unihiker@dfrobot.com

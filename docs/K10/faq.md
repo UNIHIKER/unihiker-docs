@@ -1,8 +1,13 @@
-## **High frequency problem**
-Q: Can't find K10 after downloading the public beta version of Mind+
-A: The K10 is a microcontroller dev board and needs to be programmed in Mind+ upload mode.
+## **How code K10 in Mind+**
+Q: Can't find K10 after downloading the Mind+<br/>
+A: The K10 is a microcontroller dev board and needs to be programmed in Mind+ offline mode, and the version of Mind should be 1.8.1 or above.
 
-Q: I can't find the port number of K10 in offline mode, do I need to install the driver?
+Q: How to code in Mind+？<br/>
+A: Please view this [page](https://www.unihiker.com/wiki/K10/GettingStarted/gettingstarted_mindplus/)
+
+
+## **WIndows 7 computer can not connnect to the K10**
+Q: I can't find the port number of K10 in offline mode, do I need to install the driver?<br/>
 A: The Windows 10 or Windows 11 does not need to install the driver, if the computer of Win10/11 can not recognize the port, please make sure whether you are using the USB-C cable which come with the K10. And try to connect the K10 to the computer's native USB port on your PC instead of pass through the USB hub.
 Windows7 computers need to install the serial driver manually: install [zadig](https://zadig.akeo.ie/) and set it up as follows:
 ![image.png](img/faq/faq3.png) 
@@ -20,8 +25,7 @@ Q: K10 continues to reboot and crash after uploading a program.
 A: Please select K10 in Mind+ offline mode and click “Restore device initialization settings”.
 ![image.png](img/faq/faq5.png) 
 
-## **How to download K10 supported Mind+**
-- Please view this [page](https://www.unihiker.com/wiki/K10/GettingStarted/gettingstarted_mindplus/)
+
 
 ## **K10 abnormal reboot**
 Q: Board restarts abnormally when using MQTT, pin interrupts, multithreading.

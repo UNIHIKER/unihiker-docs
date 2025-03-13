@@ -1,5 +1,5 @@
 ## **Download and Install the Mindplus (Mind+)**
-In this tutorial, we will guide you through the process of downloading and installing Mindplus on your Windows, Mac, or Linux computer.
+In this tutorial, we will guide you through the process of downloading and installing Mindplus on your Windows, MacOS or Linux.
 
 ### **Mindplus (Mind+)**
 Mind+ is a software designed for teenagers that supports AI and IoT functions by integrating with popular mainboards and open-source hardware. It offers an easy programming experience through graphical building blocks and advanced languages like Python, C, and C++.

@@ -322,13 +322,15 @@ nav:
       - Getting Started: K10/get-started.md
       - MindPlus: K10/GettingStarted/gettingstarted_mindplus.md
       - MicroPython: K10/GettingStarted/gettingstarted_mpy.md
+      - Sensor Compatible list: K10/GettingStarted/gettingstarted_sensorCompatible.md
+      - Expansion board Compatible list: K10/GettingStarted/gettingstarted_expansionboardComaptible.md
     - 🌟 Examples:
       - Mindplus Examples: K10/Examples/examples_mindplus.md
       - MicroPython Examples: K10/Examples/examples_mpy.md
     - 📜 Code Reference:
       - Blocks Reference: K10/CodeReference/CodeReference_blocksReference.md
     - 🪄 Playground: 
-      - Playground: K10/Playground/playground_playground.md
+      - Tutorial(Block): K10/Playground/Tutorial(Block).md
     - 🚀 Hardware Reference:
       - Introduction: K10/HardwareReference/hardwarereference_introduction.md
       - Onboard function: K10/HardwareReference/hardwarereference_onboardfunction.md

@@ -1,5 +1,5 @@
 ## **UNIHIKER K10 with Mindplus(Mind+)**
-In this tutorial, we will guide you through the process of downloading and installing Mindplus on your Windows, Mac, or Linux.
+In this tutorial, we will guide you through the process of downloading and installing Mindplus on your computer.
 
 ### **Mindplus(Mind+)**
 Mind+ is a software designed for teenagers that supports AI and IoT functions by integrating with popular mainboards and open-source hardware. It offers an easy programming experience through graphical building blocks and advanced languages like Python, C, and C++.
@@ -7,7 +7,8 @@ Mind+ is a software designed for teenagers that supports AI and IoT functions by
 ### **Download**
 | **Download channel** |  |
 | --- | --- |
-| **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1WAOHVI7O-FOut98sRzbNyuq7DNtMT5Vo/view?usp=sharing) |
+| **Download from Mind+:** | [Download](https://mindplus.cc/download-en.html) |
+UNIHIKER K10 only support Mind+ version V1.8.1 or above.
 
 ### **Code**
 - Open Mind+ and switch to "Offline" mode.
@@ -26,4 +27,12 @@ Mind+ is a software designed for teenagers that supports AI and IoT functions by
 
 - After the program is successfully uploaded, the K10 screen displays the text "Hello, UNIHIKER" in different colors.
 
+## **Factory Programme**
+After uploading other programmes, the factory programme will be overwritten, if you want to re-experience the factory programme, you can follow the process below:<br/>
+- Download [factory programme](https://dfimg.dfrobot.com/62b2fb5caa613609f271523c/wiki/94b66ba7b78d1fafdbc73675ec2da461.zip)
+- Unzip the programme and open it with Notepad/VSCode etc. and copy the entire contents
+- Paste it into the manual editing area of Mind+.<br/>
+![image.png](../img/get-started/getstarted5.png)<br/>
+- Select the K10 and serial port and upload the code.
 
+For more UNIHIKER K10 programming tips for Mind+, please visit [Mind+ Example](https://www.unihiker.com/wiki/K10/Examples/examples_mindplus/).

@@ -21,15 +21,7 @@ After successful boot-up, K10 runs the factory built-in program, you can quickly
 ![image.png](img/get-started/getstarted4.png)
 
 - Press the button B again to switch to “View Tutorial” mode, and scan the QR code through your cell phone to view the tutorial of K10.
-
-## **Factory Programme**
-After uploading other programmes, the factory programme will be overwritten, if you want to re-experience the factory programme, you can follow the process below:
-- Download [factory programme](https://dfimg.dfrobot.com/62b2fb5caa613609f271523c/wiki/94b66ba7b78d1fafdbc73675ec2da461.zip)
-- Unzip the programme and open it with Notepad/VSCode etc. and copy the entire contents
-- Paste it into the manual editing area of Mind+.<br/>
-![image.png](img/get-started/getstarted5.png)
-- Select the K10 and serial port and upload the code.
-
+To start programming on your own, please click on [MindPlus](https://www.unihiker.com/wiki/K10/GettingStarted/gettingstarted_mindplus/)
 
 ## **Working offline Power Supply**
 After burning a programme for the K10 in Mind+ or other IDE, the programme will be stored in the board's Flash and will not be lost during a power failure, so when the K10 is re-powered it will run the programme that was uploaded last time.
@@ -41,8 +33,7 @@ After burning a programme for the K10 in Mind+ or other IDE, the programme will 
 - Supports power supply via expansion board
 
 ## **TF card**
-We recommend using genuine SanDisk cards sold by DF Mall: 16GB Class 10 or 32GB Class 10.
+We recommend using genuine SanDisk cards sold by DFRobot: [32GB Class 10](https://www.dfrobot.com/product-1715.html).
 Using an unknown brand of memory card may cause problems such as card read/write failure and program crash.
 If you use a 32GB or higher memory card, you need to format the card into FAT32 format.
-
 
