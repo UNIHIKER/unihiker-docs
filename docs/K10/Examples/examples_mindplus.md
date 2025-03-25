@@ -100,13 +100,17 @@ Turn on the camera, when the camera detects the detection of the cat, the length
 ![image.gif](img/example_mindplus/exampleMindplus44.gif){: width="300px"}
 
 ## **AI-QR Code Scanner**
+You can generate your own QR code through some free [QR code generation sites](https://www.qr-code-generator.com/). <br/>
+Below is the "Album cover" QR code we generated
 ![image.png](img/example_mindplus/exampleMindplus30.png){: width="400px"}
 ![image.gif](img/example_mindplus/exampleMindplus30.gif){: width="300px"}
+![image.png](img/example_mindplus/exampleMindplus45.png){: width="200px"}
 
 ## **AI-Speech recognition**
 Wake up the voice recognition through the wake-up command "Hi,Telly", and then through the command word "Light on", "Light off" to control the on-board RGB ELD lights on K10 to turn on and off. <br/>
 ![image.png](img/example_mindplus/exampleMindplus31.png) 
 ![image.gif](img/example_mindplus/exampleMindplus31.gif){: width="400px"}
+
 
 ## **Serial port-Serial print**
 ![image.png](img/example_mindplus/exampleMindplus33.png) 
