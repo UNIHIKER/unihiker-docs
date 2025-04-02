@@ -336,9 +336,7 @@ nav:
       - Onboard function: K10/HardwareReference/hardwarereference_onboardfunction.md
       - System Framework: K10/HardwareReference/hardwarereference_sysframwork.md   
       - Specification: K10/HardwareReference/hardwarereference_specs.md
-      - Board Overview: K10/HardwareReference/hardwarereference_boardoverview.md
-      - Dimension: K10/HardwareReference/hardwarereference_dimension.md
-      - STP file & Schematic: K10/HardwareReference/hardwarereference_stepschematic.md
+      - Download: K10/HardwareReference/hardwarereference_stepschematic.md
     
     - 🔧 FAQ: K10/faq.md
   - Forum: https://www.dfrobot.com/forum/?t=947&p=1

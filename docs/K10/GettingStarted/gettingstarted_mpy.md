@@ -6,7 +6,6 @@ Before using micropython to program the UNIHIKER K10, the Micropython firmware h
 
 | **Download channel** |  |
 | --- | --- |
-| **Download:** | [Click to download](img/gettingstarted_mpy/unihikerK10mpy_20241122_V0.5.bin)  |
 | **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1gKTtFghDu0V-vSi19ahH7bor5WSaBbDE/view?usp=drive_link) |
 
 

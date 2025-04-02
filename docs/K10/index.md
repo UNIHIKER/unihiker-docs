@@ -32,7 +32,7 @@ The UNIHIKER M10 and K10 can be distinguished simply by the presence or absence 
       Hardware-Related Information
     &nbsp;__[![image.png](img/index/hardware.png){width=198, style="display:block;margin: 0 auto"}][intruduction]__  
 
-    __&nbsp;[Onboard function][Onboard function] |&nbsp; [System Framework][system-framework] |&nbsp; [Specification][specification] |&nbsp;  [Board Overview][overview] |&nbsp; [Dimension][dimension] |&nbsp; [Sch & 3D File][3dfile]__
+    __&nbsp;[Onboard function][Onboard function] |&nbsp; [System Framework][system-framework] |&nbsp; [Specification][specification] |&nbsp; [Download][download]__
 
 
 </div>
@@ -48,7 +48,5 @@ The UNIHIKER M10 and K10 can be distinguished simply by the presence or absence 
   [Onboard function]: HardwareReference/hardwarereference_onboardfunction.md
   [system-framework]: HardwareReference/hardwarereference_sysframwork.md
   [specification]: HardwareReference/hardwarereference_specs.md
-  [overview]: HardwareReference/hardwarereference_boardoverview.md
-  [dimension]: HardwareReference/hardwarereference_dimension.md
-  [3dfile]: HardwareReference/hardwarereference_stepschematic.md
+  [download]: HardwareReference/hardwarereference_stepschematic.md
 

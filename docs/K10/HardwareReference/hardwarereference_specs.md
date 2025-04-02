@@ -1,3 +1,9 @@
+## **Boardover view**
+![image.png](img/hardwarereference_onboard/onboard5.png) 
+
+## **Dimensional Drawing**
+![image.png](img/hardwarereference_onboard/onboard4.png) 
+
 **Core**
 
 | Function  | Description                         |
@@ -26,3 +32,4 @@
 | ------------ | ------------------------------------------------------------ |
 | On-board interface     | USB-C power/program upload interface</p>2Pin PH2.0 battery</p>3Pin PH2.0 Full function GPIO x 2</p>4Pin PH2.0 I2C </p>Self-ejecting TF card slot |
 | EdgeConnector | Full function GPIO x 2</p>I2C x 1</p>Digital IO x 15       |
+
