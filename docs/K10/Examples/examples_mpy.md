@@ -177,11 +177,10 @@ while True:
 
 ## **TF card**
 ````python title="TF card"
-from unihiker_k10 import light
-import time
-while True:
-    print(light.read())
-    time.sleep(0.1)
+from unihiker_k10 import tf_card
+import os
+files = os.listdir("/sd")
+print("Files in /sd:",files)
 ````
 
 ## **Record & Play**
