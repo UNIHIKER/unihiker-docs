@@ -1,11 +1,11 @@
-## **Download and Install the VSCode**
+## **Download and Install VSCode**
 In this tutorial, we will demonstrate how to download and install VSCode (Visual Studio Code) on your Windows, Mac, or Linux computer.   
 
 ### **VSCode** 
 VSCode is an elegant, free, and open-source code editor developed by Microsoft. It serves as a cross-platform solution, supporting numerous programming languages such as Python and C++. With features including syntax highlighting, code completion, and error detection, it empowers developers with a robust set of tools. Furthermore, its extension plugin system allows for customization and enhanced functionality, catering to diverse development requirements.   
 
 ### **Download the Editor**
-[[Download the VSCode]](https://code.visualstudio.com/download) .   
+[[Download VSCode]](https://code.visualstudio.com/download) .   
 
 ![image.png](img/VSCode - Python/1695025959912-55f4a8d7-c24e-4916-bcf3-0e3a510e5918.png)  
 
