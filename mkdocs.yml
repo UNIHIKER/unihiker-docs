@@ -321,14 +321,17 @@ nav:
     - 🚩 Getting Started: 
       - Getting Started: K10/get-started.md
       - MindPlus: K10/GettingStarted/gettingstarted_mindplus.md
+      - Arduino IDE: K10/GettingStarted/gettingstarted_arduinoide.md
       - MicroPython: K10/GettingStarted/gettingstarted_mpy.md
       - Sensor Compatible list: K10/GettingStarted/gettingstarted_sensorCompatible.md
       - Expansion board Compatible list: K10/GettingStarted/gettingstarted_expansionboardComaptible.md
     - 🌟 Examples:
       - Mindplus Examples: K10/Examples/examples_mindplus.md
+      - Arduino IDE Examples: K10/Examples/examples_arduinoide.md
       - MicroPython Examples: K10/Examples/examples_mpy.md
     - 📜 Code Reference:
       - Blocks Reference: K10/CodeReference/CodeReference_blocksReference.md
+      - Arduino API List: K10/CodeReference/CodeReference_arduinoide.md
     - 🪄 Playground: 
       - Tutorial(Block): K10/Playground/Tutorial(Block).md
     - 🚀 Hardware Reference:
