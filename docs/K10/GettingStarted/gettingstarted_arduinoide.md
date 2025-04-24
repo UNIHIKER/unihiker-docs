@@ -3,7 +3,6 @@ In this tutorial, we will guide you through the process of downloading Arduino I
 
 ### **Arduino IDE**
 Arduino IDE is an open source programming software which supports a large number of MCU dev boards. it provides an easy and fast C++ programming experience.
-Note: The current version of the Arduino IDE SDK is a beta version and only supports Arduino IDE 1.8.19.
 
 | **Download** |  |
 | --- | --- |
