@@ -117,6 +117,8 @@ save the code and name as main.py
 Click to run the code
 ![image.png](img/gettingstarted_mpy/Thonny5.png)
 
+## **MicroPython Example**
+Cklik to the [MicroPython Example](https://www.unihiker.com/wiki/K10/Examples/examples_mpy/).
 
 ## **Flash back to Arduino C firmware**
 Restore the device to the factory Arduino firmware in Mind+.

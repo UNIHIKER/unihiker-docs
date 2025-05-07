@@ -35,6 +35,6 @@ Serach unihiker and install the SDK<br/>
 UNIHIKER K10 will appear in your Arduino IDE<br/>
 ![image.png](img/gettingstarted_arduinoide/IDESDK7.png)
 
-Note:The Arduino IDE SDK for UNIHIKER K10 is still in beta, there may be some API bugs. if you find a bug, you can send an email to UNIHIKER team and we will fix it as soon as possible.
-unihiker@dfrobot.com
+Note:The Arduino IDE SDK for UNIHIKER K10 is still in beta, there may be some API bugs. if you find a bug, you can send an email to UNIHIKER team and we will fix it as soon as possible.<br/>
+Email: unihiker@dfrobot.com<br/>
 We will update to the official version in the near future.

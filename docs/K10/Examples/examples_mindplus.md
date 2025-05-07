@@ -108,6 +108,8 @@ Below is the "Album cover" QR code we generated
 
 ## **AI-Speech recognition**
 Wake up the voice recognition through the wake-up command "Hi,Telly", and then through the command word "Light on", "Light off" to control the on-board RGB ELD lights on K10 to turn on and off. <br/>
+Note: voice command word can't use monosyllabic words.<br/>
+e.g. "hi" may not work, "hello" is fine.
 ![image.png](img/example_mindplus/exampleMindplus31.png) 
 ![image.gif](img/example_mindplus/exampleMindplus31.gif){: width="400px"}
 

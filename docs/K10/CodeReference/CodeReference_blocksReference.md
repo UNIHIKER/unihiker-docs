@@ -144,7 +144,7 @@ There are three RGB LEDs on the underside of the back of the K10, use the serial
 | Block | ![image.png](img/codeReference_blocks/blockreference49.png)  |
 | Discription | Set the working length of continuous/single recognition and recognition language after waking up from speech recognition, and the unit of waking up length is milliseconds (ms).|
 | Block | ![image.png](img/codeReference_blocks/blockreference50.png) |
-| Discription | Add speech recognition command word ID and command word, command word ID setting range is 0-199, command word is filled in with a single time, the words are separated by space, and the command word is preferred to be 2~5 syllables. |
+| Discription | Add speech recognition command word ID and command word, command word ID setting range is 0-199, command word is filled in with a single time, the words are separated by space, and the command word is preferred to be 2~5 syllables.<br/> Note: voice command word can't use monosyllabic words. e.g. "hi" may not work, "hello" is fine. |
 | Block | ![image.png](img/codeReference_blocks/blockreference51.png) |
 | Discription | Used to judge the current state of the speech recognition mode. <p/>This command is used to execute commands such as animation playback or text display when waking up, don't use it nested with ‘command word detected’. |
 | Block | ![image.png](img/codeReference_blocks/blockreference52.png) |

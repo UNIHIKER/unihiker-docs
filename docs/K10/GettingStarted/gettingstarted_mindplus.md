@@ -34,6 +34,6 @@ After uploading other programmes, the factory programme will be overwritten, if 
 - Unzip the programme and open it with Notepad/VSCode etc. and copy the entire contents.<br/>
 - Paste it into the manual editing area of Mind+.<br/>
 ![image.png](../img/get-started/getstarted5.png)<br/>
-- Select the K10 and serial port and upload the code.
+- Select the K10 and upload the code.
 
 For more UNIHIKER K10 programming tips for Mind+, please visit [Mind+ Example](https://www.unihiker.com/wiki/K10/Examples/examples_mindplus/).

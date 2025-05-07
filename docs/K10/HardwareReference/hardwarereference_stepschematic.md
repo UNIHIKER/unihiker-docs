@@ -12,8 +12,14 @@ DFRobot official design case, a M3*5 screw is need to fix the case to the K10 bo
 
 ## **Factory Programme**
 After uploading other programmes, the factory programme will be overwritten, if you want to re-experience the factory programme, you can follow the process below:<br/>
+- Connect K10 to your PC and open "Mind+". Be sure the Mind+ is in the English mode.<br/>
+- Select UNIHIKER K10 in extension——>board.<br/>
+![image.png](img/hardwarereference_onboard/onboard7.png) 
+- Connect the K10, then restore device initial setting. The recovery process may take 3~5 minutes<br/>
+![image.png](img/hardwarereference_onboard/onboard8.png) 
 - Download [factory programme](https://img.dfrobot.com.cn/wikicn/62b2fb5caa613609f271523c/90d9a709be69b96c37cadd2af0337b0e.zip)<br/>
 - Unzip the programme and open it with Notepad/VSCode etc. and copy the entire contents.<br/>
 - Paste it into the manual editing area of Mind+.<br/>
 ![image.png](../img/get-started/getstarted5.png)<br/>
-- Select the K10 and serial port and upload the code.
+- Select the K10 and upload the code.<br/>
+![image.png](img/hardwarereference_onboard/onboard9.png) 

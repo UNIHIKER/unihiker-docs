@@ -1,9 +1,3 @@
-## **Boardover view**
-![image.png](img/hardwarereference_onboard/onboard5.png) 
-
-## **Dimensional Drawing**
-![image.png](img/hardwarereference_onboard/onboard4.png) 
-
 **Core**
 
 | Function  | Description                         |
@@ -30,6 +24,17 @@
 
 | Function         | Description                                |
 | ------------ | ------------------------------------------------------------ |
-| On-board interface     | USB-C power/program upload interface</p>2Pin PH2.0 battery</p>3Pin PH2.0 Full function GPIO x 2</p>4Pin PH2.0 I2C </p>Self-ejecting TF card slot |
+| On-board interface     | USB-C power(5V DC)/program upload interface</p>2Pin PH2.0 battery interface(3.0-6.0V DC)</p>Recommended power source: 3.7V Lipo battery or three 1.5V AA/AAA cells </p>3Pin PH2.0 Full function GPIO x 2</p>4Pin PH2.0 I2C </p>Self-ejecting TF card slot |
 | EdgeConnector | Full function GPIO x 2</p>I2C x 1</p>Digital IO x 15       |
+
+## **Boardover view**
+![image.png](img/hardwarereference_onboard/onboard5.png) 
+
+## **Dimensional Drawing**
+![image.png](img/hardwarereference_onboard/onboard4.png) 
+
+## **On-board resorce**
+![image.png](img/hardwarereference_onboard/onboard10.png) 
+
+
 
