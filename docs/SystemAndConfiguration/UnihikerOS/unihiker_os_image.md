@@ -3,15 +3,31 @@
 ## **OS Image**
 - To begin, download the OS img image file that needs to be flashed. 
 - Once downloaded and extracted, you will have an img format image file.
-**Download V0.4.0 System Image**
-**Name:** unihiker_v0.4.0.md5.455cd88c55d5e5bf47b3588c3f9f9446.img
+
+**Download Latest Version System Image**
+**Name:** unihiker_v0.4.1.md5.0d2e92c04f6596ed8aa19f7f8db869a5.img
 
 | **Download channel** |  |
 | --- | --- |
-| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.0_20241129_2102.7z) |
+| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.1_20250729_0952.7z) |
 | **Download from Google Drive:** | [Click to download](https://drive.google.com/drive/folders/1JU73SOyN5VmpB6ilbxVNvCB9qXfc-Qo-?usp=sharing) |
 
 ##  **Release Logs**
+
+### **V0.4.1 :**
+
+- Added pyenv tool with built-in Python 3.8.5 and 3.12.7  
+- Updated Home menu  
+       - Added M10 logo to the cover  
+       - Added USB IP reset network function on click  
+       - Added language switch quick icon in the menu  
+       - Added more parameter displays on the system infor page  
+       - Updated apt source files  
+- Added v4l-utils library  
+- Updated built-in siotV2 package  
+- Unihiker library updated to version 0.0.28  
+- Pinpong library updated unihiker recognition method
+
 ### **V0.4.0 :**
 
 - Pinpong library upgraded to the latest V0.6.1 version (greatly improved stability, speed, and threading compatibility)
