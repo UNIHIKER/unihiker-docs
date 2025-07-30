@@ -62,7 +62,7 @@ After the system image is burned, the system is in its initial state, and you ne
 
 | **Q** | **How to use a working unihiker to flash the firmware onto another unihiker??** |
 | --- | --- |
-| A | Try switching to another PC (such as a Linux PC or macOS PC), if you have multiple UNIHIKERs, you can also try this method:  [click](https://www.dfrobot.com/forum/topic/339927) |
+| A |  [click here](https://www.dfrobot.com/forum/topic/339927) |
 
 
 
