@@ -45,15 +45,22 @@ After the system image is burned, the system is in its initial state, and you ne
 
 | **Q** | **What should I do if I get stuck at the "Starting" or "Installing Driver" step for more than 5 minutes?** |
 | --- | --- |
-| A | Restart the burning tool and try burning again. If it still exists, power off the board and re-enter the burning mode, then restart the burning tool to burn. or try using the Command-line Tool.If it still doesn't work, you can try reinstalling the [driver](https://zadig.akeo.ie/), or changing the computer. |
+| A | Restart the burning tool and try burning again. If it still exists, power off the board and re-enter the burning mode, then restart the burning tool to burn. or try using the Command-line Tool.If it still doesn't work, you can try reinstalling the driver, or changing the computer. |
 
+| **Q** | **How to install the driver manually?**  |
+| --- | --- |
+| **A** | Download the driver package,and run zadig as an administrator: [driver](https://zadig.akeo.ie/) |
+| 1 | To select the unihiker option in the Zadig list, unplug and hold the home button while plugging in the unihiker (checking or unchecking "List All Device" in Options refreshes the list). Click "Install Driver" to install the driver. When prompted, check "Always trust..." and click "Install." The installation is successful when "successfully" appears. <br> ![image.png](img/7.Burn OS Image/59fffc6c52ff1d158d5436afb7979b28.png) |
+| 2|After the driver is successfully installed, unplug the unihiker USB, then hold the Home button while plugging it back in. The dropdown list in Zadig should now show "USB-MSC" or "Unknown Device." Click "Replace Driver" and wait until "successfully" appears, indicating the installation is complete.  <br> ![image.png](img/7.Burn OS Image/1e6f0bfea40c631f5938ffcf07df71ae.png) |
+| 3| After completing the previous step, unplug the unihiker USB, then hold the **Home** button while plugging it back in.<br>Next, run the flashing tool as an administrator and try flashing the image again. If a progress bar appears, the process is working correctly.|
+| **Note:** |- Do not use other driver installation tools.<br>- If **Rockusb Device** appears in **Device Manager**, right-click and uninstall it. |
 
 
 | **Q** | **How can I create a full image backup for the UNIHIKER?** |
 | --- | --- |
 | A | [click](https://www.dfrobot.com/forum/topic/327538) |
 
-| **Q** | **What should I do if all the above methods tried on my PC can't recognize UNIHIKER or fail to burn successfully?** |
+| **Q** | **How to use a working unihiker to flash the firmware onto another unihiker??** |
 | --- | --- |
 | A | Try switching to another PC (such as a Linux PC or macOS PC), if you have multiple UNIHIKERs, you can also try this method:  [click](https://www.dfrobot.com/forum/topic/339927) |
 
