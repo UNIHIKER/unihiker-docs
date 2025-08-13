@@ -6,11 +6,11 @@ Before using micropython to program the UNIHIKER K10, the Micropython firmware h
 
 | **Download channel** |  |
 | --- | --- |
-| **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1gKTtFghDu0V-vSi19ahH7bor5WSaBbDE/view?usp=drive_link) |
+| **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
 
 
 - Flash Download Tool<br/>
-Flash Download Tool released by Espressif is the tool to upload the Micropython firmware into the UNIHIKER K10.<br/>[Click to download](https://www.espressif.com.cn/en/support/download/other-tools) Flash Download Tool.
+Flash Download Tool released by Espressif is the tool to upload the Micropython firmware into the UNIHIKER K10.<br/>[Click to download](https://dl.espressif.com/public/flash_download_tool.zip) Flash Download Tool.
 <br/>
 
 - Thonny<br/>
