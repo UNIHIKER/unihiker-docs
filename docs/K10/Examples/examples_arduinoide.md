@@ -28,6 +28,7 @@ void loop() {
 
 ## **Display-Electronic photo album**
 Format the TF card to FAT32 and install it on K10. Press button A on the K10 to take a picture and button B to display it.<br/>
+Note: TF card is need to run this example.
 ````c++ title="Electronic photo album"
 #include "unihiker_k10.h"
 
@@ -337,6 +338,7 @@ void onButtonABPressed() {
 
 
 ## **On board sensor-Accelerate sensors**
+Note: TF card is need to run this example, and the arrow pictures need to store in the TF card.
 Display screen tilt:<br/>
 ````c++ title="Accelerate sensors"
 #include "unihiker_k10.h"
@@ -355,15 +357,15 @@ void loop() {
 		k10.canvas->updateCanvas();
 	}
 	else if ((k10.isGesture(TiltBack))) {
-		k10.canvas->canvasDrawImage(0, 0, "S:/forward.png");
+		k10.canvas->canvasDrawImage(0, 0, "S:/back.png");
 		k10.canvas->updateCanvas();
 	}
 	else if ((k10.isGesture(TiltLeft))) {
-		k10.canvas->canvasDrawImage(0, 0, "S:/forward.png");
+		k10.canvas->canvasDrawImage(0, 0, "S:/left.png");
 		k10.canvas->updateCanvas();
 	}
 	else if ((k10.isGesture(TiltRight))) {
-		k10.canvas->canvasDrawImage(0, 0, "S:/forward.png");
+		k10.canvas->canvasDrawImage(0, 0, "S:/right.png");
 		k10.canvas->updateCanvas();
 	}
 	k10.canvas->canvasRectangle(0, 0, 240, 320, 0xFFFFFF, 0xFFFFFF, true);
@@ -443,13 +445,13 @@ void setup() {
 void loop() {
 	while (!(mind_n_brightness==9)) {
 		k10.rgb->brightness(round(mind_n_brightness));
-		k10.rgb->write(0, 0x0000FF);
+		k10.rgb->write(-1, 0x0000FF);
 		delay(200);
 		mind_n_brightness += 1;
 	}
 	while (!(mind_n_brightness==0)) {
 		k10.rgb->brightness(round(mind_n_brightness));
-		k10.rgb->write(0, 0x0000FF);
+		k10.rgb->write(-1, 0x0000FF);
 		delay(200);
 		mind_n_brightness -= 1;
 	}
@@ -493,6 +495,7 @@ void onButtonBPressed() {
 
 ## **Audio-Record and play**
 Press button A to record 3 seconds of audio and store it to the TF card; press button B to play the recorded audio.<br/>
+Note: TF card is need to run this example
 ````c++ title="Record and play*"
 #include "unihiker_k10.h"
 
@@ -678,6 +681,7 @@ void loop() {
 
 ## **AI-QR Code Scanner**
 You can generate your own QR code through some free [QR code generation sites](https://www.qr-code-generator.com/). <br/>
+Note: TF card is need to run this example, and the Album Cover picture needs to be stored in TF card.
 Below is the "Album cover" QR code we generated
 ````c++ title="QR Code Scanner**"
 #include "unihiker_k10.h"

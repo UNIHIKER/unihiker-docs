@@ -8,7 +8,7 @@ Arduino IDE is an open source programming software which supports a large number
 | --- | --- |
 | **Download from Arduino** | [Arduino IDE](https://www.arduino.cc/en/software/) |
 
-Note: UNIHIKER K10 currently only support Arduino IDE 1.8.19 or below. We will add support for Arduino IDE V2.x in subsequent releases.
+Note: UNIHIKER K10 is now fully support all version of Arduino IDE since SDK version 0.0.2
 
 ## **Arduino IDE SDK**
 
