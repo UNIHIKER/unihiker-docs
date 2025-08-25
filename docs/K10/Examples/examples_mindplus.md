@@ -58,6 +58,10 @@ Interrupt way:<br/>
 
 ## **On board sensor-Accelerate sensors**
 Display screen tilt:<br/>
+
+!!!
+    Running this program requires a TF card, and the four arrow images must be saved to the SD card in advance.
+
 ![image.png](img/example_mindplus/exampleMindplus22.png){: width="350px"} 
 ![image.gif](img/example_mindplus/exampleMindplus21.gif){: width="250px"}<br/>
 Pedo meter:<br/>
@@ -77,6 +81,9 @@ Press button A to play the music “BIRTHDAY” in the background; press button 
 ![image.png](img/example_mindplus/exampleMindplus25.png) 
 
 ## **Audio-Record and play**
+!!!
+    Running this program requires a TF card.
+
 Press button A to record 3 seconds of audio and store it to the TF card; press button B to play the recorded audio.<br/>
 ![image.png](img/example_mindplus/exampleMindplus26.png) 
 
@@ -102,6 +109,10 @@ Turn on the camera, when the camera detects the detection of the cat, the length
 ## **AI-QR Code Scanner**
 You can generate your own QR code through some free [QR code generation sites](https://www.qr-code-generator.com/). <br/>
 Below is the "Album cover" QR code we generated
+
+!!!
+    Running this program requires a TF card, and the album cover needs to be stored in the TF card in advance.
+
 ![image.png](img/example_mindplus/exampleMindplus30.png){: width="400px"}
 ![image.gif](img/example_mindplus/exampleMindplus30.gif){: width="300px"}
 ![image.png](img/example_mindplus/exampleMindplus45.png){: width="200px"}

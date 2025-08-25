@@ -28,7 +28,10 @@ void loop() {
 
 ## **Display-Electronic photo album**
 Format the TF card to FAT32 and install it on K10. Press button A on the K10 to take a picture and button B to display it.<br/>
-Note: TF card is need to run this example.
+
+!!! Note 
+    TF card is need to run this programme
+
 ````c++ title="Electronic photo album"
 #include "unihiker_k10.h"
 
@@ -338,8 +341,13 @@ void onButtonABPressed() {
 
 
 ## **On board sensor-Accelerate sensors**
-Note: TF card is need to run this example, and the arrow pictures need to store in the TF card.
-Display screen tilt:<br/>
+
+Display screen tilt
+
+!!! Note 
+    TF card is need to run this example, and the arrow pictures need to store in the TF card.
+
+
 ````c++ title="Accelerate sensors"
 #include "unihiker_k10.h"
 UNIHIKER_K10 k10;
@@ -496,7 +504,7 @@ void onButtonBPressed() {
 ## **Audio-Record and play**
 Press button A to record 3 seconds of audio and store it to the TF card; press button B to play the recorded audio.<br/>
 Note: TF card is need to run this example
-````c++ title="Record and play*"
+````c++ title="Record and play"
 #include "unihiker_k10.h"
 
 UNIHIKER_K10 k10;
@@ -532,7 +540,7 @@ void loop() {
 
 ## **AI-Face detection**
 Turn on the camera, detect the face, and display the detected face length and width, as well as center point x and center point y coordinates, on the K10 screen<br/>
-````c++ title="Face detection**"
+````c++ title="Face detection"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
 
@@ -566,7 +574,7 @@ void loop() {
 
 ## **AI-Face recognition**
 Press button A to learn the face and green LED on; press button B to recognize the face and blue LED on, and display the recognized face ID on the K10 screen<br/>
-````c++ title="Face recognition**"
+````c++ title="Face recognition"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
 
@@ -615,7 +623,7 @@ void onButtonBPressed() {
 
 ## **AI-Dog/Cat recognition**
 Turn on the camera, when the camera detects the detection of the cat, the length and width of the cat's face, as well as the coordinates of the center point x and center point y, are displayed on the K10 screen.<br/>
-````c++ title="AI-Dog/Cat recognition**"
+````c++ title="AI-Dog/Cat recognition"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
 
@@ -647,7 +655,7 @@ void loop() {
 ![image.gif](img/example_mindplus/exampleMindplus29.gif){: width="250px"}
 
 ## **AI-Movement Detection**
-````c++ title="Movement Detection**"
+````c++ title="Movement Detection"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
 
@@ -681,9 +689,13 @@ void loop() {
 
 ## **AI-QR Code Scanner**
 You can generate your own QR code through some free [QR code generation sites](https://www.qr-code-generator.com/). <br/>
-Note: TF card is need to run this example, and the Album Cover picture needs to be stored in TF card.
+
+!!! Note 
+     Note: TF card is need to run this example, and the Album Cover picture needs to be stored in TF card.
+
+
 Below is the "Album cover" QR code we generated
-````c++ title="QR Code Scanner**"
+````c++ title="QR Code Scanner"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
 
@@ -717,7 +729,7 @@ void loop() {
 
 ## **AI-Speech recognition**
 Wake up the voice recognition through the wake-up command "Hi,Telly", and then through the command word "Light on", "Light off" to control the on-board RGB ELD lights on K10 to turn on and off. <br/>
-````c++ title="Speech recognition**"
+````c++ title="Speech recognition"
 #include "asr.h"
 #include "unihiker_k10.h"
 // Create an object
@@ -760,7 +772,7 @@ void loop() {
 ## **GPIO**
 Since the camera and display take up a lot of GPIOs on the ESP32 chip, we only left two full-function GPIOs (digital input/output, analogue input, PWM output) at P0,P1.
 The GPIOs out of Edge Connector are all led from the on-board GPIO expansion chip, and only have digital input/output function.<br/>
-````c++ title="Digital input/output**"
+````c++ title="Digital input/output"
 void setup() {
 	pinMode(P0, OUTPUT);
 	pinMode(P1, INPUT);
@@ -782,7 +794,7 @@ void loop() {
 }
 ````
 
-````c++ title="Digital input/output(Extended GPIO)**"
+````c++ title="Digital input/output(Extended GPIO)"
 #include "unihiker_k10.h"
 
 UNIHIKER_K10 k10;
