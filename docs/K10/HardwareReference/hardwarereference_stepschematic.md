@@ -12,6 +12,7 @@ DFRobot official design case, a M3*5 screw is need to fix the case to the K10 bo
 
 ## **Factory Programme**
 After uploading other programmes, the factory programme will be overwritten, if you want to re-experience the factory programme, you can follow the process below:<br/>
+
 - Connect K10 to your PC and open "Mind+". Be sure the Mind+ is in the English mode.<br/>
 - Select UNIHIKER K10 in extension——>board.<br/>
 ![image.png](img/hardwarereference_onboard/onboard7.png) 

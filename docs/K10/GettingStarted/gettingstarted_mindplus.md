@@ -1,6 +1,7 @@
 ## **UNIHIKER K10 with Mindplus(Mind+)**
 Mind+ is a software designed for teenagers that supports AI and IoT functions by integrating with popular mainboards and open-source hardware. It offers an easy programming experience through graphical building blocks and advanced languages like Python, C, and C++.
-In this tutorial, we will guide you through the process of downloading and installing Mindplus on your computer.
+In this tutorial, we will guide you through the process of downloading and installing Mindplus on your computer.<br/>
+![mindplus](img/gettingstarted_mindplus/Mindplus.png)
 
 !!! Note 
     Mind+ is only support windows for now.<br/>
@@ -34,6 +35,7 @@ UNIHIKER K10 only support Mind+ version V1.8.1 or above.
 
 ## **Factory Program**
 After uploading other programs, the factory program will be overwritten, if you want to re-experience the factory program, you can follow the process below:<br/>
+
 - Download [factory program](https://img.dfrobot.com.cn/wikicn/62b2fb5caa613609f271523c/90d9a709be69b96c37cadd2af0337b0e.zip)<br/>
 - Unzip the program and open it with Notepad/VSCode etc. and copy the entire contents.<br/>
 - Paste it into the manual editing area of Mind+.<br/>
@@ -41,13 +43,13 @@ After uploading other programs, the factory program will be overwritten, if you 
 - Select the K10 and upload the code.
 ![image.png](img/gettingstarted_mindplus/Mindplus6.png)
 
-For more UNIHIKER K10 programming tips for Mind+, please visit [Mind+ Example](https://www.unihiker.com/wiki/K10/Examples/examples_mindplus/).
+For more UNIHIKER K10 programming tips for Mind+, please visit [Mind+ Example](../Examples/examples_mindplus.md).
 
 ## **Mind+ Example**
-Cklik to the [Mind+ Example](https://www.unihiker.com/wiki/K10/Examples/examples_mindplus/).
+Click to the [Mind+ Example](https://www.unihiker.com/wiki/K10/Examples/examples_mindplus/).
 
 
-## Supported Sensors
+## **Supported Sensors**
 At present, K10 only opens up some of the commonly used sensors, and the compatibility of more sensors will be iterated in subsequent versions.
 
 ### Offical library

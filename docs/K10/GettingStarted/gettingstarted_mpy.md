@@ -1,28 +1,23 @@
 ## **UNIHIKER K10 with MicroPython**
 MicroPython is a Python interpreter that runs on microprocessors, enabling us to write Python scripts to control hardware. It is highly consistent with the standard Python interpreter (CPython) in terms of syntax and runs on microprocessors with limited resources.
-In this tutorial, we will guide you through the process of downloading and installing MicroPython and it's IDE "Thonny" on your computer.
+In this tutorial, we will guide you through the process of downloading and installing MicroPython and it's IDE "Thonny" on your computer.<br/>
+![mpy](img/gettingstarted_mpy/micropython.png)
 
 ### **Download**
 
 !!! Note 
     Before using micropython to program the UNIHIKER K10, the Micropython firmware has to be uploaded into the UNIHIKER K10.<br/>
-    Flash Download Tool now only support on Windows. MacOS/GNU Linux user can flash firmware by [ESP LAUNCHPAD](https://igrr.github.io/esp-launchpad/).
+    Flash Download Tool now only support on Windows. MacOS/GNU Linux user can flash firmware by [ESP LAUNCHPAD](https://igrr.github.io/esp-launchpad/).<br/>
+    The MicroPython Firmware and Thonny support Windows/MacOS/GNU Linux.
 
 
-- Micropython firmware<br/>
-
-
-| **Download channel** |  |
+| **Download** |  |
 | --- | --- |
-| **Download from Google Drive:** | [Google Drive](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
+| **MicroPython Firmware:** | [Google Drive Download](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
+| **Flash Download Tool(Only support windows):** | [Click to download](https://dl.espressif.com/public/flash_download_tool.zip) |
+| **ESP LaunchPad(Web Tool For All OS):** | [Click to visit](https://igrr.github.io/esp-launchpad/) |
+| **Thonny** | [Click to download](https://thonny.org/) |
 
-
-- Flash Download Tool(Only support windows)<br/>
-Flash Download Tool released by Espressif is the tool to upload the Micropython firmware into the UNIHIKER K10.<br/>[Click to download](https://dl.espressif.com/public/flash_download_tool.zip) Flash Download Tool.
-<br/>
-
-- Thonny<br/>
-Thonny is one of the most common Micropython editor.<br/>[Click to download](https://thonny.org/) Thonny.
 
 ### **Flash MicroPython Firmware on Windows**
 - Click to open the Flash Download Tool, then choose the ESP32-S3
@@ -135,7 +130,7 @@ while True:
 ![image.png](img/gettingstarted_mpy/Thonny5.png)
 
 ## **MicroPython Example**
-Cklik to the [MicroPython Example](https://www.unihiker.com/wiki/K10/Examples/examples_mpy/).
+Cklik to the [MicroPython Example](../Examples/examples_mpy.md).
 
 ## **Flash back to Arduino C firmware**
 The original firmware for K10 is ArduinoC firmware, supports development in Arduino environments such as Mind+/Arduino IDE. If you want to switch back to Arduino development after using MicroPython, we offer the following two methods for you to flash the Arduino C firmware:<br/>
@@ -150,7 +145,7 @@ Restore the device to the factory Arduino firmware in [Mind+](https://www.unihik
 **Method 2**<br/>
 For the MacOS/GNU Linux user the Arduino C firmware can be flash back by using the Arduino IDE.
 
-- Download and configure Arduino IDE by following [this tutorial](https://www.unihiker.com/wiki/K10/GettingStarted/gettingstarted_arduinoide/).<br/>
+- Download and configure Arduino IDE by following [this tutorial](../GettingStarted/gettingstarted_arduinoide.md).<br/>
 - Choose the model as "EN".
 ![image.png](img/gettingstarted_mpy/Restore2.png)
 - Upload an empty program, like this one:

@@ -1,6 +1,7 @@
 ## **UNIHIKER K10 with Arduino IDE**
 The Arduino IDE is a software tool used for programming, compiling, and uploading code to microcontroller boards. It provides a simple and user-friendly interface that allows developers to write, edit, and debug code using the Arduino programming language (based on C/C++).
-In this tutorial, we will guide you through the process of downloading Arduino IDE and installing UNIHIKER K10 sdk on your computer.
+In this tutorial, we will guide you through the process of downloading Arduino IDE and installing UNIHIKER K10 sdk on your computer.<br/>
+![Arduinnoide](img/gettingstarted_arduinoide/Arduino.png)
 
 ### **Download Arduino IDE**
 Arduino IDE is an open source programming software which supports a large number of MCU dev boards. it provides an easy and fast C++ programming experience.
@@ -42,4 +43,4 @@ Email: unihiker@dfrobot.com<br/>
 We will update to the official version in the near future.
 
 ## **Arduino Example**
-Cklik to the [Arduino Example](https://www.unihiker.com/wiki/K10/Examples/examples_arduinoide/).
+Click to the [Arduino Example](../Examples/examples_arduinoide.md).

@@ -21,3 +21,12 @@ Fully compatible with K10, available in the official extension library
 [MBT0005](https://www.dfrobot.com/product-1847.html)<br/>
 The RGB lights on the expansion board cannot be controlled.
 ![image.png](img/gettingstarted_expansionboardcompatible/expansionboard3.png)
+
+
+## **DFR1231 - Robotics & Power IO Extender for UNIHIKER K10 / micro:bit**
+[DFR1231](https://www.dfrobot.com/product-2963.html)<br/>
+![image.png](img/gettingstarted_expansionboardcompatible/expansionboard4.png)
+
+## **DFR1216 - Multi Function Expansion Board for UNIHIKER K10 and micro:bit**
+[DFR1216](https://www.dfrobot.com/product-2974.html)<br/>
+![image.png](img/gettingstarted_expansionboardcompatible/expansionboard5.png)
