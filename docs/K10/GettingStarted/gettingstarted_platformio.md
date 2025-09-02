@@ -39,7 +39,7 @@ If you are using another IDE, please refer to [this document](https://docs.platf
 
 1. **Open** VSCode Package Manager
 2. **Search** for the official ``platformio ide`` [extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
-3. **Install** PlatformIO IDE.
+3. **Install** PlatformIO IDE.<br/>
 ![vscodeExtension1](img/gettingstarted_platformio/vscodeExtension1.png)
 
 4. **Install Unihiker K10 SDK**
@@ -112,7 +112,7 @@ Refer to the [CLion Documentation page](https://www.jetbrains.com/help/clion/ins
 2. **[Download](https://www.jetbrains.com/clion/)**, install and open CLion IDE
 
 3. **Install** official [PlatformIO for CLion](https://plugins.jetbrains.com/plugin/13922-platformio-for-clion) plugin.<br/>
-Open File > Settings.." and go to the "Marketplace" tab. Search for ``PlatformIO`` and click the "Install" button.
+Open "File > Settings.." and go to the "Marketplace" tab. Search for ``PlatformIO`` and click the "Install" button.
 ![clion2](img/gettingstarted_platformio/clionExtension2.png)
 
 4. **Restart** CLion IDE
