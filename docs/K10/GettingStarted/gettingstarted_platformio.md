@@ -4,7 +4,7 @@ In this tutorial, we will guide you through the entire process of downloading, i
 ![platformio](img/gettingstarted_platformio/Platformio.png)
 
 ## **Download Code Editor**
-Platform IO is typically installed via code editor like VSCode or CLion. This tutorial will introduce how to configure Platform IO in these two IDEs.
+Platform IO is typically installed via code editor/IDE like VSCode or CLion. This tutorial will introduce how to configure Platform IO in these two IDEs.
 If you are using another IDE, please refer to [this document](https://docs.platformio.org/en/latest/integration/ide/index.html) to learn how to configure Platform IO in your IDE.
 
 | **Download** |  |
@@ -12,10 +12,15 @@ If you are using another IDE, please refer to [this document](https://docs.platf
 | **VSCode** | [Download](https://code.visualstudio.com/Download) |
 | **CLion** | [Download](https://www.jetbrains.com/clion/) |
 
+!!! Note 
+    The following configuration needs to be performed only once. Once the Platform IO SDK for K10 is successfully configured, you can directly find DFRobot->Unihiker K10 in Platform IO IDE when creating new projects.
 
 ## **Install Platform IO extension/plug-in**
 ### Platform IO in VSCode
 [Visual Studio Code](https://code.visualstudio.com/) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
+
+
+ ![image.png](img/gettingstarted_platformio/vscode.png){: width="320px"}
 
 !!! Note 
     Please note that you do not need to install [PlatformIO Core(CLI)](https://docs.platformio.org/en/latest/core/index.html#piocore) separately if
@@ -89,32 +94,34 @@ void loop() {
     - Connect your K10 to PC/Mac and upload code with ``ctrl+alt+u`` hotkey
 
 ### Platform IO in CLion
-[CLion](https://www.jetbrains.com/clion/) is a cross-platform C/C++ IDE for Linux, OS X, and Windows. CLion includes such features as a smart editor, code generation, code quality assurance, automated refactorings, on-the-fly code analysis, project manager, integrated version control systems and debugger.
+[CLion](https://www.jetbrains.com/clion/) is a cross-platform C/C++ IDE for GNU Linux, macOS, and Windows. CLion includes such features as a smart editor, code generation, code quality assurance, automated refactorings, on-the-fly code analysis, project manager, integrated version control systems and debugger.
 
 Refer to the [CLion Documentation page](https://www.jetbrains.com/help/clion/installation-guide.html) for more detailed information.
-![clion1](img/gettingstarted_platformio/clionExtension1.png)
+
+![image.png](img/gettingstarted_platformio/clionExtension1.png){: width="320px"}
+
+!!! Note 
+    **Step 1** is a temporary step and depends on [CLion #CPP-19412: Automatically install PlatformIO Core](https://youtrack.jetbrains.com/issue/CPP-19412). You may also skip Step 1 and proceed from Step 2 to install the Platform IO IDE and  CLion.
+
+    **About Unihiker K10:** The Unihiker K10 cannot currently be selected directly in Platform IO. You must first create a Platform IO project using another random DFRobot board, then modify the ``platformio.ini`` file and download the SDK before you can begin development.
+
+    **Other plug-in**: It is also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini) plugin that provides syntax highlighting, formatting, code folding, and viewing structure for [“platformio.ini” (Project Configuration File)](https://docs.platformio.org/en/latest/projectconf/index.html#projectconf).
 
 1. **Install** PlatformIO Core (CLI). See [Installation](https://docs.platformio.org/en/latest/core/installation/index.html#core-installation) guide.
 
-!!! Note 
-    This a **temporary step** and depends on [CLion #CPP-19412: Automatically install PlatformIO Core](https://youtrack.jetbrains.com/issue/CPP-19412)
+2. **[Download](https://www.jetbrains.com/clion/)**, install and open CLion IDE
 
-
-2. **[Download](https://www.jetbrains.com/clion/)** and install CLion IDE
-
-3. **Install** official [PlatformIO for CLion](https://plugins.jetbrains.com/plugin/13922-platformio-for-clion) plugin. Open "Configure > Plugins" window and go to the "Marketplace" tab. Search for ``PlatformIO`` and press the "Install" button.
+3. **Install** official [PlatformIO for CLion](https://plugins.jetbrains.com/plugin/13922-platformio-for-clion) plugin.<br/>
+Open File > Settings.." and go to the "Marketplace" tab. Search for ``PlatformIO`` and click the "Install" button.
 ![clion2](img/gettingstarted_platformio/clionExtension2.png)
 
 4. **Restart** CLion IDE
 
-!!! Note 
-    It is also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini) plugin that provides syntax highlighting, formatting, code folding, and viewing structure for [“platformio.ini” (Project Configuration File)](https://docs.platformio.org/en/latest/projectconf/index.html#projectconf).
-
 5. **Setting Up** the Project
-    - Please open “New Project” wizard, select board and framework, and create a new PlatformIO project. Please USE ONLY Latin characters (a-z) in a project name to avoid further issues with project compilation. Numbers and some symbols are allowed depending on a file system:
+    - Please open “New Project” wizard, select board and framework, and create a new PlatformIO project. Please USE ONLY Latin characters (a-z) in a project name to avoid further issues with project compilation. Numbers and some symbols are allowed depending on different OS:
     ![clion3](img/gettingstarted_platformio/clionExtension3.png)
 
-    - Open ``platformio.ini`` file, then copy and paste the following configure text in it. And use ``ctrl+s`` to save the configure file.<br/>
+    - Open ``platformio.ini`` file, then copy and paste the following configure text in it. And use ``ctrl+s`` hot key to save the configure file.<br/>
     Wait for the SDK download.
         ````bash title="platformio.ini"
         [env:unihiker]
@@ -128,6 +135,7 @@ Refer to the [CLion Documentation page](https://www.jetbrains.com/help/clion/ins
         ````
 
 6. **Run** test code on Unihiker K10
+    - Once the SDK download complete, then the Platform IO in CLion is ready to go. 
     - Open ``main.cpp`` file from ``src`` folder and replace its contents with the next:
 
     ````c++ title="test code"
