@@ -20,7 +20,7 @@ If you are using another IDE, please refer to [this document](https://docs.platf
 [Visual Studio Code](https://code.visualstudio.com/) is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Python, PHP, Go) and runtimes (such as .NET and Unity)
 
 
- ![image.png](img/gettingstarted_platformio/vscode.png){: width="320px"}
+ ![image.png](img/gettingstarted_platformio/vscode.png){: width="240px"}
 
 !!! Note 
     Please note that you do not need to install [PlatformIO Core(CLI)](https://docs.platformio.org/en/latest/core/index.html#piocore) separately if
@@ -96,7 +96,7 @@ void loop() {
 ### Platform IO in CLion
 [CLion](https://www.jetbrains.com/clion/) is a cross-platform C/C++ IDE for GNU Linux, macOS, and Windows. CLion includes such features as a smart editor, code generation, code quality assurance, automated refactorings, on-the-fly code analysis, project manager, integrated version control systems and debugger.
 
-Refer to the [CLion Documentation page](https://www.jetbrains.com/help/clion/installation-guide.html) for more detailed information.
+Refer to the [CLion Documentation page](https://www.jetbrains.com/clion/features/) for more detailed information.
 
 ![image.png](img/gettingstarted_platformio/clionExtension1.png){: width="320px"}
 
@@ -109,13 +109,13 @@ Refer to the [CLion Documentation page](https://www.jetbrains.com/help/clion/ins
 
 1. **Install** PlatformIO Core (CLI). See [Installation](https://docs.platformio.org/en/latest/core/installation/index.html#core-installation) guide.
 
-2. **[Download](https://www.jetbrains.com/clion/)**, install and open CLion IDE
+2. **[Download](https://www.jetbrains.com/clion/download/?section=windows)**, install and open CLion IDE
 
 3. **Install** official [PlatformIO for CLion](https://plugins.jetbrains.com/plugin/13922-platformio-for-clion) plugin.<br/>
-Open "File > Settings.." and go to the "Marketplace" tab. Search for ``PlatformIO`` and click the "Install" button.
+Open **File > Settings.. > Plugins** and go to the "Marketplace" tab. Search for ``PlatformIO`` and click the "Install" button.
 ![clion2](img/gettingstarted_platformio/clionExtension2.png)
 
-4. **Restart** CLion IDE
+4. **Restart** CLion IDE after the plug-in is successfully installed.
 
 5. **Setting Up** the Project
     - Please open “New Project” wizard, select board and framework, and create a new PlatformIO project. Please USE ONLY Latin characters (a-z) in a project name to avoid further issues with project compilation. Numbers and some symbols are allowed depending on different OS:
