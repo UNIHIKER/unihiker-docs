@@ -166,6 +166,20 @@ Open **File > Settings.. > Plugins** and go to the "Marketplace" tab. Search for
 
     - Build your project and upload code with ``ctrl+F5`` hotkey.
 
+### Serial Setup
+Like any other ESP32-S3 based dev board. The serial of Unihiker K10 is not automatically mapped to the USB-C port by default.<br/>
+Although we have already included the configuration of serial port mapping in the above-mentioned ``platformio.ini`` configuration file, but from the second project, the settings related to the serial port in ``platformio.ini`` need to be set up manully.<br/>
+Before uploading the code, please copy and paste the following Settings about the serial port at the end of ``platformio.ini``. Then you can see the data output by the serial port in your code in the serial monitor.<br>
+
+````bash title="platformio.ini"
+build_flags = 
+            -DARDUINO_USB_CDC_ON_BOOT=1
+            -DARDUINO_USB_MODE=1
+            -DModel=None
+````
+
+The ``platformio.ini`` should look like this:
+![serialsetup](img/gettingstarted_platformio/serialsetup.png)
 
 ## **Platform IO Example**
 Cklik to the [Platform IO Example](../Examples/examples_arduinoide.md).

@@ -42,5 +42,10 @@ Note:The Arduino IDE SDK for UNIHIKER K10 is still in beta, there may be some bu
 Email: unihiker@dfrobot.com<br/>
 We will update to the official version in the near future.
 
+### **Serial Setup**
+Like any other ESP32-S3 based dev board. The serial of Unihiker K10 is not automatically mapped to the USB-C port by default.<br/>
+Enable **Tools->USB CDC on Boot** before uploading Arduino code. Then you can view data in the Serial Monitor.
+![image.png](img/gettingstarted_arduinoide/IDESDK8.png)
+
 ## **Arduino Example**
 Click to the [Arduino Example](../Examples/examples_arduinoide.md).
