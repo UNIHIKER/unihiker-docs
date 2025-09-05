@@ -20,11 +20,9 @@ In this tutorial, we will guide you through the process of downloading and insta
 
 
 ### **Flash MicroPython Firmware on Windows**
-- Click to open the Flash Download Tool, then choose the ESP32-S3
-![image.png](img/gettingstarted_mpy/flashdownload1.png)
+- Click to open the Flash Download Tool, then choose the ESP32-S3.<br/>![image.png](img/gettingstarted_mpy/flashdownload1.png)
 
-- Select the firmware and fill up the address with 0x00, then click on √.
-![image.png](img/gettingstarted_mpy/flashdownload2.png)
+- Select the firmware and fill up the address with 0x00, then click on √.<br/>![image.png](img/gettingstarted_mpy/flashdownload2.png)
 
 - Press and hold the BOOT button on the back of K10, connect the board to the computer and select the corresponding port in the software.<br/>
 - First click "ERASE" to clear the flsh, and then click "START" to flash the firmware after ERASE step is successful.<br/>

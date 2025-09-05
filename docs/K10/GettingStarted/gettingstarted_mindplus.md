@@ -5,7 +5,7 @@ In this tutorial, we will guide you through the process of downloading and insta
 
 !!! Note 
     Mind+ is only support windows for now.<br/>
-    MacOS/GNU Linux users can use K10 via Arduino IDE or MicroPython.<br/>
+    MacOS/GNU Linux users can code on K10 via Arduino IDE or MicroPython.<br/>
     We will actively update the IDE and SDK for K10 in the near future.
 
 

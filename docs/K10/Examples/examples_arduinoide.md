@@ -274,7 +274,7 @@ void loop() {
 ![image.png](img/example_mindplus/exampleMindplus18.png)
 
 ## **On board sensor-Button**
-Normal form:<br/>
+Normal method:<br/>
 ````c++ title="Button"
 #include "unihiker_k10.h"
 
@@ -301,7 +301,7 @@ void loop() {
 	}
 }
 ````
-Interrupt form:<br/>
+Interrupt method:<br/>
 ````c++ title="Button"
 #include "unihiker_k10.h"
 
@@ -311,18 +311,6 @@ void onButtonABPressed();
 
 UNIHIKER_K10 k10;
 uint8_t      screen_dir=2;
-
-void setup() {
-	k10.begin();
-	k10.buttonA->setPressedCallback(onButtonAPressed);
-	k10.initScreen(screen_dir);
-	k10.creatCanvas();
-	k10.buttonB->setPressedCallback(onButtonBPressed);
-	k10.buttonAB->setPressedCallback(onButtonABPressed);
-}
-void loop() {
-
-}
 
 void onButtonAPressed() {
 	k10.canvas->canvasRectangle(10, 100, 110, 100, 0xFF6666, 0x0000FF, true);
@@ -335,6 +323,18 @@ void onButtonBPressed() {
 void onButtonABPressed() {
 	k10.canvas->canvasClear();
 	k10.canvas->updateCanvas();
+}
+
+void setup() {
+	k10.begin();
+	k10.buttonA->setPressedCallback(onButtonAPressed);
+	k10.initScreen(screen_dir);
+	k10.creatCanvas();
+	k10.buttonB->setPressedCallback(onButtonBPressed);
+	k10.buttonAB->setPressedCallback(onButtonABPressed);
+}
+void loop() {
+
 }
 ````
 ![image.gifg](img/example_mindplus/exampleMindplus20.gif){: width="250px"}
@@ -784,7 +784,7 @@ void loop() {
 }
 ````
 
-````c++ title="Analog input/ PWM output**"
+````c++ title="Analog input/ PWM output"
 void setup() {
 	Serial.begin(9600);
 	analogWrite(P0, map(512, 0, 1023, 0, 255));
@@ -808,5 +808,3 @@ void loop() {
 	Serial.println((digital_read(eP3)));
 }
 ````
-
-

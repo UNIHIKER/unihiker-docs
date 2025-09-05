@@ -1,6 +1,6 @@
 {
     "files.associations": {
-        "UNIHIKER K10-UserProgram-CN-241202.C": "cpp"
+        ".mpyproject.json": "jsonc"
     },
     "MicroPython.executeButton": [
         {
@@ -19,5 +19,8 @@
             "command": "extension.execute",
             "priority": 4
         }
+    ],
+    "python.autoComplete.extraPaths": [
+        "c:/Users/roger/.vscode/extensions/rt-thread.rt-thread-micropython-1.0.11/microExamples/code-completion"
     ]
 }

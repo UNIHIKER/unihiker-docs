@@ -72,7 +72,7 @@ After burning a programme for the K10 in Mind+ or other IDE, the programme will 
 - Supports power supply via expansion board
 
 **TF card**<br/>
-We recommend using genuine SanDisk cards sold by DFRobot: [32GB Class 10](https://www.dfrobot.com/product-1715.html).
+We recommend using genuine SanDisk cards in DFRobot Store: [32GB Class 10](https://www.dfrobot.com/product-1715.html).
 Using an unknown brand of memory card may cause problems such as card read/write failure and program crash.
 If you use a 32GB or higher memory card, you need to format the card into FAT32 format.
 
