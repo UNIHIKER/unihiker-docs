@@ -18,6 +18,8 @@ In this tutorial, we will guide you through the process of downloading and insta
 | **ESP LaunchPad(Web Tool For All OS):** | [Click to visit](https://igrr.github.io/esp-launchpad/) |
 | **Thonny** | [Click to download](https://thonny.org/) |
 
+!!! Note 
+    The Micropython firmware for the Unihiker K10 is currently in the early access phase, and we are actively developing its AI-related features. You can find the current version of the Micropython source code in this [GitHub repository](https://github.com/DFRobot/K10_Micropython).
 
 ### **Flash MicroPython Firmware on Windows**
 - Click to open the Flash Download Tool, then choose the ESP32-S3.<br/>![image.png](img/gettingstarted_mpy/flashdownload1.png)
