@@ -1,5 +1,5 @@
 ## **Schematic**
-[UNIHIKER K10 Schematic](img/hardwarereference_onboard/UnihikerK10Sch.pdf) 
+[UNIHIKER K10 Schematic](img/hardwarereference_onboard/UnihikerK10Schematic.pdf) 
 
 ## **3D Model**
 [UNIHIKER K10 STP model](https://dfimg.dfrobot.com/62b2fb5caa613609f271523c/wiki/0e1a9576dddf1e4a435683e2633d21cb.zip) 
