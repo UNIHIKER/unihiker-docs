@@ -1,4 +1,4 @@
-# Preface
+##  Preface
 The UNIHIKER M10 is a development board running the Debian 10 operating system, capable of running full Python3. Since Debian 10 comes with Python 3.7 by default, some newer libraries, especially AI-related ones, may require higher versions of Python, such as 3.8 or 3.12.
 
 Because the UNIHIKER M10 runs Linux, multiple Python versions can be installed. The `pyenv` tool is designed to manage different Python versions. It can install or uninstall various Python versions and direct the system's default `python` and `pip` commands to any of these versions.
