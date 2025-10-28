@@ -28,7 +28,7 @@ Here are some common issues and solutions when using UNIHIKER:
 
 - [How to Assign Different Addresses to Multiple Unihikers Plugged into Main Computer](How_can_multiple_Unihikers_be_plugged_into_the_main_computer_and_assigned_to_different_addresses.md)
 
-- [How to Install Multiple Python Versions on Unihiker?](How_to_Install_Multiple_Python_Versions_on_Unihiker.md)
+- [How to use Pyenv to install multiple Python versions on Unihiker?](How_to_Install_Multiple_Python_Versions_on_Unihiker.md)
 
 
 

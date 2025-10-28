@@ -315,7 +315,7 @@ nav:
       - Installing Python library failed Warning Retrying Errno 3 : Troubleshooting/Installing_Python_library_failed_Warning__Retrying_Errno_3.md
       - The UNIHIKER cannot be connected to Mindplus : Troubleshooting/The_UNIHIKER_cannot_be_connected_to_Mind.md
       - What should I do if the screen is black, white and I can't enter the system : Troubleshooting/What_should_I_do_if_the_screen_is_black_white_and_I_can_t_enter_the_system.md
-      - How to Install Multiple Python Versions on Unihiker? : Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker.md
+      - How to use Pyenv to install multiple Python versions on Unihiker? : Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker.md
   - Documentation(K10): 
     - K10/index.md 
     - 🚩 Getting Started: 
