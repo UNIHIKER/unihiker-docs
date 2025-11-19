@@ -16,7 +16,7 @@
 
 ### **V0.4.1 :**
 
-- Added pyenv tool with built-in Python 3.8.5 and 3.12.7  
+- Added pyenv tool with built-in Python 3.8.5 and 3.12.7. [Pyenv Usage Guide](/Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker)
 - Updated Home menu  
        - Added M10 logo to the cover  
        - Added USB IP reset network function on click  
