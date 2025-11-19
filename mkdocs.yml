@@ -324,7 +324,7 @@ nav:
       - Arduino IDE: K10/GettingStarted/gettingstarted_arduinoide.md
       - Platform IO: K10/GettingStarted/gettingstarted_platformio.md
       - MicroPython: K10/GettingStarted/gettingstarted_mpy.md
-      - Expansion board Compatible list: K10/GettingStarted/gettingstarted_expansionboardComaptible.md
+      - Accessories: K10/GettingStarted/gettingstarted_accessories.md
     - 🌟 Examples:
       - Mindplus Examples: K10/Examples/examples_mindplus.md
       - Arduino IDE/Platform IO Examples: K10/Examples/examples_arduinoide.md
@@ -334,6 +334,7 @@ nav:
       - Arduino/PlatformIO API List: K10/CodeReference/CodeReference_arduinoide.md
     - 🪄 Playground: 
       - MindPlus Tutorial(Block): K10/Playground/Tutorial(Block).md
+      - LLM Voice/Visual Chatboat Xiaozhi AI - support Deepseek: K10/Playground/XiaozhiAI.md
     - 🚀 Hardware Reference:
       - Specification: K10/HardwareReference/hardwarereference_specs.md
       - Download: K10/HardwareReference/hardwarereference_stepschematic.md

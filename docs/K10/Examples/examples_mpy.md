@@ -1,81 +1,33 @@
-## **Examples of all on-board resources**
-````python title="hello_unihiker"
-from unihiker_k10 import screen,camera,tf_card,
-from unihiker_k10 import temp_humi,light,acce
-from unihiker_k10 import rgb,button
-from unihiker_k10 import mic,speaker
-import time
 
-#Init display and set the display direction(0~3)
-screen.init(dir=2)#direction default to be 2
+## **Display - Camera Display**
+````python title="Display_Camera"
+from unihiker_k10 import screen
+import time
+from k10_base import Camera
+
+camera = Camera()
+
+#Init display(Dir = 0~3)
+screen.init(dir=2)#Default by 2
 camera.init()#Init camera
 
-
-#On board LED
-rgb.write(num = 0, R=255,G=0,B=0)
-rgb.write(num = 1, R=0,G=255,B=0)
-rgb.write(num = 2, R=0,G=0,B=255)
-time.sleep(1)
-rgb.clear()
-
-#Start record voice, save the audio file into the ESP32 file system then play the audio
-screen.draw_text(text="begin sys recode",line=0)
-screen.show_draw()
-mic.recode_sys(name="sound.wav",time=5)
-screen.draw_text(text="recode sys done",line=0)
-screen.show_draw()
-time.sleep(1)
-screen.draw_text(text="begin sys play",line=0)
-screen.show_draw()
-speaker.play_sys_music("sound.wav")
-screen.draw_text(text="end sys play",line=0)
-screen.show_draw()
-time.sleep(1)
-
-#Display the camera image onto the screen
+#Screen display camera
 screen.show_camera(camera)
 
-bt_a=button(button.a)#Init on board button A
-bt_b=button(button.b)#Init on board button B
-def button_a_pressed():
-    screen.draw_text(text="btn_a:pressed",line=5)
-    screen.show_draw()
-    
-def button_a_released():
-    screen.draw_text(text="btn_a:released",line=5)
-    screen.show_draw()
-    
-def button_b_pressed():
-    screen.draw_text(text="btn_b:pressed",line=6)
-    screen.show_draw()
-    
-def button_b_released():
-    screen.draw_text(text="btn_b:released",line=6)
-    screen.show_draw()
-bt_a.event_pressed = button_a_pressed
-bt_a.event_released = button_a_released
-bt_b.event_pressed = button_b_pressed
-bt_b.event_released = button_b_released
-
 while True:
-    screen.draw_text(text="temp=" + str(temp_humi.read_temp()) + " humi=" + str(temp_humi.read_humi()),line=0)
-    screen.show_draw()
-    screen.draw_text(text="light=" + str(light.read()) ,line=1)
-    screen.show_draw()
-    screen.draw_text(text="ax=" + str(acce.read_x()),line=2)
-    screen.show_draw()
-    screen.draw_text(text="ay=" + str(acce.read_y()),line=3)
-    screen.show_draw()
-    screen.draw_text(text="az=" + str(acce.read_z()),line=4)
-    screen.show_draw()
-    time.sleep(0.1)
+    time.sleep(1)
 ````
 
-## **Screen Display**
+## **Display - Screen icon Display**
 ````python title="Screen Display"
 from unihiker_k10 import screen
 import time
+from k10_base import Camera
+
+camera = Camera()
+camera.init()
 screen.init(dir=2)
+screen.show_camera(camera)
 screen.show_bg(color=0xFFFF00)
 screen.set_width(width=5)
 screen.draw_line(x0=0,y0=0,x1=80,y1=80,color=0x0000FF)
@@ -84,23 +36,24 @@ screen.draw_rect(x=120,y=100,w=80,h=120,bcolor=0xFF6666,fcolor=0x0000FF)
 screen.draw_rect(x=120,y=100,w=40,h=60,bcolor=0x012345)
 screen.draw_circle(x=80,y=80,r=40,bcolor=0x00FF00,fcolor=0x0000FF)
 screen.draw_circle(x=80,y=80,r=20,bcolor=0xFF0000)
-screen.draw_text(text="hello\n123",x=10,y=0,font_size=24,color=0xFF0000)
+screen.draw_text(text="Hello\n23",x=10,y=0,font_size=24,color=0xFF0000)
 screen.draw_text(text="line\n456\nhgjh\n",line=2,font_size=24,color=0xFF0000)
 screen.show_draw()
 time.sleep(2)
 screen.clear()
+
 while True:
-    pass
+    time.sleep(1)
 ````
 
-## **On board button**
+## **On board Sensor - button**
 ````python title="On board button"
 from unihiker_k10 import button
 import time
 bt_a=button(button.a)#Init button A
 bt_b=button(button.b)#Init button B
 
-#When button A/B is pressed/release
+#When the button A/B released
 def button_a_pressed():
     print("button_a_pressed")
     
@@ -119,24 +72,37 @@ bt_b.event_pressed = button_b_pressed
 bt_b.event_released = button_b_released
 
 while True:
-    #print("button_a.status=",bt_a.status())
-    #print("button_b.status=",bt_b.status())
+    print("button_a.status=",bt_a.status())
+    print("button_b.status=",bt_b.status())
     time.sleep(0.1)
     pass
+
 ````
 
-## **Temperature & Humidity sensor**
+## **On board Sensor - Temperature & Humidity sensor**
 ````python title="Temperature & Humidity sensor"
-from unihiker_k10 import button,temp_humi
-#Read (temp ℃/temp ℉/humi)
-print(temp_humi.read_temp())#℃
-print(temp_humi.read_temp_f())#℉
-print(temp_humi.read_humi())
+from unihiker_k10 import button,temp_humi,screen
+import time
+
+screen.init(dir=2)
+screen.show_bg(color=0xFFFF00)
+
 while True:
-    pass
+    temp_c = temp_humi.read_temp()
+    temp_f = temp_humi.read_temp_f()
+    humi = temp_humi.read_humi()
+    print(temp_c)
+    print(temp_f)
+    print(humi)
+    screen.draw_text(text="TempC: "+str(temp_c)+" C",x=10,y=0,font_size=24,color=0xFF0000)
+    screen.draw_text(text="TempF: "+str(temp_f)+" f",x=10,y=20,font_size=24,color=0xFF0000)
+    screen.draw_text(text="Humi: "+str(humi)+" %RH",x=10,y=40,font_size=24,color=0xFF0000)
+    screen.show_draw()
+    time.sleep(1)
+
 ````
 
-## **Ambient Light Sensor**
+## **On board Sensor - Ambient Light Sensor**
 ````python title="Ambient Light Sensor"
 from unihiker_k10 import light
 import time
@@ -145,20 +111,32 @@ while True:
     time.sleep(0.1)
 ````
 
-## **On board RGB LED**
+## **On board Sensor - On-board Accelerometer**
+````python title="On-board Accelerometer"
+from unihiker_k10 import acce
+import time
+#Read Accelerometer Values (x/y/z)
+while True:
+    print("x=",acce.read_x())
+    print("y=",acce.read_y())
+    print("z=",acce.read_z())
+    time.sleep(0.1)
+````
+
+## **On board Sensor - On board RGB LED**
 ````python title="On board RGB LED"
 from unihiker_k10 import rgb
 import time
-#LED number (0,1,2,ALL) show color
-rgb.write(num = 0,color=0x0000FF)#num=-1 or not assigne any value to num is select all LED
+#Light Indicator (0,1,2,All) Display Color()
+rgb.write(num = 0,color=0x0000FF)#You can use -1 or leave this parameter blank to represent all.
 
-#LED number (0,1,2,ALL) show RGB color
+#Light Indicator (0,1,2,All) Display Color R()G()B()
 rgb.write(num = 0,R=255,G=0,B=0)
 
-#switch off LED number (0,1,2,ALL)
+#Off (All, 0, 1, 2) RGB
 rgb.write(num = 0,color=0x000000)
 
-#set RGB LED brightness
+#Set RGB brightness to (0-9)
 rgb.brightness(9)
 while True:
     rgb.write(color=0xFF00FF)
@@ -173,17 +151,19 @@ while True:
     time.sleep(1)
     rgb.write(color=0x0000)
     time.sleep(1)
+      
 ````
 
-## **TF card**
+## **On board Sensor - TF card**
 ````python title="TF card"
-from unihiker_k10 import tf_card
+from k10_base import TF_card
 import os
+tf_card = TF_card()
 files = os.listdir("/sd")
 print("Files in /sd:",files)
 ````
 
-## **Record & Play**
+## **On board Sensor - Record & Play**
 ````python title="Record & Play"
 from unihiker_k10 import mic,speaker
 import time
@@ -206,140 +186,74 @@ while True:
     pass
 ````
 
-## **Wifi**
+## **Communication - Wifi**
 ````python title="Wifi"
-from unihiker_k10 import wifi
-#try to connect wifi.The parameter name can be omitted. timeout is an optional parameter that indicates the connection timeout duration, the default timeout is 10000 milliseconds.
-wifi.connect(ssid="dfrobotOffice",psd="dfrobot2011",timeout=50000) 
-#Return network connection status, True means connected, False means not connected
-wifi.status() 
-# Returns a string containing the current IP address, subnet mask, gateway and other information
-wifi.info()
+from k10_base import WiFi,MqttClient
+wifi = WiFi() 
+wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000) #Attempt to connect to the Wi-Fi network. The parameter name is optional. `timeout` is an optional parameter indicating the connection timeout duration, with a default timeout of 10,000 milliseconds.
+wifi.status() #Returns the network connection status. True indicates connected; False indicates disconnected.
+wifi.info() #Return a string containing the current IP address, subnet mask, gateway, and other information.
 ````
 
-## **MQTT**
-````python title="MQTT_EASYIOT"
-# EASYIOT 
-from unihiker_k10 import wifi
-from unihiker_k10 import mqttclient
+## **Communication - MQTT**
+````python title="MQTT"
+from k10_base import WiFi,MqttClient
+
 import time
 
-#Connect WiFi
-wifi.connect(ssid="Redm",psd="aijine12345",timeout=50000)
-wifi.status()
-wifi.info()
+wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000) #Attempt to connect to the Wi-Fi network. The parameter name is optional. `timeout` is an optional parameter indicating the connection timeout duration. The default timeout is 10,000 milliseconds.
+wifi.status() #Returns the network connection status. True indicates connected; False indicates disconnected.
+wifi.info() #Return a string containing the current IP address, subnet mask, gateway, and other information.
 
 def received_1ffdf0jpLa():
-    msg=mqttclient.message(topic='AwErylzNg')
+    msg=mqttclient.message(topic='siot/test')
     print(msg)
 
-mqttclient.connect(server= "iot.dfrobot.com",
-                   port=1883, 
-                   client_id="",
-                   user= "VB3Xs_kHg" ,
-                   psd= "VB3Xy_zNgz") #Blocking runs with a default timeout of 3 seconds
-mqttclient.connected() #Return to Connection Status
-mqttclient.publish(topic='AwErylzNg',content= 'hello')#Send a message to the corresponding topic, content is the content of the message.
-#msg=mqttclient.message(topic='1ffdf0jpLa') #Get the messages received by the corresponding topic, if there are no messages for the topic, then return None.
-
-mqttclient.received (topic='AwErylzNg', #When the corresponding topic receives a message, the callback function
-                     callback=received_1ffdf0jpLa) #Specify the callback function via callback
-
-while True:
-    time.sleep(0.1)
-    pass
-````
-
-
-````python title="MQTT_SIOTV1"
-# SIOT V1
-from unihiker_k10 import wifi
-from unihiker_k10 import mqttclient
-import time
-
-wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000)
-wifi.status()
-wifi.info()
-
-def received_1ffdf0jpLa():
-    msg=mqttclient.message(topic='siot/Speed')
-    print(msg)
-
-mqttclient.connect(server= "192.168.7.141",
+mqttclient.connect(server= "192.168.9.172",
                    port=1883, 
                    client_id="",
                    user= "siot" ,
-                   psd= "dfrobot") 
-mqttclient.connected() 
-mqttclient.publish(topic='siot/Speed',content= 'hello')
-#msg=mqttclient.message(topic='1ffdf0jpLa') 
+                   psd= "dfrobot") #Blocked operation, default timeout is 3 seconds.
+mqttclient.connected() #Return connection status
 
-mqttclient.received (topic='siot/Speed', 
-                     callback=received_1ffdf0jpLa) 
-while True:
-    time.sleep(0.1)
-    pass
+#msg=mqttclient.message(topic='1ffdf0jpLa') #Retrieve messages received for the specified topic. If no messages exist for that topic, return None.
+
+mqttclient.received (topic='siot/test', #When a message is received for the corresponding topic, the callback function
+                     callback=received_1ffdf0jpLa) #Specify a callback function via callback
+
+while True: 
+    mqttclient.publish(topic='siot/test',content= 'hello')#Send a message to the corresponding topic, with content as the message text.
+    time.sleep(3)
+
 ````
 
-````python title="MQTT_SIOTV1"
-# SIOT V2   mqttclient.publishs should be added "->"
-from unihiker_k10 import wifi
-from unihiker_k10 import mqttclient
-import time
-
-wifi.connect(ssid="Redm",psd="aijine12345",timeout=50000) 
-wifi.status() 
-wifi.info() 
-
-def received_1ffdf0jpLa():
-    msg=mqttclient.message(topic='siot/Speed')
-    print(msg)
-
-mqttclient.connect(server= "192.168.45.146",
-                   port=1883, 
-                   client_id="",
-                   user= "siot" ,
-                   psd= "dfrobot") 
-mqttclient.connected() 
-mqttclient.publish(topic='siot/Speed',content= '->hello')
-#msg=mqttclient.message(topic='1ffdf0jpLa')
-
-mqttclient.received (topic='siot/Speed', 
-                     callback=received_1ffdf0jpLa) 
-
-while True:
-    time.sleep(0.1)
-    pass
-````
-
-
-## **Bluetooth HID**
+## **Communication - Bluetooth HID**
 ````python title="Bluetooth HID"
 from unihiker_k10 import screen, hid, keycode,button
 import time
 bt_a=button(button.a)#Init button A
 bt_b=button(button.b)#Init button B
 
-ble_hid = hid(name='mpy_hid') #Init bluetooth HID and name the device as mpy_hid
+ble_hid = hid(name='mpy_hid') #Initialize the Bluetooth HID device and name it mpy_hid
 screen.init(dir = 2)
 screen.show_bg(color=0xFFFF00)
 screen.draw_text(text="ready",line=1,font_size=24,color=0xFF0000)
 screen.show_draw()
 while True:
-    if ble_hid.isconnected():#Determine whether the connection has been made, True is connected, False is not connected Non-blocking
+    if ble_hid.isconnected():#Determine whether a connection has been established: True indicates a connection exists, False indicates no connection exists. Non-blocking.
         screen.draw_text(text="connect",line=1,font_size=24,color=0xFF0000)
         screen.show_draw()
     else:
         screen.draw_text(text="disconnect",line=1,font_size=24,color=0xFF0000)
         screen.show_draw()
     if bt_a.status() == 1:
-        ble_hid.keyboard_send(keycode.SPACE) #keyboard pressing space
+        ble_hid.keyboard_send(keycode.SPACE) #Simulate pressing the spacebar on the keyboard
     if bt_b.status() == 1:
-        ble_hid.keyboard_send([keycode.CTRL,keycode.a]) #Keyboard pressing CTRL+a
+        ble_hid.keyboard_send([keycode.CTRL,keycode.a]) #Press the key combination CTRL+A
     time.sleep(0.1)
 ````
 
-## **Servo**
+## **Peripheral Sensor - Servo**
 ````python title="Servo"
 from unihiker_k10 import servo
 import time
@@ -351,7 +265,7 @@ while True:
     time.sleep(1)
 ````
 
-## **WS2812**
+## **Peripheral Sensor - RGB light strip**
 ````python title="WS2812"
 from unihiker_k10 import neopixel
 ws2812=neopixel(P1,3) #Connect the LED strip to p1, the LED strip has 3 WS2812
@@ -360,14 +274,12 @@ ws2812.brightness(9)#Set brightness
 ws2812.write(0,1,0x00,0x00,0xFF) #Set WS2812 0-2 to display colours based on r, g, b values.
 ````
 
-## **DHT11/DHT22**
+## **Peripheral Sensor - DHT11/DHT22**
 ````python title="DHT11/DHT22"
 from unihiker_k10 import dht
 import time
 
-dhtsensor=dht(P0)#Initialising the DHT sensor connected to port 0, 
-#which automatically recognises whether it is a DHT11 or a DHT22.
-
+dhtsensor=dht(0)#Initialize the DHT sensor connected to port 0; it can automatically detect whether it is 11 or 22.
 while True:
     temp,hum=dhtsensor.read()
     print(temp)
@@ -375,7 +287,7 @@ while True:
     time.sleep(1)
 ````
 
-## **DS18B20**
+## **Peripheral Sensor - DS18B20**
 ````python title="DHT11/DHT22"
 from unihiker_k10 import ds18b20
 import time
@@ -386,7 +298,7 @@ while True:
     time.sleep(1)
 ````
 
-## **TRIG-ECHO Ultrasonic sensor**
+## **Peripheral Sensor - TRIG-ECHO Ultrasonic sensor**
 ````python title="TRIG-ECHO"
 from unihiker_k10 import ultrasonic
 import time 
@@ -396,7 +308,7 @@ while True:
     time.sleep(0.1)
 ````
 
-## **Weight sensor(KIT0176)**
+## **Peripheral Sensor - Weight sensor(KIT0176)**
 ````python title="TRIG-ECHO"
 from unihiker_k10 import force
 import time
@@ -405,4 +317,199 @@ fs.zero() #Weight Zeroing
 while True:
     print(fs.read(mass=False)) #Returns the mass value in grams. # Returns the mass by default, and when parameter mass=False, returns the force in N (Newtons)
     time.sleep(0.5)
+````
+
+## **Peripheral Sensor - GPIO**
+````python title="GPIO"
+from unihiker_k10 import pin
+import time
+
+p0=pin(0)
+p1=pin(1)
+
+p2 = pin(2)
+p2.write_digital(0)
+p2.write_digital(1)
+
+while True:
+    print('read_digital:'+ str(p0.read_digital()))
+    time.sleep(1)
+    print('read_analog:'+ str(p0.read_analog()))
+    time.sleep(1) 
+    print('write_digital_1')
+    p0.write_digital(value=1)
+    time.sleep(1)
+    print('write_digital_0')
+    p0.write_digital(value=0)
+    time.sleep(1)
+    
+    print('write_analog(value=0,freq=255)')
+    p1.write_analog(value=0,freq=255)
+    time.sleep(1)
+    print('write_analog(value=500,freq=255)')
+    p1.write_analog(value=500,freq=255)
+    time.sleep(1)
+    print('write_analog(value=1000,freq=255)')
+    p1.write_analog(value=1000,freq=255)
+    time.sleep(1)
+````
+
+## **AI - Movement detection**
+````python title="Movement Detection"
+import ai
+import time
+from unihiker_k10 import screen
+import machine
+
+#Init ai
+ai.init_ai()
+
+#Start camera
+ai.camera_start()
+
+#Start move detect
+ai.move_detect()
+
+screen.init()
+
+try:
+    while True:
+        image_data = ai.camera_capture()
+        screen.show_camera_img(image_data)
+        if ai.is_ai_data_updated():
+            data = ai.get_ai_data()
+            print(f"Move: {data['move_flag']}")
+            
+        time.sleep_ms(1)
+    
+except KeyboardInterrupt:
+    print("\nCapture Ctrl+C interrupt!")
+    ai.deinit_ai()
+````
+
+## **AI - QR Code recognition**
+````python title="QR Code recognition"
+import ai
+import time
+from unihiker_k10 import screen
+import machine
+
+#Init AI
+ai.init_ai()
+
+#Start camera
+ai.camera_start()
+
+#Start QR code scanner
+ai.code_scanner() 
+
+screen.init()
+
+try:
+    while True:
+        image_data = ai.camera_capture()
+        screen.show_camera_img(image_data)
+        if ai.is_ai_data_updated():
+            data = ai.get_ai_data()
+            if data['code_data']:
+                print(f"QR Code: {data['code_data']}")
+            else:
+                print("No QR code detected")
+            
+        time.sleep_ms(1)
+    
+except KeyboardInterrupt:
+    print("\nCapture Ctrl+C interrupt!")
+    #screen.deinit()
+    ai.deinit_ai()
+````
+
+## **AI - Cat/Dog recognition**
+````python title="Cat/Dog recognition"
+import ai
+import time
+from unihiker_k10 import screen
+import machine
+
+#Init AI
+ai.init_ai()
+
+#Start Camera
+ai.camera_start()
+
+#Start cat/dog detect
+ai.cat_detect() 
+
+screen.init()
+
+try:
+    while True:
+        image_data = ai.camera_capture()
+        screen.show_camera_img(image_data)
+        if ai.is_ai_data_updated():
+            data = ai.get_ai_data()
+            print(f"Cat: {data['cat_flag']}")
+            if data['cat_flag']:
+                print(f"Cat Detect: {data['cat_detect']['frame_length']}")
+                print(f"Cat Detect: {data['cat_detect']['frame_width']}")
+            
+        time.sleep_ms(1)
+    
+except KeyboardInterrupt:
+    print("\nCapture Ctrl+C interrupt!")
+    #screen.deinit()
+    ai.deinit_ai()
+````
+
+## **AI - Face recognition**
+````python title="Face recognition"
+import ai
+import time
+from unihiker_k10 import screen
+import machine
+
+from unihiker_k10 import button
+bt_a=button(button.a)#Init button A
+bt_b=button(button.b)#Init button B
+
+#Init AI
+ai.init_ai()
+
+#Start camera
+ai.camera_start()
+
+#Start face recognition
+ai.face_recognize_start()
+
+screen.init()
+
+#When the button A/B pressed
+def button_a_pressed ():
+    print("button_a_pressed")
+    ai.register_face()
+    
+def button_b_pressed():
+    print("button_b_pressed")
+    ai.recognize_face()
+    
+bt_a.event_pressed = button_a_pressed
+bt_b.event_pressed = button_b_pressed
+
+try:
+    while True:
+        image_data = ai.camera_capture()
+        screen.show_camera_img(image_data)
+        if ai.is_ai_data_updated():
+            data = ai.get_ai_data()
+            print(f"Face: {data['face_flag']}")
+            if data['face_flag']:
+                print(f"Face ID: {data['face_detect']['face_id']}")
+                print(f"Left eye: {data['face_detect']['left_eye']}")
+            
+        time.sleep_ms(1)
+    
+except KeyboardInterrupt:
+    print("\nCapture Ctrl+C interrupt!")
+    #screen.deinit()
+    ai.deinit_ai()
 ````

@@ -13,13 +13,13 @@ In this tutorial, we will guide you through the process of downloading and insta
 
 | **Download** |  |
 | --- | --- |
-| **MicroPython Firmware:** | [Google Drive Download](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
+| **MicroPython Firmware:** | [Google Drive Download(V0.9.2)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link)<br/>[Google Drive Download(V0.5)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
 | **Flash Download Tool(Only support windows):** | [Click to download](https://dl.espressif.com/public/flash_download_tool.zip) |
 | **ESP LaunchPad(Web Tool For All OS):** | [Click to visit](https://igrr.github.io/esp-launchpad/) |
 | **Thonny** | [Click to download](https://thonny.org/) |
 
 !!! Note 
-    The Micropython firmware for the Unihiker K10 is currently in the early access phase, and we are actively developing its AI-related features. You can find the current version of the Micropython source code in this [GitHub repository](https://github.com/DFRobot/K10_Micropython).
+    The Micropython firmware for the Unihiker K10 is currently in the early access phase, and we are actively developing its AI-related features.
 
 ### **Flash MicroPython Firmware on Windows**
 - Click to open the Flash Download Tool, then choose the ESP32-S3.<br/>![image.png](img/gettingstarted_mpy/flashdownload1.png)
@@ -48,76 +48,31 @@ In this tutorial, we will guide you through the process of downloading and insta
 - Creat a new file and enter the code.<br/>
 ![image.png](img/gettingstarted_mpy/Thonny2.png)
 
-````python title="hello_unihiker"
-from unihiker_k10 import screen,camera,tf_card,
-from unihiker_k10 import temp_humi,light,acce
-from unihiker_k10 import rgb,button
-from unihiker_k10 import mic,speaker
+````python title="Screen Display"
+from unihiker_k10 import screen
 import time
+from k10_base import Camera
 
-#Init display and set the display direction(0~3)
-screen.init(dir=2)#direction default to be 2
-camera.init()#Init camera
-
-
-#On board LED
-rgb.write(num = 0, R=255,G=0,B=0)
-rgb.write(num = 1, R=0,G=255,B=0)
-rgb.write(num = 2, R=0,G=0,B=255)
-time.sleep(1)
-rgb.clear()
-
-#Start record voice, save the audio file into the ESP32 file system then play the audio
-screen.draw_text(text="begin sys recode",line=0)
-screen.show_draw()
-mic.recode_sys(name="sound.wav",time=5)
-screen.draw_text(text="recode sys done",line=0)
-screen.show_draw()
-time.sleep(1)
-screen.draw_text(text="begin sys play",line=0)
-screen.show_draw()
-speaker.play_sys_music("sound.wav")
-screen.draw_text(text="end sys play",line=0)
-screen.show_draw()
-time.sleep(1)
-
-#Display the camera image onto the screen
+camera = Camera()
+camera.init()
+screen.init(dir=2)
 screen.show_camera(camera)
-
-bt_a=button(button.a)#Init on board button A
-bt_b=button(button.b)#Init on board button B
-def button_a_pressed():
-    screen.draw_text(text="btn_a:pressed",line=5)
-    screen.show_draw()
-    
-def button_a_released():
-    screen.draw_text(text="btn_a:released",line=5)
-    screen.show_draw()
-    
-def button_b_pressed():
-    screen.draw_text(text="btn_b:pressed",line=6)
-    screen.show_draw()
-    
-def button_b_released():
-    screen.draw_text(text="btn_b:released",line=6)
-    screen.show_draw()
-bt_a.event_pressed = button_a_pressed
-bt_a.event_released = button_a_released
-bt_b.event_pressed = button_b_pressed
-bt_b.event_released = button_b_released
+screen.show_bg(color=0xFFFF00)
+screen.set_width(width=5)
+screen.draw_line(x0=0,y0=0,x1=80,y1=80,color=0x0000FF)
+screen.draw_point(x=100,y=10,color=0xFF0000)
+screen.draw_rect(x=120,y=100,w=80,h=120,bcolor=0xFF6666,fcolor=0x0000FF)
+screen.draw_rect(x=120,y=100,w=40,h=60,bcolor=0x012345)
+screen.draw_circle(x=80,y=80,r=40,bcolor=0x00FF00,fcolor=0x0000FF)
+screen.draw_circle(x=80,y=80,r=20,bcolor=0xFF0000)
+screen.draw_text(text="Hello\n23",x=10,y=0,font_size=24,color=0xFF0000)
+screen.draw_text(text="line\n456\nhgjh\n",line=2,font_size=24,color=0xFF0000)
+screen.show_draw()
+time.sleep(2)
+screen.clear()
 
 while True:
-    screen.draw_text(text="temp=" + str(temp_humi.read_temp()) + " humi=" + str(temp_humi.read_humi()),line=0)
-    screen.show_draw()
-    screen.draw_text(text="light=" + str(light.read()) ,line=1)
-    screen.show_draw()
-    screen.draw_text(text="ax=" + str(acce.read_x()),line=2)
-    screen.show_draw()
-    screen.draw_text(text="ay=" + str(acce.read_y()),line=3)
-    screen.show_draw()
-    screen.draw_text(text="az=" + str(acce.read_z()),line=4)
-    screen.show_draw()
-    time.sleep(0.1)
+    time.sleep(1)
 ````
 
 - CTRL+S to save to micropython device. Choose to save to This computer is also fine, but if the program save to local computer, the program will be lost after K10 was reboot, it is more suitable for saving to the computer when debugging.<br/>
