@@ -19,7 +19,7 @@ In this tutorial, we will guide you through the process of downloading and insta
 | **Thonny** | [Click to download](https://thonny.org/) |
 
 !!! Note 
-    The Micropython firmware for the Unihiker K10 is currently in the early access phase, and we are actively developing its AI-related features.
+    The current version (0.9.2) of AI features—including facial recognition, cat/dog recognition, and QR code recognition consumes significant hardware resources. Therefore, simultaneous use of AI and WiFi functionality is not supported at this time.
 
 ### **Flash MicroPython Firmware on Windows**
 - Click to open the Flash Download Tool, then choose the ESP32-S3.<br/>![image.png](img/gettingstarted_mpy/flashdownload1.png)
