@@ -153,23 +153,26 @@ void setup() {
     k10.initScreen(screen_dir);
     k10.creatCanvas();
     k10.setScreenBackground(0xFFFFFF);
+    k10.canvas->canvasText("UNIHIKER", 1, 0x0000FF);
+    k10.canvas->updateCanvas();
+    delay(1000);
+    k10.canvas->canvasText("UNIHIKER", 2, 0xFF0000);
+    k10.canvas->updateCanvas();
+    delay(1000);
+    k10.canvas->canvasText("UNIHIKER", 3, 0x00FF00);
+    k10.canvas->updateCanvas();
+    delay(1000);
+    k10.canvas->canvasText("UNIHIKER", 4, 0x000000);
+    k10.canvas->updateCanvas();
+    delay(1000);
 }
 
 void loop() {
-    // Draw a green circle on the screen
-    k10.canvas->canvasCircle(120, 160, 10, 0x00FF00, 0x00FF00, true);
-    k10.canvas->updateCanvas();
-    delay(1000);
-    
-    // Clear the circle
-    k10.canvas->canvasCircle(120, 160, 10, 0xFFFFFF, 0xFFFFFF, true);
-    k10.canvas->updateCanvas();
-    delay(1000);
 }
 ````
 
-    - Build your project with ``ctrl+alt+b`` hotkey
-    - Connect your K10 to PC/Mac and upload code with ``ctrl+alt+u`` hotkey. The text "Unihiker" will appear on the Unihiker K10 screen.<br/>
+- Build your project with ``ctrl+alt+b`` hotkey
+- Connect your K10 to PC/Mac and upload code with ``ctrl+alt+u`` hotkey. The text "Unihiker" will appear on the Unihiker K10 screen.<br/>
     ![image.png](../Examples/img/example_mindplus/exampleMindplus6.gif){: width="250px"}
 
 
