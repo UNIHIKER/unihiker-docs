@@ -90,12 +90,15 @@ Cklik to the [MicroPython Example](../Examples/examples_mpy.md).
 ## **Flash back to Arduino C firmware**
 The original firmware for K10 is ArduinoC firmware, supports development in Arduino environments such as Mind+/Arduino IDE. If you want to switch back to Arduino development after using MicroPython, we offer the following two methods for you to flash the Arduino C firmware:<br/>
 **Method 1**<br/>
-Restore the device to the factory Arduino firmware in [Mind+](https://www.unihiker.com/wiki/K10/GettingStarted/gettingstarted_mindplus/).<br/>
+Restore the device to the factory Arduino firmware in [Mind+ V1](https://www.unihiker.com/wiki/K10/GettingStarted/gettingstarted_mindplus/).<br/>
+
+![image.png](img/gettingstarted_mpy/Restore1.png)
+
+Or click on erase after the K10 is connected to Mind+ V2.
+![image.png](img/gettingstarted_mpy/Restore3.png)
 
 !!! Note 
     Mind+ is only support windows for now.
-
-![image.png](img/gettingstarted_mpy/Restore1.png)
 
 **Method 2**<br/>
 For the MacOS/GNU Linux user the Arduino C firmware can be flash back by using the Arduino IDE.
