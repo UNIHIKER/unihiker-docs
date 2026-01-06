@@ -1,6 +1,6 @@
 # **Welcome to UNIHIKER M10 Documentation**
 Unleash your imagination and embark on a new journey with UNIHIKER M10.
-![image.png](img/index/UNIHIKERM10back.png)
+![image.png](img/index/UNIHIKERM10back.jpg)
 The UNIHIKER M10 and K10 can be distinguished simply by the presence or absence of a camera and USB-A port on the back.
 
 <div class="grid cards" markdown>
@@ -65,12 +65,3 @@ The UNIHIKER M10 and K10 can be distinguished simply by the presence or absence 
   [overview]: HardwareReference/hardware_reference_board_overview.md
   [dimension]: HardwareReference/hardware_reference_dimension.md
   [3dfile]: HardwareReference/hardware_reference_svg_3d_file.md
-
-
-
-
-
-
-
-
-
