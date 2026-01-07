@@ -52,6 +52,19 @@ A: The two blocks "Enable/Disable show camera" and "switch detection mode" shoul
 ![image.png](img/faq/faq7.png) 
 ![image.png](img/faq/faq8.png) 
 
+**Q: When using the AI function, the screen image gets stuck and does not move.**
+A: The two blocks "Enable/Disable show camera" and "switch detection mode" should be avoided to be called at high frequency, and should be called at initialization time or through conditional judgment. This problem is easy to appear in the project of multiple recognition mode switching, as follows:
+![image.png](img/faq/faq7.png) 
+![image.png](img/faq/faq8.png) 
+
+## **Arduino IDE program issue**
+**Any example code displayed on the screen in the Arduino IDE does not function, resulting in a black screen.**
+It is possible that the Arduino IDE introduced an incorrect TFT_eSPI library during program compilation.
+To verify this issue, you can enable "Show verbose output during compile & upload” in Arduino IDE's “File->Preferences” and also set “Compiler warnings” to “All”. 
+![image.png](img/faq/faq9.png) 
+If the issue truly stems from an error in include TFT_eSPI, you will encounter the following error when compiling any K10 screen display: the TFT_eSPI module within the BSP has not been called.
+![image.jpg](img/faq/TFTlib_include.jpg)
+After removing the incorrectly called TFT_eSPI, this issue will be resolved.
 
 ## **Audio**
 Q: When playing wav files from a TF card, the playback sound has a noticeable speedup or the playback sound is garbled.

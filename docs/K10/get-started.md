@@ -56,7 +56,7 @@ Please refer to the system requirements for each programming platform to select 
 | **Platform** | Platform version requirements | Windows | MacOS | GNU Linux|
 | --- | --- | --- | --- | --- |
 | **[Mind+](GettingStarted/gettingstarted_mindplus.md)** | V1.8.1 RC1.0 | ✅ | ❌️ | ❌️ |
-| **[Arduino IDE](GettingStarted/gettingstarted_arduinoide.md)** | All version | ✅ | ❌️ | ❌️ |
+| **[Arduino IDE](GettingStarted/gettingstarted_arduinoide.md)** | All version | ✅ | ✅ | ✅ |
 | **[Platform IO](GettingStarted/gettingstarted_platformio.md)** | All version | ✅ | ✅ | ✅ |
 | **[MicroPython](GettingStarted/gettingstarted_mpy.md)** | All version | ✅ | ✅ | ✅ |
 
