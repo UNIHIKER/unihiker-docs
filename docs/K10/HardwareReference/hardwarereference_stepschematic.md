@@ -24,3 +24,8 @@ After uploading other programmes, the factory programme will be overwritten, if 
 ![image.png](../img/get-started/getstarted5.png)<br/>
 - Select the K10 and upload the code.<br/>
 ![image.png](img/hardwarereference_onboard/onboard9.png) 
+
+## **Certification**
+- [CE Certification](img/hardwarereference_onboard/DFR0992-EN-CE-Certification.pdf) 
+- [FCC Certification](img/hardwarereference_onboard/DFR0992-EN-FCC-Certification.pdf) 
+- [RoHS](img/hardwarereference_onboard/DFR0992-EN-ROHS.pdf) 
