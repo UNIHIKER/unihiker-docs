@@ -13,7 +13,7 @@ In this tutorial, we will guide you through the process of downloading and insta
 
 | **Download** |  |
 | --- | --- |
-| **MicroPython Firmware:** | [Google Drive Download(V0.9.2)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link)<br/>[Google Drive Download(V0.5)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
+| **MicroPython Firmware:** | [Google Drive Download(V0.9.2)](https://drive.google.com/file/d/1KAQAJJqcSX-ypoEthFkJ0ItVk6Jy7bOx/view?usp=drive_link)<br/>[Google Drive Download(V0.5)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
 | **Flash Download Tool(Only support windows):** | [Click to download](https://dl.espressif.com/public/flash_download_tool.zip) |
 | **ESP LaunchPad(Web Tool For All OS):** | [Click to visit](https://igrr.github.io/esp-launchpad/) |
 | **Thonny** | [Click to download](https://thonny.org/) |

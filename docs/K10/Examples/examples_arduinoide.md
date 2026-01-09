@@ -24,6 +24,10 @@ void loop() {
 	delay(2000);
 }
 ````
+
+!!! Note 
+    If the screen does not showing anything, please refer to [this FAQ](../faq.md#arduino-ide-program-issue) 
+
 ![image.gif](img/example_mindplus/exampleMindplus1.gif){: width="250px"}
 
 ## **Display-Electronic photo album**

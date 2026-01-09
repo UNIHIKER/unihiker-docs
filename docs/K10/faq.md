@@ -58,7 +58,7 @@ A: The two blocks "Enable/Disable show camera" and "switch detection mode" shoul
 ![image.png](img/faq/faq8.png) 
 
 ## **Arduino IDE program issue**
-**Any example code displayed on the screen in the Arduino IDE does not function, resulting in a black screen.**
+**Any example code displayed on the screen in the Arduino IDE does not function, resulting in a black screen.**<br/>
 It is possible that the Arduino IDE introduced an incorrect TFT_eSPI library during program compilation.
 To verify this issue, you can enable "Show verbose output during compile & upload” in Arduino IDE's “File->Preferences” and also set “Compiler warnings” to “All”. 
 ![image.png](img/faq/faq9.png) 
@@ -78,4 +78,3 @@ A: When playing notes/audio in a subthread, the subthread cannot be stopped duri
 Q: K10 unable to connect to the hotspot on the UNIHIKER M10.
 A: UNIHIKER M10 must be install the OS of version 0.3.7 and above, and then switch the mode to WPA2 in "5-Switch Wireless Hotspot Mode".
 [UNIHIKER M10 install OS tutorial](https://www.unihiker.com/wiki/SystemAndConfiguration/UnihikerOS/)
-
