@@ -5,13 +5,11 @@ from unihiker_k10 import screen
 import time
 from k10_base import Camera
 
-camera = Camera()
+camera = Camera() 
 
-#Init display(Dir = 0~3)
-screen.init(dir=2)#Default by 2
-camera.init()#Init camera
+screen.init(dir=2)
+camera.init()
 
-#Screen display camera
 screen.show_camera(camera)
 
 while True:
@@ -36,7 +34,7 @@ screen.draw_rect(x=120,y=100,w=80,h=120,bcolor=0xFF6666,fcolor=0x0000FF)
 screen.draw_rect(x=120,y=100,w=40,h=60,bcolor=0x012345)
 screen.draw_circle(x=80,y=80,r=40,bcolor=0x00FF00,fcolor=0x0000FF)
 screen.draw_circle(x=80,y=80,r=20,bcolor=0xFF0000)
-screen.draw_text(text="Hello\n23",x=10,y=0,font_size=24,color=0xFF0000)
+screen.draw_text(text="你好\n23",x=10,y=0,font_size=24,color=0xFF0000)
 screen.draw_text(text="line\n456\nhgjh\n",line=2,font_size=24,color=0xFF0000)
 screen.show_draw()
 time.sleep(2)
@@ -50,10 +48,9 @@ while True:
 ````python title="On board button"
 from unihiker_k10 import button
 import time
-bt_a=button(button.a)#Init button A
-bt_b=button(button.b)#Init button B
+bt_a=button(button.a)
+bt_b=button(button.b)
 
-#When the button A/B released
 def button_a_pressed():
     print("button_a_pressed")
     
@@ -94,9 +91,9 @@ while True:
     print(temp_c)
     print(temp_f)
     print(humi)
-    screen.draw_text(text="TempC: "+str(temp_c)+" C",x=10,y=0,font_size=24,color=0xFF0000)
-    screen.draw_text(text="TempF: "+str(temp_f)+" f",x=10,y=20,font_size=24,color=0xFF0000)
-    screen.draw_text(text="Humi: "+str(humi)+" %RH",x=10,y=40,font_size=24,color=0xFF0000)
+    screen.draw_text(text="温度: "+str(temp_c)+" C",x=10,y=0,font_size=24,color=0xFF0000)
+    screen.draw_text(text="温度: "+str(temp_f)+" f",x=10,y=20,font_size=24,color=0xFF0000)
+    screen.draw_text(text="湿度: "+str(humi)+" %RH",x=10,y=40,font_size=24,color=0xFF0000)
     screen.show_draw()
     time.sleep(1)
 
@@ -115,7 +112,7 @@ while True:
 ````python title="On-board Accelerometer"
 from unihiker_k10 import acce
 import time
-#Read Accelerometer Values (x/y/z)
+
 while True:
     print("x=",acce.read_x())
     print("y=",acce.read_y())
@@ -127,16 +124,13 @@ while True:
 ````python title="On board RGB LED"
 from unihiker_k10 import rgb
 import time
-#Light Indicator (0,1,2,All) Display Color()
-rgb.write(num = 0,color=0x0000FF)#You can use -1 or leave this parameter blank to represent all.
 
-#Light Indicator (0,1,2,All) Display Color R()G()B()
+rgb.write(num = 0,color=0x0000FF)
+
 rgb.write(num = 0,R=255,G=0,B=0)
 
-#Off (All, 0, 1, 2) RGB
 rgb.write(num = 0,color=0x000000)
 
-#Set RGB brightness to (0-9)
 rgb.brightness(9)
 while True:
     rgb.write(color=0xFF00FF)
@@ -151,7 +145,7 @@ while True:
     time.sleep(1)
     rgb.write(color=0x0000)
     time.sleep(1)
-      
+        
 ````
 
 ## **On board Sensor - TF card**
@@ -190,8 +184,8 @@ while True:
 ````python title="Wifi"
 from k10_base import WiFi,MqttClient
 wifi = WiFi() 
-wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000) #Attempt to connect to the Wi-Fi network. The parameter name is optional. `timeout` is an optional parameter indicating the connection timeout duration, with a default timeout of 10,000 milliseconds.
-wifi.status() #Returns the network connection status. True indicates connected; False indicates disconnected.
+wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000) #Attempt to connect to a Wi-Fi network. Parameter names are optional. `timeout` is an optional parameter indicating the connection timeout duration, with a default timeout of 10,000 milliseconds.
+wifi.status() #Returns the network connection status. True indicates connected, False indicates disconnected.
 wifi.info() #Return a string containing the current IP address, subnet mask, gateway, and other information.
 ````
 
@@ -201,9 +195,9 @@ from k10_base import WiFi,MqttClient
 
 import time
 
-wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000) #Attempt to connect to the Wi-Fi network. The parameter name is optional. `timeout` is an optional parameter indicating the connection timeout duration. The default timeout is 10,000 milliseconds.
+wifi.connect(ssid="DFRobot-guest",psd="dfrobot@2017",timeout=50000) #Attempt to connect to the Wi-Fi network. The parameter name is optional. `timeout` is an optional parameter indicating the connection timeout duration, with a default timeout of 10,000 milliseconds.
 wifi.status() #Returns the network connection status. True indicates connected; False indicates disconnected.
-wifi.info() #Return a string containing the current IP address, subnet mask, gateway, and other information.
+wifi.info() #wifi.info() # Returns a string containing information such as the current IP address, subnet mask, and gateway.
 
 def received_1ffdf0jpLa():
     msg=mqttclient.message(topic='siot/test')
@@ -231,25 +225,25 @@ while True:
 ````python title="Bluetooth HID"
 from unihiker_k10 import screen, hid, keycode,button
 import time
-bt_a=button(button.a)#Init button A
-bt_b=button(button.b)#Init button B
+bt_a=button(button.a)
+bt_b=button(button.b)
 
-ble_hid = hid(name='mpy_hid') #Initialize the Bluetooth HID device and name it mpy_hid
+ble_hid = hid(name='mpy_hid') 
 screen.init(dir = 2)
 screen.show_bg(color=0xFFFF00)
 screen.draw_text(text="ready",line=1,font_size=24,color=0xFF0000)
 screen.show_draw()
 while True:
-    if ble_hid.isconnected():#Determine whether a connection has been established: True indicates a connection exists, False indicates no connection exists. Non-blocking.
+    if ble_hid.isconnected():
         screen.draw_text(text="connect",line=1,font_size=24,color=0xFF0000)
         screen.show_draw()
     else:
         screen.draw_text(text="disconnect",line=1,font_size=24,color=0xFF0000)
         screen.show_draw()
     if bt_a.status() == 1:
-        ble_hid.keyboard_send(keycode.SPACE) #Simulate pressing the spacebar on the keyboard
+        ble_hid.keyboard_send(keycode.SPACE) 
     if bt_b.status() == 1:
-        ble_hid.keyboard_send([keycode.CTRL,keycode.a]) #Press the key combination CTRL+A
+        ble_hid.keyboard_send([keycode.CTRL,keycode.a]) 
     time.sleep(0.1)
 ````
 
@@ -257,21 +251,23 @@ while True:
 ````python title="Servo"
 from unihiker_k10 import servo
 import time
-s1=servo(1) # Connect servo to P1
+s1=servo(1) # Connect the servo to pin P1.
 while True:
-    s1.angle(value=170) #Set the servo to 170°(0~180°)
+    s1.angle(value=170) #Set the servo to rotate to the 180° position, with an angle range of: 0 to 180 degrees.
     time.sleep(1)
     s1.angle(value=10)
     time.sleep(1)
+
 ````
 
 ## **Peripheral Sensor - RGB light strip**
 ````python title="WS2812"
 from unihiker_k10 import neopixel
-ws2812=neopixel(P1,3) #Connect the LED strip to p1, the LED strip has 3 WS2812
-ws2812.brightness(9)#Set brightness
+ws2812=neopixel(0,3) #Connect the light strip to pin 0, LED number is 3.
+ws2812.brightness(9)#Set brightness 0-9
 
-ws2812.write(0,1,0x00,0x00,0xFF) #Set WS2812 0-2 to display colours based on r, g, b values.
+ws2812.write(0,1,0x00,0x00,0xFF) #Display colors on LEDs 0-1 based on their r, g, b values.
+
 ````
 
 ## **Peripheral Sensor - DHT11/DHT22**
@@ -279,7 +275,7 @@ ws2812.write(0,1,0x00,0x00,0xFF) #Set WS2812 0-2 to display colours based on r, 
 from unihiker_k10 import dht
 import time
 
-dhtsensor=dht(0)#Initialize the DHT sensor connected to port 0; it can automatically detect whether it is 11 or 22.
+dhtsensor=dht(0)#Initialize the DHT sensor connected to port 0; it can automatically detect whether it is DHT11 or DHT22.
 while True:
     temp,hum=dhtsensor.read()
     print(temp)
@@ -288,7 +284,7 @@ while True:
 ````
 
 ## **Peripheral Sensor - DS18B20**
-````python title="DHT11/DHT22"
+````python title="DS18B20"
 from unihiker_k10 import ds18b20
 import time
 ds=ds18b20(1)
@@ -302,14 +298,14 @@ while True:
 ````python title="TRIG-ECHO"
 from unihiker_k10 import ultrasonic
 import time 
-sonic=ultrasonic(trig=0,echo=0) #To connect the trig and echo pins, the DFRobot SEN0388 is used to fill in the same pins.
+sonic=ultrasonic(trig=0,echo=0) #Connect the trig and echo pins. When assigning the same pin, use SEN0388.
 while True:
     print(sonic.distance())
     time.sleep(0.1)
 ````
 
 ## **Peripheral Sensor - Weight sensor(KIT0176)**
-````python title="TRIG-ECHO"
+````python title="Weight Sensor"
 from unihiker_k10 import force
 import time
 fs=force()

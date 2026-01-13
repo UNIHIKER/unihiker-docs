@@ -18,8 +18,8 @@ xiaozhi-esp32 is an open-source ESPIDF project, since the configuration process 
 ## **Flash Firmware on Windows**
 - Click to open the Flash Download Tool, then choose the ESP32-S3.<br/>![image.png](../GettingStarted/img/gettingstarted_mpy/flashdownload1.png)
 
-- Select the firmware and fill up the address with 0x00, then click on √.<br/>
-<img src="../GettingStarted/img/gettingstarted_mpy/flashdownload2.png" width="400">
+- Select the firmware and fill up the address with 0x00, then click on √.
+![image.png](../GettingStarted/img/gettingstarted_mpy/flashdownload2.png){: width="400px"}
 
 - Press and hold the BOOT button on the back of K10, connect the board to the computer and select the corresponding port in the software.<br/>
 - First click "ERASE" to clear the flsh, and then click "START" to flash the firmware after ERASE step is successful.<br/>
@@ -29,7 +29,7 @@ xiaozhi-esp32 is an open-source ESPIDF project, since the configuration process 
 - Visit [ESP LAUNCHPAD](https://igrr.github.io/esp-launchpad/)
 - Press and hold the BOOT button on the back of K10, connect the board to your Mac/PC then release BOOT button.
 - Click "connect" to choose the port.<br/>
-<img src="../GettingStarted/img/gettingstarted_mpy/flashdownload3.png" width="600">
+![image.png](../GettingStarted/img/gettingstarted_mpy/flashdownload3.png){: width="400px"}
 
 - Enter the "DIY" page and choose the .bin firmware which downloaded from Google Drive.
 - Change the Flash Address into 0x00
@@ -39,24 +39,24 @@ xiaozhi-esp32 is an open-source ESPIDF project, since the configuration process 
 # Config the Wi-Fi and language model
 After successfully flash the firmware, press the RST button on the back of K10.
 The K10 will first enter the Wi-Fi configuration mode.<br/>
-<img src="img/xiaozhi/wifiConfig.png" width="300"/>
+![image.png](img/xiaozhi/wifiConfig.png){: width="400px"}
 
 Now use your PC or phone the connect the hotspot of xiaozhi. Then config the Wi-Fi SSID and password to let xiaozhi connect to the Internet.
 The K10 could only connect the 2.4GHz Wi-Fi.<br/>
-<img src="img/xiaozhi/wifiConfig1.png" width="300"/>
+![image.png](img/xiaozhi/wifiConfig1.png){: width="400px"}
 
 Once the Wi-Fi is successfully connected, the K10 will reboot in 3 second.
 And the a six-digit device code will show up on the screen of K10.<br/>
-<img src="img/xiaozhi/wifiConfig2.png" width="300"/>
+![image.png](img/xiaozhi/wifiConfig2.png){: width="400px"}
 
 Then you can go the xiaozhi configuration site to config the language model and speaker.
 [Xiaozhi config site](https://xiaozhi.me/)
 
 Click on the console:<br/>
-<img src="img/xiaozhi/xiaozhime.png" width="600"/>
+![image.png](img/xiaozhi/xiaozhime.png){: width="400px"}
 
 Register a xiaozhi account using your mobile phone number.<br/>
-<img src="img/xiaozhi/xiaozhime1.png" width="700"/>
+![image.png](img/xiaozhi/xiaozhime1.png){: width="700px"}
 
 After enter the console, then add device and enter the device code now on the K10 display.<br/>
 ![image.png](img/xiaozhi/xiaozhime2.png)
@@ -82,19 +82,19 @@ UNIHIKER K10 Feature Contributor: [@HonestQiao](https://github.com/HonestQiao)<b
 
 # Wake up your AI friend and do some small talk
 Starting from version 2.x, xiaozhi firmware supports custom themes and wake-up words without requiring a full source code compilation.
-After binding your xiaozhi device to the xiaozhi.me website, you can click “Customize” to configure your settings.
-<img src="img/xiaozhi/xiaozhime4.png" width="650"/>
+After binding your xiaozhi device to the xiaozhi.me website, you can click “Customize” to configure your settings.<br/>
+![image.png](img/xiaozhi/xiaozhime4.png){: width="650px"}
 
-First, confirm that your hardware setup is an ESP32-S3 with a screen resolution of 240×320. Then click “Next”.
-<img src="img/xiaozhi/xiaozhime5.png" width="650"/>
+First, confirm that your hardware setup is an ESP32-S3 with a screen resolution of 240×320. Then click “Next”.<br/>
+![image.png](img/xiaozhi/xiaozhime5.png){: width="650px"}
 
 On the next step, you can configure the wake word, font, Xiaozhi's expressions, and background image.
 The wake word can utilize the “Preset Wake Word” officially supported by ESP32, or be fully customized to your own wake word.
-After completing all settings, please proceed by clicking "Next".
-<img src="img/xiaozhi/xiaozhime6.png" width="650"/>
+After completing all settings, please proceed by clicking "Next".<br/>
+![image.png](img/xiaozhi/xiaozhime6.png){: width="650px"}
 
-Finally, you can preview the results. Once you've confirmed everything is correct, click "Generate assets.bin".
-<img src="img/xiaozhi/xiaozhime7.png" width="650"/>
+Finally, you can preview the results. Once you've confirmed everything is correct, click "Generate assets.bin".<br/>
+![image.png](img/xiaozhi/xiaozhime7.png){: width="650px"}
 
-Now connect your K10 to your computer and click "Flash to Device Online". After the flashing process completes, press the RST button on the back of the UNIHIKER K10 to start using your fully customized xiaozhi.
-<img src="img/xiaozhi/xiaozhime8.png" width="650"/>
+Now connect your K10 to your computer and click "Flash to Device Online". After the flashing process completes, press the RST button on the back of the UNIHIKER K10 to start using your fully customized xiaozhi.<br/>
+![image.png](img/xiaozhi/xiaozhime8.png){: width="650px"}

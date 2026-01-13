@@ -34,8 +34,9 @@ In this tutorial, we will guide you through the process of downloading Arduino I
 ![image.png](img/gettingstarted_arduinoide/IDESDK6.png)
 
 !!! Note 
-    When installing BSP in Arduino IDE V2.3.x, you may encounter the following error:
-    **Failed to install platformUNIHIKER:0.0.x<br/>4 DEADLINE EXCEEDED net/http:request cancelled<br/> (Client timeout or contect cancellation while reading body)**
+    When installing BSP in Arduino IDE V2.3.x, you may encounter the following error:<br/>
+    **Failed to install platformUNIHIKER:0.0.x<br/>4 DEADLINE EXCEEDED net/http:request cancelled<br/> (Client timeout or contect cancellation while reading body)**<br/>
+    
     You can refer to this [Arduino Forum Topic](https://forum.arduino.cc/t/ide-2-3-7-now-gives-error-4-deadline-exceeded/1422321/2) for a solution.
 
 - UNIHIKER K10 will appear in your Arduino IDE<br/>
