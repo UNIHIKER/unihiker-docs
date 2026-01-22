@@ -1,7 +1,15 @@
-* text eol=lf
+* text=auto
+
 *.png binary
 *.jpg binary
+*.jpeg binary
 *.gif binary
 *.webp binary
-*.jpeg binary
 *.bmp binary
+
+*.zip binary
+*.7z binary
+*.rar binary
+*.pdf binary
+
+*.exe binary
