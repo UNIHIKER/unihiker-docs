@@ -1,15 +1,77 @@
+# 1. Global default: Auto-detect text files
 * text=auto
 
+# 2. Image formats (Binary)
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.gif binary
 *.webp binary
 *.bmp binary
+*.ico binary
+*.svg text
 
+# 3. Archives and Documents (Binary)
 *.zip binary
 *.7z binary
 *.rar binary
+*.tar.gz binary
 *.pdf binary
 
+# 4. AI Models and Firmware (Binary)
+*.tflite binary
+*.onnx binary
+*.h5 binary
+*.model binary
+*.bin binary
+*.hex binary
+*.uf2 binary
+# MicroPython compiled files
+*.mpy binary
+
+# 5. Compiled Libraries and Objects (Binary for Arduino/IDF/C)
+*.a binary
+*.o binary
+*.so binary
+*.lib binary
+*.dll binary
+*.pyd binary
+
+# 6. Media and Fonts (Binary)
+*.mp3 binary
+*.wav binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# 7. Executables (Binary)
 *.exe binary
+*.app binary
+
+# 8. Source Code and Scripts (Text)
+*.md text
+*.py text
+*.c text
+*.cpp text
+*.h text
+*.hpp text
+*.ino text
+*.yml text
+*.yaml text
+*.json text
+*.css text
+*.js text
+*.txt text
+
+# 9. Cross-platform Scripts (Enforce LF for Linux/Unihiker compatibility)
+# Shell scripts must use LF to run correctly on M10/Linux
+*.sh text eol=lf
+# Windows batch files must use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 10. Linux System Config (Enforce LF)
+# Prevent Windows CRLF from breaking Linux service or config files
+dockerfile text eol=lf
+*.conf text eol=lf
