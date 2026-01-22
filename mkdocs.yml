@@ -285,6 +285,7 @@ nav:
       - 5.Board Overview: HardwareReference/hardware_reference_board_overview.md
       - 6.Dimension: HardwareReference/hardware_reference_dimension.md
       - 7.SVG & 3D File: HardwareReference/hardware_reference_svg_3d_file.md
+      - 8.Certification: HardwareReference/hardware_reference_certification.md
     - 🧩 System and Configuration:
       - 1.Multi Connection Methods: SystemAndConfiguration/system_and_configuration_multi_connection_methods.md
       - 2.Home Menu: SystemAndConfiguration/system_and_configuration_home_menu.md
@@ -344,4 +345,3 @@ nav:
   - Contact Us: 
     - 1.Technical Discussion: ContactUs/contactus_technical_discussion.md
     - 2.Contact Us: ContactUs/contactus_contact_us.md
-
