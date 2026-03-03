@@ -2,7 +2,7 @@
 | **Function** | **Description** |
 | --- | --- |
 | CPU | RK3308 Arm 64-bit 4-core 1.2GHz |
-| **Memory | 512MB DDR3 |
+| Memory | 512MB DDR3 |
 | Hard Disk | 16GB eMMC |
 | OS | debian 10 |
 | Wi-Fi & Bluetooth | RTL8723DS 2.4G&4.0 |
@@ -17,7 +17,7 @@
 | Light sensor | PT0603 Photosensitive triode |
 | Buzzer | Passive buzzer |
 | LED | Blue LED |
-| 6-axis Motion Sensor | 3-axis accelerator and 3-axis gyroscope (ICM20689) |
+| 6-axis Motion Sensor | 3-axis accelerator and 3-axis gyroscope (ICM20689/QMI8658C) |
 
 ### **Interface**
 | **Function** | **Description** |
