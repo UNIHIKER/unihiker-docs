@@ -5,14 +5,22 @@
 - Once downloaded and extracted, you will have an img format image file.
 
 **Download Latest Version System Image**
-**Name:** unihiker_v0.4.1.md5.0d2e92c04f6596ed8aa19f7f8db869a5.img
+**Name:** unihiker_v0.4.5_20260201_1541-f4c3.7z
 
 | **Download channel** |  |
 | --- | --- |
-| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.1_20250729_0952.7z) |
+| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.5_20260201_1541-f4c3.7z) |
 | **Download from Google Drive:** | [Click to download](https://drive.google.com/drive/folders/1JU73SOyN5VmpB6ilbxVNvCB9qXfc-Qo-?usp=sharing) |
 
 ##  **Release Logs**
+
+### **V0.4.5 :**
+- Python Environment: Switched default Python to v3.12.7 via pyenv.
+- Package Management: Added built-in uv tool with pre-cached pip libraries for Python 3.12.
+
+### **V0.4.2 :**
+- Pre-installed Libraries: Integrated various Python libraries, including model_mp_io and model_mp_core for model inference.
+- SIoT Upgrade: Updated SIoT V2 to fix web pop-up error issues.
 
 ### **V0.4.1 :**
 
