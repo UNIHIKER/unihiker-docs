@@ -1,7 +1,7 @@
 ## **UNIHIKER K10**
 **Introuction**<br/>
-UNIHIKER K10 is a development and learning board designed for rapid experience and learning of artificial intelligence, which meets the learning needs of programming, IoT and AI. The board integrates LCD color screen, WiFi Bluetooth, camera, microphone, speaker, RGB indicator, multiple sensors and rich expansion interfaces. With the highly integrated on-board resources, sensor control, IoT applications, and artificial intelligence projects such as face recognition, voice recognition, and speech synthesis can be easily realized without the need to connect additional devices during the teaching process.
-
+UNIHIKER K10 is a development and learning board designed for rapid experience and learning of artificial intelligence, which meets the learning needs of programming, IoT and AI. The board integrates LCD color screen, WiFi Bluetooth, camera, microphone, speaker, RGB indicator, multiple sensors and rich expansion interfaces. With the highly integrated on-board resources, sensor control, IoT applications, and artificial intelligence projects such as face recognition, voice recognition, and speech synthesis can be easily realized without the need to connect additional devices during the teaching process.<br/>
+**Note: K10 in the document is the abbreviation of K10 of the UNIHIKER K10**<br/>
 ![image.png](HardwareReference/img/hardwarereference_onboard/onboard6.png) 
 
 **Feature**<br/>
@@ -19,7 +19,7 @@ UNIHIKER K10 is a development and learning board designed for rapid experience a
 - Use a USB cable to connect the USB-C to your PC/Mac or to a 5V adapter
 - And wait for the K10's screen to display a logo, which means that K10 is ready to go. 
 ![image.png](img/get-started/getstarted2.png)
-- After successful boot-up, K10 runs the factory built-in program, you can quickly experience the most of the K10 features. <br/>(K10 in the document is the abbreviation of K10 of the UNIHIKER K10)<br/>
+- After successful boot-up, K10 runs the factory built-in program, you can quickly experience the most of the K10 features. <br/>
 
 !!! Note 
     Please make sure the USB cable is plugged directly into the USB port of your computer, do not use intermediate components such as extension cables or USB dock, and make sure the USB cable has a data transfer function.
