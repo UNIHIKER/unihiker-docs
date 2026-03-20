@@ -1,5 +1,5 @@
 ### **Description**
-UNIHIKER is equipped with a microcontroller that is responsible for controlling the onboard components and GPIO. To achieve this, we will utilize the Python PinPong library to connect and control the temperature and humidity sensors externally through the side pins of the board.
+UNIHIKER is equipped with a microcontroller that is responsible for controlling the onboard components and GPIO pins. To achieve this, we will utilize the Python PinPong library to connect and control the temperature and humidity sensors externally through the side pins of the board.
 ### **Syntax**
 **Object.temp_c()**
 **Object.humidity()**

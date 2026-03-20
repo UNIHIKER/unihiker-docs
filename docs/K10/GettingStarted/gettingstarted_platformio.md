@@ -29,7 +29,7 @@ Refer to the [CLion Documentation page](https://www.jetbrains.com/clion/features
 
     **About Unihiker K10:** The Unihiker K10 cannot currently be selected directly in Platform IO. You must first create a Platform IO project using another random DFRobot board, then modify the ``platformio.ini`` file and download the SDK before you can begin development.
 
-    **Other plug-in**: It is also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini) plugin that provides syntax highlighting, formatting, code folding, and viewing structure for [“platformio.ini” (Project Configuration File)](https://docs.platformio.org/en/latest/projectconf/index.html#projectconf).
+    **Other plugins**: It is also recommend to install [Ini](https://plugins.jetbrains.com/plugin/6981-ini) plugin that provides syntax highlighting, formatting, code folding, and viewing structure for [“platformio.ini” (Project Configuration File)](https://docs.platformio.org/en/latest/projectconf/index.html#projectconf).
 
 1. **Install** PlatformIO Core (CLI). See [Installation](https://docs.platformio.org/en/latest/core/installation/index.html#core-installation) guide.
 
@@ -58,7 +58,7 @@ Open **File > Settings.. > Plugins** and go to the "Marketplace" tab. Search for
             -DModel=None
         ````
 
-6. **Run** test code on Unihiker K10
+6. **Run** this test code on Unihiker K10
     - Once the SDK download complete, then the Platform IO in CLion is ready to go. 
     - Open ``main.cpp`` file from ``src`` folder and replace its contents with the next:
 
@@ -101,9 +101,7 @@ Open **File > Settings.. > Plugins** and go to the "Marketplace" tab. Search for
  ![image.png](img/gettingstarted_platformio/vscode.png){: width="240px"}
 
 !!! Note 
-    Please note that you do not need to install [PlatformIO Core(CLI)](https://docs.platformio.org/en/latest/core/index.html#piocore) separately if
-    you are going to use [PlatformIO IDE for VSCode](https://docs.platformio.org/en/latest/integration/ide/vscode.html#ide-vscode). [PlatformIO Core(CLI)](https://docs.platformio.org/en/latest/core/index.html#piocore) is built into
-    PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
+    Please note that you do not need to install [PlatformIO Core(CLI)](https://docs.platformio.org/en/latest/core/index.html#piocore) separately if you are going to use [PlatformIO IDE for VSCode](https://docs.platformio.org/en/latest/integration/ide/vscode.html#ide-vscode). [PlatformIO Core(CLI)](https://docs.platformio.org/en/latest/core/index.html#piocore) is built into PlatformIO IDE and you will be able to use it within PlatformIO IDE Terminal.
 
     **Git:** If you are going to use Git for installing upstream development platforms, cloning
     external projects, installing library dependencies from a repository, please ensure

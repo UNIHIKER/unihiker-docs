@@ -16,32 +16,32 @@
 | Block | ![image.png](img/codeReference_blocks/blockreference8.png)  |
 | Description | Display pictures in TF memory card at specified location (coordinates), support to display png, jpg and bmp format pictures.</p>This block can display pictures with transparent backgrounds.</p>bmp only supports images with 16-bit color bit depth, this format is mainly used to display images taken by K10, png or jpg format is recommended.</p>Do not modify the image format by directly modifying the suffix, otherwise it may cause display abnormality. |
 | Block | ![image.png](img/codeReference_blocks/blockreference9.png)|
-| Description | Save the current frame captured by the camera and store it in the TF card.</p>Start taking pictures instantly board the upper right corner of the indicator light will light up, the start of photography is recommended to keep the screen stationary 0.5S, this 0.5S will feel obvious screen picture lag, at this time the system is caching the pictures captured, 0.5S after the cache can be free to move the lens, at this time the system will gradually write the cached pictures to the TF card. Until the indicator light in the upper right corner goes out, indicating that the picture has been successfully saved to the TF card, you can start the next picture shooting.</p>When you take a picture with K10, only bmp format is supported. When displaying photos taken with K10, only bmp format is supported. |
+| Description | Save the current frame captured by the camera and store it in the TF card.</p>When you start taking a picture, the indicator light in the upper-right corner will turn on immediately. It is recommended to keep the screen steady for about 0.5 seconds after starting the capture. During this short period, you may notice a slight lag on the screen, as the system is temporarily caching the captured image.</p>After the initial 0.5 seconds, you can move the camera freely. The system will then gradually write the cached image data to the TF card. Once the indicator light in the upper-right corner turns off, the photo has been successfully saved, and you can proceed to take the next picture.</p>Note that when you take or display a picture with K10, only bmp format is supported.|
 
 ## **Text display**
 |      |                                                              |
 | ---- | ------------------------------------------------------------ |
 | Block | ![image.png](img/codeReference_blocks/blockreference10.png) |
-| Discription | Display text of the specified color starting from the leftmost side of the first line on the K10 screen.</p>The K10 supports a total of 13 lines of text display when in portrait orientation.</p>This command can quickly complete the text display, if you need to adjust the position, please use the text display command that can set the coordinates.</p>This command forces an autoclear operation, see another block below for what autoclear does. |
+| Discription | Displaying text of the specified color will appear on the K10 screen from the top-left corner.</p>The K10 supports a total of 13 lines of text display when in portrait orientation.</p>This command can quickly complete the text display, if you need to adjust the position, please use the text display command that can set the coordinates.</p>This command forces an autoclear operation, see another block below for what autoclear does. |
 | Block | ![image.png](img/codeReference_blocks/blockreference11.png) |
 | Discription | Clears the display of text on the certain line.                                     |
 | Block | ![image.png](img/codeReference_blocks/blockreference12.png) |
-| Discription | Display the text at the specified position (coordinates), the font size refers to the pixels occupied by the character font, there are two choices 24x24 and 16x16.</p>Fill in up to 512 English letters or 256 Chinese characters at a time.</p>Line Character Count indicates that line feeds are automatically performed based on the set number of characters in the text. When calculating the number of line breaks, Chinese, English letters and punctuation will be counted as one word. The maximum number of supported line breaks is 49, and the default is no line breaks when it is set to 50.</p>Whether or not to auto-clear indicates whether or not the previous text should be cleared first to re-display the new text. When auto-clear is enabled, it will automatically clear all the content after the coordinates to the background color, including the already displayed text, lines, and images. Please refer to the example below for more details on how to use this feature. |
+| Discription | Displaying text at the specified position (coordinates), the font size refers to the pixels occupied by the character font, there are two choices 24x24 and 16x16.</p>The page holds a maximum of 512 English letters or 256 Chinese characters.</p>Line Character Count indicates that line feeds are automatically performed based on the set number of characters in the text. When calculating the number of line breaks, Chinese, English letters and punctuation will be counted as one word. The maximum number of supported line breaks is 49, and the default is no line breaks when it is set to 50.</p>Auto-clear indicates whether or not the previous text should be cleared first to re-display the new text. When auto-clear is enabled, it will automatically clear all the content after the coordinates to the background color, including the already displayed text, lines, and images. Please refer to the example below for more details on how to use this feature. |
 
 
 ## **Lines and shapes display**
 |      |                                                              |
 | ---- | ------------------------------------------------------------ |
 | Block | ![image.png](img/codeReference_blocks/blockreference13.png) |
-| Discription | Displays dots of the specified color at the specified position (coordinates) on the screen, and the size of the dots cannot be modified.   |
+| Discription | Displays dots of the specified color at the specified position (coordinates) on the screen. Note that the size of the dots cannot be modified.   |
 | Block | ![image.png](img/codeReference_blocks/blockreference14.png) |
 | Discription | Sets the width of the lines and borders in pixels.</p>If this block is not called, the default line width/border width is 1 |
 | Block | ![image.png](img/codeReference_blocks/blockreference15.png)|
 | Discription | Draws a line segment of the specified color according to the start point coordinates (X1, Y1) and end point coordinates (X2, Y2). |
 | Block | ![image.png](img/codeReference_blocks/blockreference16.png) |
-| Discription | Draws a circle with the specified radius based on the center coordinates (X, Y). Also, you can set whether the circle is solid (filled/unfilled), border and fill color. |
+| Discription | Draws a circle with the specified radius based on the center coordinates (X, Y). One can also set whether the circle is solid (filled/unfilled), border and fill color. |
 | Block | ![image.png](img/codeReference_blocks/blockreference17.png) |
-| Discription | Draws a rectangle starting at the upper-left corner of the rectangle at the specified position (coordinates). You can set the width and height of the rectangle, the border color, and the fill color. |
+| Discription | Draws a rectangle starting at the upper-left corner of the rectangle at the specified position (coordinates). One can set the width and height of the rectangle, the border color, and the fill color. |
 
 ## **QR Code Display**
 |      |                                                              |
@@ -94,7 +94,7 @@ There are three RGB LEDs on the underside of the back of the K10, use the serial
 | Block | ![image.png](img/codeReference_blocks/blockreference33.png) |
 | Discription | Plays note sounds of a specified pitch, and you can set the number of beats to play.               |
 | Block | ![image.png](img/codeReference_blocks/blockreference34.png)|
-| Discription | Play the specified audio file from the TF memory card in the background, currently only supports two-channel stereo audio in wav format, otherwise there will be noise or playback acceleration issues. |
+| Discription | Play the specified audio file from the TF memory card in the background, currently this function only supports two-channel stereo audio in wav format, otherwise there will be noise or playback acceleration issues. |
 | Block | ![image.png](img/codeReference_blocks/blockreference35.png) |
 | Discription | Stop playing TF card audio.                                       |
 | Block | ![image.png](img/codeReference_blocks/blockreference36.png) |
@@ -111,13 +111,13 @@ There are three RGB LEDs on the underside of the back of the K10, use the serial
 | Block | ![image.png](img/codeReference_blocks/blockreference39.png) |
 | Discription | Get the key point data of the detected face, containing 14 items such as length, width, centre point coordinates, left and right eye coordinates, nose coordinates, left side of mouth coordinates, right side of mouth coordinates and so on. |
 | Block | ![image.png](img/codeReference_blocks/blockreference40.png) |
-| Discription | Learning faces, used to collect and learn recognised faces, after successful learning it will automatically assign an ID number to the face, ID number starts from 1, up to 48 faces can be learned. </p> No need to relearn after power off K10. |
+| Discription | Learning faces, used to collect and learn recognised faces, after successful learning it will automatically assign an ID number to the face, ID number starts from 1, up to 48 faces can be learned. </p> No need to relearn the ID after powering off K10. |
 | Block | ![image.png](img/codeReference_blocks/blockreference41.png)  |
 | Discription | Recognise faces that have been learned.                         |
 | Block | ![image.png](img/codeReference_blocks/blockreference42.png) |
 | Discription | Determine whether recognition is complete.                                       |
 | Block | ![image.png](img/codeReference_blocks/blockreference43.png) |
-| Discription | Get the recognised face ID, used to read the face ID number after successful recognition. </p> This instruction, after successful recognition, will only fetch the ID number of the recognised face once, and after fetching it once, the instruction will perform a reset operation (the value changes to -1). |
+| Discription | Get the recognised face ID, used to read the face ID number after successful recognition. </p> After succesfull recognition this instruction will only fetch the ID number of the recognised face once, and after fetching it once, the instruction will perform a reset operation (the value changes to -1). |
 | Block | ![image.png](img/codeReference_blocks/blockreference44.png) |
 | Discription | Forgets the assigned face ID that has been learnt.                                   |
 | Block | ![image.png](img/codeReference_blocks/blockreference45.png) |
@@ -135,7 +135,7 @@ There are three RGB LEDs on the underside of the back of the K10, use the serial
 |      |                                                              |
 | ---- | ------------------------------------------------------------ |
 | Block | ![image.png](img/codeReference_blocks/blockreference48.png)  |
-| Discription | Sets the motion detection sensitivity, the larger the setting value, the more sensitive the detection of motion, the range is 0-100.<p>If you do not set the sensitivity when using motion detection, the default is 50.|
+| Discription | Sets the motion detection sensitivity, the larger the setting value, the more sensitive the detection of motion, the range is 0-100.<p>If you do not set the sensitivity when using motion detection, the default value is 50.|
 
 
 ## **AI-Speech recognition**

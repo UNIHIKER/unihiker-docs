@@ -1,5 +1,5 @@
 ## **Expansion board**
-UNIHIKER K10 and Micro:bit share the same pinout on edge connector, So UNIHIKER K10 is compatible with some micro:bit expansion boards.
+UNIHIKER K10 and micro:bit share the same pinout on edge connector, So UNIHIKER K10 is compatible with some micro:bit expansion boards.
 
 The K10 is not compatible with the [DFR1136 M10 Dual Motor Driver I/O Expansion Board](https://www.dfrobot.com/product-2852.html). When the K10 is used with this expansion board, it can only use the GPIO and I2C interfaces of the expansion board, but not the motor driver, RGB, IR transceiver and other functions of the expansion board.
 

@@ -1,6 +1,6 @@
 ### **Description**
-OLED 2864 display module is a compact monochrome graphic display module from DFRobot.It embeded an 0.96" OLED with 128x64 high resolution.Because of the advantages of OLED technology,the module own wider viewing angles and improved brightness compared with the character LCD.
-UNIHIKER is equipped with a microcontroller that is responsible for controlling the onboard components and GPIO. To achieve this, we will utilize the Python PinPong library to connect and control the OLED 2864 Display Screen externally through the side pins of the board.
+OLED 2864 display module is a compact monochrome graphic display module from DFRobot.It embeded an 0.96" OLED screen with 128x64 high resolution.Because of the advantages of OLED technology,the module own wider viewing angles and improved brightness compared with the character LCD.
+UNIHIKER is equipped with a microcontroller that is responsible for controlling the onboard components and GPIO pins. To achieve this, we will utilize the Python PinPong library to connect and control the OLED 2864 Display Screen externally through the side pins of the board.
 ### **Common functions**
 
 

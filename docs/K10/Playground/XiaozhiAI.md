@@ -21,7 +21,7 @@ xiaozhi-esp32 is an open-source ESPIDF project, since the configuration process 
 - Select the firmware and fill up the address with 0x00, then click on √.
 ![image.png](../GettingStarted/img/gettingstarted_mpy/flashdownload2.png){: width="400px"}
 
-- Press and hold the BOOT button on the back of K10, connect the board to the computer and select the corresponding port in the software.<br/>
+- Press and hold the BOOT button on the back of K10, connect the board to the computer via a USB-C cable and release the BOOT button. Then select the corresponding port in the software.<br/>
 - First click "ERASE" to clear the flsh, and then click "START" to flash the firmware after ERASE step is successful.<br/>
 - Press the RST reset button on the K10 board after the flash is completed.<br/>
 

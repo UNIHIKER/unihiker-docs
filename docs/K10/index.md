@@ -1,5 +1,5 @@
 # **Welcome to UNIHIKER K10 Documentation**
-Unleash your imagination and embark on a new journey with UNIHIKER K10.
+Unleash your imagination and embark on a new journey with the UNIHIKER K10.
 ![image.png](img/index/UNIHIKERK10back.jpg)
 
 !!! note

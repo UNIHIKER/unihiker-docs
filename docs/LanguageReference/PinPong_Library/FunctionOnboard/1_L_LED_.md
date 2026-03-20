@@ -1,5 +1,5 @@
 ### **Description**
-On the back of the UNIHIKER, there is a blue LED light marked "L" that users can control through programming.
+On the back of the UNIHIKER, there is a blue LED light marked "L" that users can control by programming it.
 The onboard LED labeled as 'L' is connected to the P25 interface of UNIHIKER, meaning that controlling the P25 pin allows for control of the onboard LED.
 ### **Syntax**
 **Pin(Pin.P25, Pin.OUT).write_digital**

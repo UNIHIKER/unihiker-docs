@@ -1,5 +1,5 @@
 ### **Description**
-UNIHIKER is equipped with a microcontroller responsible for controlling onboard components and GPIO. This project uses the PinPong library of Python to control a NeoPixel LED externally connected through side pins of the board. We will use an external light strips to achieve red, orange, yellow, green, blue, and purple colors.
+UNIHIKER is equipped with a microcontroller responsible for controlling onboard components and GPIO pins. This project uses the PinPong library of Python to control a NeoPixel LED externally connected through side pins of the board. We will use an external light strips to achieve red, orange, yellow, green, blue, and purple colors.
 ### **Common functions**
 
 #### 1.1 NeoPixel(Pin( ),  )

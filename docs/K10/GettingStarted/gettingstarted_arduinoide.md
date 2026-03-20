@@ -9,7 +9,7 @@ In this tutorial, we will guide you through the process of downloading Arduino I
 | **Download from Arduino** | [Download](https://www.arduino.cc/en/software/) |
 
 !!! Note 
-    UNIHIKER K10 is now fully support all versions of Arduino IDE since BSP version 0.0.2
+    UNIHIKER K10 now fully supports all versions of Arduino IDE since BSP version 0.0.2
 
 ### **Install Arduino IDE BSP**
 
@@ -45,7 +45,7 @@ In this tutorial, we will guide you through the process of downloading Arduino I
 
 
 !!! Note 
-    The Arduino IDE BSP for UNIHIKER K10 is still in beta, there may be some bugs. if you find a bug, you can send an email to UNIHIKER team and we will fix it as soon as possible.<br/>
+    The Arduino IDE BSP for UNIHIKER K10 is still in beta (development), there may be some bugs. If you find a bug, you can send an email to the UNIHIKER team and we will fix it as soon as possible.<br/>
     Email: unihiker@dfrobot.com
 
 

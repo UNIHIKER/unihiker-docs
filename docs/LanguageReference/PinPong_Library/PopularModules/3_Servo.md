@@ -1,5 +1,5 @@
 ### **Description**
-UNIHIKER is equipped with a microcontroller responsible for controlling onboard components and GPIO. This project uses PinPong library of Python to control the ultrasonic sensor externally connected through side pins of the board. 
+UNIHIKER is equipped with a microcontroller responsible for controlling onboard components and GPIO pins. This project uses PinPong library of Python to control the servo motor externally connected through side pins of the board. 
 ### **Syntax**
 **Object = Servo(Pin(Pin.P21))**
 **Object.angle(angle)**

@@ -1,7 +1,7 @@
 ## **UNIHIKER K10**
 **Introuction**<br/>
-UNIHIKER K10 is a development and learning board designed for rapid experience and learning of artificial intelligence, which meets the learning needs of programming, IoT and AI. The board integrates LCD color screen, WiFi Bluetooth, camera, microphone, speaker, RGB indicator, multiple sensors and rich expansion interfaces. With the highly integrated on-board resources, sensor control, IoT applications, and artificial intelligence projects such as face recognition, voice recognition, and speech synthesis can be easily realized without the need to connect additional devices during the teaching process.<br/>
-**Note: K10 in the document is the abbreviation of K10 of the UNIHIKER K10**<br/>
+UNIHIKER K10 (hereafter only reffered to as K10) is a development and learning board designed for rapid experience and learning of artificial intelligence, which meets the learning needs of programming, IoT and AI. The board integrates LCD color screen, WiFi Bluetooth, camera, microphone, speaker, RGB indicator, multiple sensors and rich expansion interfaces. With the highly integrated on-board resources, sensor control, IoT applications, and artificial intelligence projects such as face recognition, voice recognition, and speech synthesis can be easily realized without the need to connect additional devices during the teaching process.<br/>
+
 ![image.png](HardwareReference/img/hardwarereference_onboard/onboard6.png) 
 
 **Feature**<br/>
