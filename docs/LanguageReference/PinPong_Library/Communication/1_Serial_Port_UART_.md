@@ -169,7 +169,7 @@ buf = [0x00, 0x01, 0x02, 0x03, 0x05, 0x06, 0x07]
 # uart1.readinto(buf, nbytes)
 
 while True:
-    uart1.write(buf)  # Write data to UART
+    uart1.write(buf)  # Write data to UART 
     time.sleep(1)
 ```
 

@@ -10,13 +10,13 @@
 
 | Function                      | Description                                |
 | ------------------------- | ---------------------------------------------------- |
-| Temp&Humi Sensor(AHT20)       | Temperature：-40-85℃  Accuracy±0.3℃</p>Humidity：0-100%RH Accuracy±2%RH |
-| Ambient Light Sensor(LTR303ALS)   | Detection range：0~64k Lux                                  |
-| Triaxial Acceleration Sensor(SC7A20H) | ±2G/±4G/±8G/±16G                                     |
+| Temp&Humi Sensor(AHT20)       | Temperature：-40-85℃  Accuracy ± 0.3℃</p>Humidity：0-100%RH Accuracy ± 2%RH |
+| Ambient Light Sensor (LTR303ALS)   | Detection range：0~64k Lux                                  |
+| Triaxial Acceleration Sensor (SC7A20H) | ±2G/±4G/±8G/±16G                                     |
 | Display                      | 2.8inch 240x320 Colored LCD  ILI9341                                     |
 | Camera                    | 2MP，80°FOV   GC2145              |
 | A, B, RST,BOOT button            | A, B, RST,BOOT button       |
-| MEMS MIC                | MEMS MIC x 2            |
+| MEMS MIC                | vMEMS MIC x 2            |
 | Speaker                    | Power：2W                          |
 | WS2812 RGB LED              | WS2812 RGB LED x 3         |
 

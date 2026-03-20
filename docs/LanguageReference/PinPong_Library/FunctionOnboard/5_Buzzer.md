@@ -13,7 +13,7 @@ The UNIHIKER main controllers come equipped with an integrated buzzer, which can
 ### **Return**
 **None  
 ### **Example Description**
-The code below uses the buzzer.play() function to play music on the buzzer. With different functions such as buzzer.pitch(), buzzer.stop(), buzzer.pitch(), and buzzer.redirect(), we can modify the tone, start and pause playback, and redirect the buzzer to a specific pin.
+The code below uses the buzzer.play() function to play music on the buzzer. With different functions such as buzzer.pitch(), buzzer.stop(), buzzer.pitch(), and buzzer.redirect(), one can modify the tone, start and pause playback, and redirect the buzzer to a specific pin.
 ### **Hardware Required**
 
 - [UNIHIKER](https://www.dfrobot.com/product-2691.html)

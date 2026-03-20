@@ -1,6 +1,6 @@
 ### **Description**
-SPI stands for Serial Peripheral Interface, which, as the name suggests, is a serial peripheral device interface. 
-SPI, it is a high-speed, full duplex, synchronous communication bus that only occupies four wires on the chip pins, saving chip pins and space for PCB layout, providing convenience.  
+SPI stands for Serial Peripheral Interface.
+These SPIs are high-speed, full duplex, synchronous communication buses that only occupy four wires on the chip pins, saving chip pins and space for PCB layout, providing convenience.  
  It is mainly used in EEPROM, FLASH, real-time clock, AD converter, as well as between digital signal processors and digital signal decoders.  
 SPI has two modes: master and slave. An SPI communication system needs to include one (and only one) master device and one or more slave devices. The master device provides the clock, and the slave device receives the clock. The read and write operations of the SPI interface are initiated by the master device. When there are multiple slave devices, they are managed through their respective chip selection signals.  
 

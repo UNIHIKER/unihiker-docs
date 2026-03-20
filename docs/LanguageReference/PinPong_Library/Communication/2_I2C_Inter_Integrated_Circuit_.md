@@ -82,7 +82,7 @@ root@unihiker:~#
 
 ### **Example Description**
 By utilizing the characteristics of I2C communication, data commands are sent to HUSKYLENS through UNIHIKER, which can control HUSKYLENS to switch recognition modes. After successful switching, HUSKYLENS sends communication data indicating successful mode switching to UNIHIKER. When UNIHIKER receives a data frame starting with "0x55, 0xaa, 0x11", it indicates that the response signal sent by HUSKYLENS has been successfully received by UNIHIKER.  
-> Note: You need to first adjust the Protocol Type to I2C in the General Settings of HUSKYLENS.
+> Note: You first need to adjust the Protocol Type to I2C in the General Settings of HUSKYLENS.
 
 > Tips: For more communication instructions, please refer to: [HUSKYLENS Protocol](https://github.com/HuskyLens/HUSKYLENSArduino/blob/master/HUSKYLENS%20Protocol.md)
 

@@ -1,5 +1,5 @@
 ### **Description**
-Write a PWM analog value to the specified pin, contrl the pin to output a PWM wave with a specific duty cycle.  
+Write a PWM (Pulse Width Modulation) analog value to the specified pin, contrl the pin to output a PWM wave with a specific duty cycle.  
 - Generally used for adjusting LED brightness or motor speed.  
 - UNIHIKER supports an 8-channel 10-bit PWM generator, these pins support it: P0, **P2**, P3, **P8,P9,P10**, P16,P21,P22 and P22.  
 > Note: P8 and P2 share one PWM channel, P9 and P10 share one PWM channel, so P8 and P9 can also use PWM, but P2 and P10 cannot be used when they are in use. Also note that P8P9 is a group, P2P10 is a group, only one group can be used at the same time, they cannot be mixed (for example, if P8 or P9 outputs PWM, then P2 or P10 cannot output PWM).  
@@ -50,7 +50,7 @@ There are two ways to output PWM waves, one is using the Pin class, and the othe
 
 
 ### **Example Description**
-In this example, we first initialize UNIHIKER with Board().begin(), then initialize the pin to PWM mode using the Pin or PWM class. In the main loop, we use the range() function to generate a loop array, and then adjust the PWM duty cycle using the write_analog() or duty() function. By observing the brightness of the LED light, we can understand the principle of PWM output.
+In this example, we first initialize UNIHIKER with Board().begin(), then initialize the pin to PWM mode using the Pin or PWM class. In the main loop, we use the range() function to generate a loop array, and then adjust the PWM duty cycle using the write_analog() or duty() function. By observing the brightness of the LED light, we can understand the principle of a PWM output.
 
 ### **Hardware Required**
 

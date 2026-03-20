@@ -1,5 +1,5 @@
 ### **Description**
-Control the specified IO pin to output high level (3.3V) or low level (0V).
+The output can be controlled by setting the specified IO pin to output a high level (3.3V) or a low level (0V).
 
 ### **Common functions**
 

@@ -1,5 +1,5 @@
 ### **Description**
-UNIHIKER is equipped with a microcontroller responsible for controlling onboard components and GPIO. Based on this functionality, we can control the external ultrasonic sensor by Pin21. This project uses PinPong library of Python to control the ultrasonic sensor externally connected through side pins of the board. The reason for using the ultrasonic module is that it can detect the distance between the object in front of itself through ultrasonic waves, thereby simulating the scene of obstacles and timely braking when the vehicle is moving forward.
+UNIHIKER is equipped with a microcontroller responsible for controlling onboard components and GPIO pins. Based on this functionality, we can control the external ultrasonic sensor by Pin21. This project uses PinPong library of Python to control the ultrasonic sensor externally connected through side pins of the board. The reason for using the ultrasonic module is that it can detect the distance between the object in front of itself through ultrasonic waves, thereby simulating the scene of obstacles and timely braking when the vehicle is moving forward.
 ### **Syntax**
 **Object = ANALOG_URM09(Pin((Pin.P21)))**
 **dis = Object.distance_cm()**

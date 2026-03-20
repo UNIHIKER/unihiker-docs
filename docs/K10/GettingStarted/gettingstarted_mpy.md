@@ -1,6 +1,6 @@
 ## **UNIHIKER K10 with MicroPython**
-MicroPython is a Python interpreter that runs on microprocessors, enabling us to write Python scripts to control hardware. It is highly consistent with the standard Python interpreter (CPython) in terms of syntax and runs on microprocessors with limited resources.
-In this tutorial, we will guide you through the process of downloading and installing MicroPython and it's IDE "Thonny" on your computer.<br/>
+MicroPython is a Python interpreter that runs on microprocessors, enabling users to write Python scripts to control hardware. It is highly consistent with the standard Python interpreter (CPython) in terms of syntax and runs on microprocessors with limited resources.
+In this tutorial, we will guide you through the process of downloading and installing MicroPython and its IDE "Thonny" on your computer.<br/>
 ![mpy](img/gettingstarted_mpy/micropython.png)
 
 ### **Download**
@@ -98,7 +98,7 @@ Or click on erase after the K10 is connected to Mind+ V2.
 ![image.png](img/gettingstarted_mpy/Restore3.png)
 
 !!! Note 
-    Mind+ is only support windows for now.
+    Mind+ is available for Windows only at the moments.
 
 **Method 2**<br/>
 For the MacOS/GNU Linux user the Arduino C firmware can be flash back by using the Arduino IDE.

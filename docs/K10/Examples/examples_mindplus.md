@@ -1,4 +1,4 @@
-## **Display-Set Back Ground Color**
+## **Display-Set Background Color**
 Setting the background color of the K10 screen<br/>
 ![image.png](img/example_mindplus/exampleMindplus1.png){: width="250px"}
 ![test image size](img/example_mindplus/exampleMindplus1.gif){: width="250px"}
@@ -68,7 +68,7 @@ Pedo meter:<br/>
 ![image.[ng]](img/example_mindplus/exampleMindplus43.png){: width="400px"}
 ![image.gif](img/example_mindplus/exampleMindplus43.gif){: width="250px"}
 
-## **On board sensor-Accelerate ball**
+## **On board sensor-Accelerate Ball**
 ![image.png](img/example_mindplus/exampleMindplus23.png){: width="350px"}
 ![image.gif](img/example_mindplus/exampleMindplus23.gif){: width="250px"}
 

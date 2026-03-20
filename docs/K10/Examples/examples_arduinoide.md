@@ -1,3 +1,7 @@
+## **Unihiker K10 Features and Example Overview**
+These examples provide a concise overview of the main capabilities of the UNIHIKER K10, including display control, user input, sensors, multimedia, AI functions, and GPIO usage. The display demonstrations show how to change background colors, draw shapes, display images, and render text using the canvas system. Button inputs are handled through both polling and interrupt callbacks, enabling responsive and event-driven interaction.
+
+Additional examples illustrate how to use the built-in camera, accelerometer, RGB LED, and audio features for tasks such as taking photos, detecting gestures, playing sounds, and recording audio. The K10 also supports on-device AI functions like face detection, motion detection, and QR code scanning. Finally, GPIO examples explain how to interface with external hardware using digital, analog, and PWM signals, making the board suitable for a wide range of embedded and interactive projects.<br/>
 ## **Display-Set Back Ground Color**
 Setting the background color of the K10 screen<br/>
 ````c++ title="Screen Display"
@@ -349,7 +353,7 @@ void loop() {
 Display screen tilt
 
 !!! Note 
-    TF card is need to run this example, and the arrow pictures need to store in the TF card.
+    A TF card is required to run this example. The arrow pictures need to be stored in the TF card.
 
 
 ````c++ title="Accelerate sensors"
@@ -472,7 +476,7 @@ void loop() {
 ![image.gif](img/example_mindplus/exampleMindplus24.gif){: width="250px"}
 
 ## **Audio-Play build-in music**
-Press button A to play the music “BIRTHDAY” in the background; press button B to play the alphabet song (1155661)<br/>
+The following example plays the music “BIRTHDAY” in the background when button A is pressed; press button B to play the alphabet song (1155661)<br/>
 ````c++ title="Play build-in music"
 #include "unihiker_k10.h"
 
@@ -577,7 +581,7 @@ void loop() {
 ![image.gif](img/example_mindplus/exampleMindplus27.gif) 
 
 ## **AI-Face recognition**
-Press button A to learn the face and green LED on; press button B to recognize the face and blue LED on, and display the recognized face ID on the K10 screen<br/>
+Press button A to learn the face until the green LED turns on; press button B to recognize the face and blue LED turns on, and display the recognized face ID on the K10 screen<br/>
 ````c++ title="Face recognition"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
@@ -626,7 +630,7 @@ void onButtonBPressed() {
 ![image.gif](img/example_mindplus/exampleMindplus28.gif){: width="250px"}
 
 ## **AI-Dog/Cat recognition**
-Turn on the camera, when the camera detects the detection of the cat, the length and width of the cat's face, as well as the coordinates of the center point x and center point y, are displayed on the K10 screen.<br/>
+Turn on the camera, when the camera detects a cat, the length and width of the cat's face, as well as the coordinates of the center point x and center point y, are displayed on the K10 screen.<br/>
 ````c++ title="AI-Dog/Cat recognition"
 #include "unihiker_k10.h"
 #include "AIRecognition.h"
@@ -695,7 +699,7 @@ void loop() {
 You can generate your own QR code through some free [QR code generation sites](https://www.qr-code-generator.com/). <br/>
 
 !!! Note 
-     Note: TF card is need to run this example, and the Album Cover picture needs to be stored in TF card.
+     Note: TF card is need to run this example. The Album Cover picture also needs to be stored in TF card.
 
 
 Below is the "Album cover" QR code we generated
@@ -774,7 +778,7 @@ void loop() {
 ![image.gif](img/example_mindplus/exampleMindplus31.gif){: width="400px"}
 
 ## **GPIO**
-Since the camera and display take up a lot of GPIOs on the ESP32 chip, we only left two full-function GPIOs (digital input/output, analogue input, PWM output) at P0,P1.
+Since the camera and display take up a lot of GPIO pins on the ESP32 chip, we only left two full-function GPIOs (digital input/output, analogue input, PWM output) at P0,P1.
 The GPIOs out of Edge Connector are all led from the on-board GPIO expansion chip, and only have digital input/output function.<br/>
 ````c++ title="Digital input/output"
 void setup() {

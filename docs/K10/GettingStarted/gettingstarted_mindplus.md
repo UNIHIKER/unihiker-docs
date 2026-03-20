@@ -1,10 +1,10 @@
 ## **UNIHIKER K10 with Mindplus(Mind+)**
-Mind+ is a software designed for teenagers that supports AI and IoT functions by integrating with popular mainboards and open-source hardware. It offers an easy programming experience through graphical building blocks and advanced languages like Python, C, and C++.
+Mind+ is a software, based on scratch, designed for teenagers that supports AI and IoT functions by integrating with popular mainboards and open-source hardware. It offers an easy programming experience through graphical building blocks and advanced languages like Python, C, and C++.
 In this tutorial, we will guide you through the process of downloading and installing Mindplus on your computer.<br/>
 ![mindplus](img/gettingstarted_mindplus/Mindplus.png)
 
 !!! Note 
-    Mind+ is only support windows for now.<br/>
+    Mind+ is only available for Windows at the moment.<br/>
     MacOS/GNU Linux users can code on K10 via Arduino IDE or MicroPython.<br/>
     We will actively update the IDE and SDK for K10 in the near future.
 

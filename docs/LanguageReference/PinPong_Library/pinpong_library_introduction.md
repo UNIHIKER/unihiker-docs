@@ -1,5 +1,5 @@
 # PinPong Library - Introduction
-UNIHIKER is equipped with a microcontroller coprocessor, whose duty is to control the onboard components and GPIO interfaces. In order to achieve hardware control, we utilize the PinPong library in Python to communicate with the coprocessor and write Python code to control the hardware.
+UNIHIKER is equipped with a microcontroller coprocessor, whose duty is to control the onboard components and GPIO interface pins. In order to achieve hardware control, we utilize the PinPong library in Python to communicate with the coprocessor and write Python code to control the hardware.
 
 The PinPong library is a collection of Python code for controlling open-source hardware mainboards. allowing you to quickly and easily control open-source hardware using Python within just five minutes.
 
