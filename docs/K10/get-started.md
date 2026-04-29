@@ -76,3 +76,41 @@ We recommend using genuine SanDisk cards in DFRobot Store: [32GB Class 10](https
 Using an unknown brand of memory card may cause problems such as card read/write failure and program crash.
 If you use a 32GB or higher memory card, you need to format the card into FAT32 format.
 
+#### **K10 as a card reader**<br/>
+
+The k10 cna be turned into a caard reader by uploading a special firmware.
+
+##### **Software preparation**<br/>
+
+- [K10 card reader firmware](img/get-started/usb_msv_SDspi.bin) 
+- [Flash download tool](https://dl.espressif.com/public/flash_download_tool.zip)
+
+##### **Firmware burning**<br/>
+
+- After downloading and extracting the Flash download too, run the .exe file and select ESP32-S3.
+
+    ![K10 card reader tool](img/get-started/getstarted8.png)
+
+- Select hte corresponding file, enter the corresponding address, and check the box at the front. 
+
+    ![K10 card reader tool](img/get-started/getstarted9.png)
+
+- Press and hold the BOOT button onthe back of the K10 boars, connect the board to the computer and select the corresponding port on the software.
+
+- First, click "ERASE" to clear the flash file. After siccesful clearing, click "START" to burn the file.
+
+- After the burning process is completed, press the "RST" reset button on the blank K10 boars, insert the TF card, and you can access the TF card on your computher in the same way as accessing files on a USB drive.
+
+#### Restoring initial settings
+
+Note: After flashing the card reader firmware, to use the graphical mode in Mind+ again, you need to restore the initial settings of the K10 in Mind+ V1
+
+![image.png](img/get-started/getstarted10.png)
+
+or connect the K10 in Mind+ V2 and click erase.
+
+![image.png](img/get-started/getstarted11.png)
+
+To restore, first press and hold the boot button, then connect the data cable. Once the port is recognized, release the boot button. Then click "Restore Initial Settings." After completion, press the RST button on the board to reset and finish the restoration process.
+
+![image.png](img/get-started/getstarted12.png)
