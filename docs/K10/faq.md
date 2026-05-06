@@ -78,3 +78,7 @@ A: When playing notes/audio in a subthread, the subthread cannot be stopped duri
 Q: K10 unable to connect to the hotspot on the UNIHIKER M10.
 A: UNIHIKER M10 must have the OS of version 0.3.7 or above, and then switch the mode to WPA2 in "5-Switch Wireless Hotspot Mode".
 [UNIHIKER M10 install OS tutorial](https://www.unihiker.com/wiki/SystemAndConfiguration/UnihikerOS/)
+
+## **AI - Single-syllable words cannot be recognized**
+Q: During speech recognition, single-syllable words like "Hi", "Go" cannot be recognized.
+A: If your instruction contains only one syllable, then K10 will not be able to recognize it. The voice recognition command can be a single word, but this word must have at least two syllables. For example, Hi and Go can be changed to Hello and Advance.

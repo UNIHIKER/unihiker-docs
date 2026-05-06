@@ -329,7 +329,8 @@ nav:
     - 🌟 Examples:
       - Mindplus Examples: K10/Examples/examples_mindplus.md
       - Arduino IDE/Platform IO Examples: K10/Examples/examples_arduinoide.md
-      - MicroPython Examples: K10/Examples/examples_mpy.md
+      - MicroPython Examples(Code): K10/Examples/examples_mpy.md
+      - MicroPython Examples(Blocks): K10/Examples/examples_mpy_block.md
     - 📜 Code Reference:
       - Blocks Reference(MindPlus): K10/CodeReference/CodeReference_blocksReference.md
       - Arduino/PlatformIO API List: K10/CodeReference/CodeReference_arduinoide.md

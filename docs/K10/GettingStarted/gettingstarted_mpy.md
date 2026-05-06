@@ -3,25 +3,44 @@ MicroPython is a Python interpreter that runs on microprocessors, enabling users
 In this tutorial, we will guide you through the process of downloading and installing MicroPython and its IDE "Thonny" on your computer.<br/>
 ![mpy](img/gettingstarted_mpy/micropython.png)
 
-### **Download**
 
 !!! Note 
     Before using micropython to program the UNIHIKER K10, the Micropython firmware has to be uploaded into the UNIHIKER K10.<br/>
-    Flash Download Tool now only support on Windows. MacOS/GNU Linux user can flash firmware by [ESP LAUNCHPAD](https://igrr.github.io/esp-launchpad/).<br/>
-    The MicroPython Firmware and Thonny support Windows/MacOS/GNU Linux.
+    Flash Download Tool now only support on Windows. MacOS/GNU Linux user can flash firmware by [ESP LAUNCHPAD](https://igrr.github.io/esp-launchpad/).
+
+    For users who prefer block-based programming, we recommend using Mind+ V2 to flash the MicroPython firmware.
+    For users who prefer other MicroPython code editors, we recommend using the Flash Download Tool or ESP LAUNCHPAD to flash the MicroPython firmware.
 
 
+### **Flash MicroPython Firmware on Windows via Mind+ V2**
+!!! Note 
+    The current version (0.9.8) of AI features—including facial recognition, cat/dog recognition, and QR code recognition consumes significant hardware resources. Therefore, simultaneous use of AI and WiFi functionality is not supported at this time.
+#### **Download**
 | **Download** |  |
 | --- | --- |
-| **MicroPython Firmware:** | [Google Drive Download(V0.9.2)](https://drive.google.com/file/d/1KAQAJJqcSX-ypoEthFkJ0ItVk6Jy7bOx/view?usp=drive_link)<br/>[Google Drive Download(V0.5)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
+| **Mind+ V2** | [Click to download Mind+ V2](https://mindplus.cc/en/download.html)<br/>|
+
+- Open Mind+ V2 and select MicroPython Block Mode
+![mind+](img/gettingstarted_mpy/Mind+1.png)
+
+- Expand and select the 0.0.5 version (or higher) of UNIHIKER K10 in the lower left corner and install it. After the installation is complete, select UNIHIKER K10.
+![mind+](img/gettingstarted_mpy/Mind+2.png)
+
+- Then, press and hold the BOOT button on the back of the K10 and connect it to the computer via USB.
+- Return to the previous interface, click on the device connection, then click on Erase, Burn -> 0.9.8. Flash the firmware
+![mind+](img/gettingstarted_mpy/Mind+3.png)
+
+- Wait until the terminal on the lower right corner is finished burning the code. When "Hard resetting via RTS pin..." appears, it indicates that the burning is complete. At this point, you can click the RST button behind K10 to perform a hardware reset. Then, click the connection again to connect the UNIHIKER K10 in the MicroPython mode.
+
+
+### **Flash MicroPython Firmware on Windows via Flash Download Tool**
+### **Download**
+| **Download** |  |
+| --- | --- |
+| **MicroPython Firmware:** | [Google Drive Download(0.9.8)](https://drive.google.com/file/d/14d7ziQHWjk0BLEEK1jS4lcNuRWWqhiTP/view?usp=drive_link)<br/>[Google Drive Download(V0.9.2)](https://drive.google.com/file/d/1KAQAJJqcSX-ypoEthFkJ0ItVk6Jy7bOx/view?usp=drive_link)<br/>[Google Drive Download(V0.5)](https://drive.google.com/file/d/1jzlGrbEmur0Sg263MxGxotl6H2WHMf41/view?usp=drive_link) |
 | **Flash Download Tool(Only support windows):** | [Click to download](https://dl.espressif.com/public/flash_download_tool.zip) |
 | **ESP LaunchPad(Web Tool For All OS):** | [Click to visit](https://igrr.github.io/esp-launchpad/) |
 | **Thonny** | [Click to download](https://thonny.org/) |
-
-!!! Note 
-    The current version (0.9.2) of AI features—including facial recognition, cat/dog recognition, and QR code recognition consumes significant hardware resources. Therefore, simultaneous use of AI and WiFi functionality is not supported at this time.
-
-### **Flash MicroPython Firmware on Windows**
 - Click to open the Flash Download Tool, then choose the ESP32-S3.<br/>![image.png](img/gettingstarted_mpy/flashdownload1.png)
 
 - Select the firmware and fill up the address with 0x00, then click on √.<br/>![image.png](img/gettingstarted_mpy/flashdownload2.png)
@@ -85,7 +104,7 @@ while True:
 ![image.png](img/gettingstarted_mpy/Thonny5.png)
 
 ## **MicroPython Example**
-Cklik to the [MicroPython Example](../Examples/examples_mpy.md).
+Cklik to the [MicroPython Block Example](../Examples/examples_mpy_block.md) or [MicroPython Example](../Examples/examples_mpy.md).
 
 ## **Flash back to Arduino C firmware**
 The original firmware for K10 is ArduinoC firmware, supports development in Arduino environments such as Mind+/Arduino IDE. If you want to switch back to Arduino development after using MicroPython, we offer the following two methods for you to flash the Arduino C firmware:<br/>
