@@ -38,7 +38,7 @@ After the system image is burned, the system is in its initial state, and you ne
 | **Q** | **If the device to be burned is not displayed, what should I do?** |
 | --- | --- |
 | A | First, make sure your computer can access the UNIHIKER board correctly. When the board is powered on normally and displays the logo on the screen, you should be able to access the board's webpage menu by entering 10.1.2.3 in your web browser.Then, make sure to follow the steps for burning the system image carefully. It's important to turn off the board and disconnect it from power first, then press and hold the Home button before connecting the USB cable to the PC to let the board enter system image burning mode.|
-|   |If the device still does not appear, try using a different USB port on your computer. For desktop PCs, rear USB ports (directly on the motherboard) are often more stable than front ports, as they are less frequently plugged/unplugged and tend to provide more reliable communication during the high-speed flashing process. |
+|   | If the device still does not appear, try using a different USB port on your computer. For desktop PCs, rear USB ports (directly on the motherboard) are often more stable than front ports, as they are less frequently plugged/unplugged and tend to provide more reliable communication during the high-speed flashing process. |
 
 | **Q** | **The system burning is complete and the progress reaches 100%, but the UNIHIKER still cannot boot up after one minute.** |
 | --- | --- |

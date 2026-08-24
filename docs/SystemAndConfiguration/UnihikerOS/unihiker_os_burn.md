@@ -91,9 +91,9 @@ Repository Link: https://github.com/rockchip-linux/rkdeveloptool
 
 ### **2.4 Enter flashing mode**
 
-- Disconnect the UNIHIKER board from the power source (the memory card also needs to be removed)
-- Press and hold the Home button on the board , and connect the board to your computer via USB cable. Then the board will enter the firmware flashing mode and display a white screen. The software should recognize the board as a new device.
-- Release the Home button now.
+- Disconnect the UNIHIKER board from the power source (the memory card also needs to be removed)  
+- Press and hold the Home button on the board , and connect the board to your computer via USB cable. Then the board will enter the firmware flashing mode and display a white screen. The software should recognize the board as a new device.  
+- Release the Home button now.  
 
 ![](https://dfimg.dfrobot.com/64228321aa9508d63a42c28b/wiki/a07417b99c96146ea81ba3bb4bd4ac2f.png)
 

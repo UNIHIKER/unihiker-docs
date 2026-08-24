@@ -21,12 +21,17 @@
 
 ### **V0.4.1 :**
 
-- Added pyenv tool with built-in Python 3.8.5 and 3.12.7. [Pyenv Usage Guide](/Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker)
-- Updated Home menu- Added M10 logo to the cover- Added USB IP reset network function on click- Added language switch quick icon in the menu- Added more parameter displays on the system infor page- Updated apt source files
-- Added v4l-utils library
-- Updated built-in siotV2 package
-- Unihiker library updated to version 0.0.28
-- Pinpong library updated unihiker recognition method
+- Added pyenv tool with built-in Python 3.8.5 and 3.12.7. [Pyenv Usage Guide](/Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker)  
+- Updated Home menu  
+- Added M10 logo to the cover  
+- Added USB IP reset network function on click  
+- Added language switch quick icon in the menu  
+- Added more parameter displays on the system infor page  
+- Updated apt source files  
+- Added v4l-utils library  
+- Updated built-in siotV2 package  
+- Unihiker library updated to version 0.0.28  
+- Pinpong library updated unihiker recognition method  
 
 ### **V0.4.0 :**
 
