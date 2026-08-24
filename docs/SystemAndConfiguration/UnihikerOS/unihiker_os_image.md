@@ -1,40 +1,37 @@
-
-
 ## **OS Image**
-- To begin, download the OS img image file that needs to be flashed. 
+
+- To begin, download the OS img image file that needs to be flashed.
 - Once downloaded and extracted, you will have an img format image file.
 
 **Download Latest Version System Image**
-**Name:** unihiker_v0.4.5_20260201_1541-f4c3.7z
+**Name:** unihiker_v0.4.2_20260128_2257.7z
 
-| **Download channel** |  |
-| --- | --- |
-| **Download:** | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.5_20260201_1541-f4c3.7z) |
+| **Download channel**            |                                                                                                        |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Download:**                   | [Click to download](https://download3.dfrobot.com.cn/unihiker/img/unihiker_v0.4.2_20260128_2257.7z)  |
 | **Download from Google Drive:** | [Click to download](https://drive.google.com/drive/folders/1JU73SOyN5VmpB6ilbxVNvCB9qXfc-Qo-?usp=sharing) |
 
-##  **Release Logs**
+## **Release Logs**
 
-### **V0.4.5 :**
-- Python Environment: Switched default Python to v3.12.7 via pyenv.
-- Package Management: Added built-in uv tool with pre-cached pip libraries for Python 3.12.
 
 ### **V0.4.2 :**
+
 - Pre-installed Libraries: Integrated various Python libraries, including model_mp_io and model_mp_core for model inference.
 - SIoT Upgrade: Updated SIoT V2 to fix web pop-up error issues.
 
 ### **V0.4.1 :**
 
-- Added pyenv tool with built-in Python 3.8.5 and 3.12.7. [Pyenv Usage Guide](/Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker)
+- Added pyenv tool with built-in Python 3.8.5 and 3.12.7. [Pyenv Usage Guide](/Troubleshooting/How_to_Install_Multiple_Python_Versions_on_Unihiker)  
 - Updated Home menu  
-       - Added M10 logo to the cover  
-       - Added USB IP reset network function on click  
-       - Added language switch quick icon in the menu  
-       - Added more parameter displays on the system infor page  
-       - Updated apt source files  
+- Added M10 logo to the cover  
+- Added USB IP reset network function on click  
+- Added language switch quick icon in the menu  
+- Added more parameter displays on the system infor page  
+- Updated apt source files  
 - Added v4l-utils library  
 - Updated built-in siotV2 package  
 - Unihiker library updated to version 0.0.28  
-- Pinpong library updated unihiker recognition method
+- Pinpong library updated unihiker recognition method  
 
 ### **V0.4.0 :**
 
@@ -70,11 +67,11 @@
 - fix apt upgrade error.
 - Update three built-in dedicated libraries (siot, pinpong, unihiker) to the latest version.
 - Add a batch of built-in libraries:
-   - webssh
-   - opencv_contrib_python
--pyzbar
-   - dominate
--pypinyin
-   - lsusb
--onnxruntime
--graphviz
+  - webssh
+  - opencv_contrib_python
+  - pyzbar
+  - dominate
+  - pypinyin
+  - lsusb
+  - onnxruntime
+  - graphviz
