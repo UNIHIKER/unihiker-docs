@@ -325,6 +325,7 @@ nav:
       - Arduino IDE: K10/GettingStarted/gettingstarted_arduinoide.md
       - Platform IO: K10/GettingStarted/gettingstarted_platformio.md
       - MicroPython: K10/GettingStarted/gettingstarted_mpy.md
+      - Schematik: K10/GettingStarted/gettingstarted_schematik.md
       - Accessories: K10/GettingStarted/gettingstarted_accessories.md
     - 🌟 Examples:
       - Mindplus Examples: K10/Examples/examples_mindplus.md
