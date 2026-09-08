@@ -7,6 +7,7 @@
 [UNIHIKER K10 STL model](https://dfimg.dfrobot.com/5cabf4771804207b131ae8cb/wiki/cf174faab293c4f3c5f6bd1e92e4a199.zip)
 
 ## **Case**
+[Purchase this case from DFRobot store](https://www.dfrobot.com/product-3004.html)<br/>
 DFRobot official design case, a M3*5 screw is need to fix the case to the K10 board, the case expose all the interfaces of the K10.<br/>
 [UNIHIKER K10 case——designed by DFRobot](https://dfimg.dfrobot.com/62b2fb5caa613609f271523c/wiki/dd231e44c83eacf7ad601ce01b386718.zip) 
 ![image.png](img/hardwarereference_onboard/onboard3.png) 
@@ -30,3 +31,6 @@ After uploading other programmes, the factory programme will be overwritten, if 
 - [CE Certification](img/hardwarereference_onboard/DFR0992-EN-CE-Certification.pdf) 
 - [FCC Certification](img/hardwarereference_onboard/DFR0992-EN-FCC-Certification.pdf) 
 - [RoHS](img/hardwarereference_onboard/DFR0992-EN-ROHS.pdf) 
+- [Doc](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_DOC.pdf)
+- [Safety and Compliance Information](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_Safety_and_Compliance_Information.pdf)
+- [User Guide](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_User_Guide.pdf)

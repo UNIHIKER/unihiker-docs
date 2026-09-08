@@ -326,7 +326,6 @@ nav:
       - Platform IO: K10/GettingStarted/gettingstarted_platformio.md
       - MicroPython: K10/GettingStarted/gettingstarted_mpy.md
       - Schematik: K10/GettingStarted/gettingstarted_schematik.md
-      - Accessories: K10/GettingStarted/gettingstarted_accessories.md
     - 🌟 Examples:
       - Mindplus Examples: K10/Examples/examples_mindplus.md
       - Arduino IDE/Platform IO Examples: K10/Examples/examples_arduinoide.md
@@ -338,10 +337,9 @@ nav:
     - 🪄 Playground: 
       - MindPlus Tutorial(Block): K10/Playground/Tutorial(Block).md
       - LLM Voice/Visual Chatboat Xiaozhi AI - support Deepseek: K10/Playground/XiaozhiAI.md
-    - 🚀 Hardware Reference:
-      - Specification: K10/HardwareReference/hardwarereference_specs.md
-      - Download: K10/HardwareReference/hardwarereference_stepschematic.md
-    
+    - 📝Specification: K10/HardwareReference/hardwarereference_specs.md
+    - 💾 Reference Download: K10/HardwareReference/hardwarereference_stepschematic.md
+    - 🧩 Accessories: K10/GettingStarted/gettingstarted_accessories.md
     - 🔧 FAQ: K10/faq.md
   - Forum: https://www.dfrobot.com/forum/?t=947&p=1
   - Contact Us: 

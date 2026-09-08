@@ -36,7 +36,7 @@ UNIHIKER K10 only support Mind+ version V1.8.1 or above.
 ## **Factory Program**
 After uploading other programs, the factory program will be overwritten, if you want to re-experience the factory program, you can follow the process below:<br/>
 
-- Download [factory program](https://img.dfrobot.com.cn/wikicn/62b2fb5caa613609f271523c/90d9a709be69b96c37cadd2af0337b0e.zip)<br/>
+- Download [factory program](img/gettingstarted_mindplus/UNIHIKER%20K10-UserProgram-EN-260810.zip)<br/>
 - Unzip the program and open it with Notepad/VSCode etc. and copy the entire contents.<br/>
 - Paste it into the manual editing area of Mind+.<br/>
 ![image.png](../img/get-started/getstarted5.png)<br/>
