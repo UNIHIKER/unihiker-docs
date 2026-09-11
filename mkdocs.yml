@@ -150,7 +150,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.snippets
   # - markdown.extensions.meta
-
+  - pymdownx.quotes:
+      callouts: true
 extra_css:
   - stylesheets/extra.css
 
