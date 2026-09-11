@@ -31,6 +31,6 @@ After uploading other programmes, the factory programme will be overwritten, if 
 - [CE Certification](img/hardwarereference_onboard/DFR0992-EN-CE-Certification.pdf) 
 - [FCC Certification](img/hardwarereference_onboard/DFR0992-EN-FCC-Certification.pdf) 
 - [RoHS](img/hardwarereference_onboard/DFR0992-EN-ROHS.pdf) 
-- [Doc](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_DOC.pdf)
+- [Doc](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_DOC_V1.1.pdf)
 - [Safety and Compliance Information](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_Safety_and_Compliance_Information.pdf)
 - [User Guide](img/hardwarereference_onboard/DFR0992-EN_UNIHIKER-K10_User_Guide.pdf)
